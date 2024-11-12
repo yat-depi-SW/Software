@@ -1,0 +1,62 @@
+---
+- name: Setup Jenkins on Ubuntu EC2
+  hosts: ec2_instances
+  become: yes
+
+  vars:
+    jenkins_port: 8088  # Change this to your desired host port
+    jenkins_home: /var/jenkins_home
+
+  tasks:
+    - name: Update APT package index
+      apt:
+        update_cache: yes
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Add ec2-user to the docker group
+      user:
+        name: ec2-user
+        group: docker
+
+    - name: Pull Jenkins Docker image
+      docker_image:
+        name: jenkins/jenkins
+        tag: lts
+        source: pull
+
+    - name: Run Jenkins container
+      docker_container:
+        name: jenkins
+        image: jenkins/jenkins:lts
+        state: started
+        restart_policy: unless-stopped
+        published_ports:
+          - "{{ jenkins_port }}:8080"
+        volumes:
+          - "{{ jenkins_home }}:/var/jenkins_home"
+      register: jenkins_container
+
+    - name: Wait for Jenkins to be up and running
+      uri:
+        url: "http://{{ ansible_host }}:{{ jenkins_port }}/login"
+        status_code: 200
+        timeout: 60
+      register: jenkins_status
+      retries: 6
+      delay: 10
+      until: jenkins_status is succeeded
+
+    - name: Print Jenkins URL
+      debug:
+        msg: "Jenkins is running at http://{{ ansible_host }}:{{ jenkins_port }}"
+

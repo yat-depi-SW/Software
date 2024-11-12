@@ -1,0 +1,60 @@
+﻿@model List<MemberPenaltyHistoryVM>
+
+    <h2>Active Penalty</h2>
+    <hr />
+<table class="table table-hover table-bordered text-center shadow-sm">
+    <thead class="thead-dark">
+        <tr>
+
+            <th>Book Title</th>
+            <th>Borrow Date</th>
+            <th>To be Return on</th>
+            <th>Return Date</th>
+            <th>Overdue Days</th>
+            <th>Penalty Amount</th>
+           
+
+        </tr>
+    </thead>
+   <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.BookTitle</td>                 
+                <td>@(record.BorrowDate.HasValue ? record.BorrowDate.Value.ToString("dd/MM/yyyy") : "N/A")</td>
+                <td>
+
+                    @if (record.defaultReturnDate.HasValue)
+                    {
+                        if (record.defaultReturnDate.Value < DateTime.Today)
+                        {
+                            <span class="badge bg-danger">@record.defaultReturnDate.Value.ToString("dd/MM/yyyy")</span>
+                        }
+                        else
+                        {
+                            @record.defaultReturnDate.Value.ToString("dd/MM/yyyy")
+                        }
+                    }
+                    else
+                    {
+                        <span>N/A</span>
+                    }
+                </td>
+                <td>
+                    @if (record.ReturnDate.HasValue)
+                    {
+                        @record.ReturnDate.Value.ToString("dd/MM/yyyy")
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Not Returned</span>
+                    }
+                    </td>
+                <td>@record.PenaltyDays Days</td>
+                <td>@(record.PValue.HasValue ? record.PValue.Value.ToString("F2") : "0.00") LE</td>
+
+
+            </tr>
+        }
+    </tbody> 
+</table>

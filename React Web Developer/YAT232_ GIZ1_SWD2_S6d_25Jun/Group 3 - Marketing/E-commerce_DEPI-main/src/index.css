@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+a.active hr{
+    display: block;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

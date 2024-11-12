@@ -1,0 +1,182 @@
+// Color variables
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+$light-background: rgba(248, 244, 225, 0.8);
+$section-padding: 90px;
+
+.container-xl {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  h3 {
+    font-size: 1.8rem;
+    color: $dark-color;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 3px;
+      width: 100px;
+      background-color: $dark-color;
+    }
+  }
+
+  .payment-section {
+    background-color: $light-background;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+    padding: 45px 30px;
+    @media (max-width: 767px) {
+      padding: 25px 15px;
+    }
+    .order-summary {
+      margin-bottom: 2rem;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+
+        th,
+        td {
+          padding: 12px;
+          border: 1px solid $alt-light-color;
+          text-align: left;
+          @media (max-width: 767px) {
+            padding: 10px;
+          }
+        }
+
+        th {
+          background-color: $alt-dark-color;
+          color: $light-color;
+          font-weight: 500;
+        }
+
+        td {
+          background-color: #fff;
+          color: $dark-color;
+        }
+
+        tr:last-child {
+          td {
+            font-weight: 500 !important;
+            background-color: $alt-dark-color;
+            color: $light-color;
+          }
+        }
+      }
+    }
+
+    .billing-info {
+      form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          label {
+            font-weight: bold;
+            color: $dark-color;
+          }
+
+          input {
+            padding: 10px;
+            border: 1px solid $alt-light-color;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+
+            &:focus {
+              outline: none;
+              border-color: $dark-color;
+            }
+          }
+        }
+
+        @media (max-width: 991px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+    .payment-options {
+      grid-column: 1 / span 3;
+
+      @media (max-width: 991px) {
+        grid-column: 1 / span 2;
+      }
+      @media (max-width: 767px) {
+        grid-column: 1 / span 1;
+      }
+
+      h2.payment-title {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $dark-color;
+        margin-bottom: 1rem;
+      }
+
+      .option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 1rem;
+
+        label {
+          font-size: 1.2rem;
+          color: $alt-dark-color;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 8px;
+          i {
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    // Submit button styling with adjustments
+    .submit-btn {
+      color: $light-color;
+      grid-column: 2;
+      background-color: $alt-dark-color;
+      padding: 10px 16px !important;
+
+      &:hover {
+        background-color: $dark-color;
+      }
+      @media (max-width: 991px) {
+        grid-column: 1 / span 2;
+        width: 50%;
+        margin: auto !important;
+      }
+      @media (max-width: 767px) {
+        grid-column: 1;
+        width: 100%;
+      }
+    }
+
+    // Error message styling
+    .error-message {
+      color: red;
+      font-size: 0.875rem; // Reduced font size for error messages
+    }
+  }
+}

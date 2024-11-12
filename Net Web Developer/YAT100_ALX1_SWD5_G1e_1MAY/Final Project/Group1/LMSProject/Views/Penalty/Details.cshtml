@@ -1,0 +1,60 @@
+﻿@model LMSProjectAUTH.Application.ViewModel.Penalty.PenaltyVM
+
+@{
+    ViewData["Title"] = "Penalty Details";
+}
+
+<h2>Penalty Details</h2>
+<hr />
+<!-- Render the Member Details Partial View -->
+@await Html.PartialAsync("_MemberDetails", Model.MemberDetails)
+<br />
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Book Title: @Model.BookTitle</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="BorrowDate" class="form-label"><strong>Borrow Date:</strong></label>
+                            <input type="text" class="form-control" id="BorrowDate" value="@(Model.BorrowDate?.ToShortDateString() ?? "N/A")" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="DefaultReturnDate" class="form-label"><strong>Default Return Date:</strong></label>
+                            <input type="text" class="form-control" id="DefaultReturnDate" value="@(Model.DefaultReturnDate?.ToShortDateString() ?? "N/A")" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="PenaltyDays" class="form-label"><strong>Overdue Days:</strong></label>
+                            <input type="text" class="form-control" id="PenaltyDays" value="@Model.PenaltyDays" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="PValue" class="form-label"><strong>Penalty Amount:</strong></label>
+                            <input type="text" class="form-control" id="PValue" value="@(Model.PValue?.ToString("##.##") ?? "0") LE" readonly />
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-start mt-4">
+                        @if (!(Model.IsPaid))
+                        {
+                            <form asp-action="MarkAsPaid" method="post">
+                                <input type="hidden" name="penaltyId" value="@Model.Id" />
+                                <button type="submit" class="btn btn-success">Mark as Paid</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <!-- Disabled button indicating penalty is already paid -->
+                            <button type="button" class="btn btn-secondary" disabled>Already Paid</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

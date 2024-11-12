@@ -1,0 +1,28 @@
+<div class="container-xl">
+  <div *ngIf="product" class="item-details">
+    <img [src]="product.image" [alt]="product.name">
+    <div class="info">
+      <h3>{{product.name}}</h3>
+      <p>Bake House {{product.name}} is made from the top ingredients to satisfy you and surely make your day.</p>
+      @if(product.amount===0){
+      <p><strong>Availability: </strong><span class="text-white bg-danger">Out Of Stock</span></p>
+      }@else if(product.amount<=10){ <p><strong>Availability: </strong><span class="text-white bg-warning">Low In
+          Stock</span></p>
+        }@else{
+        <p><strong>Availability: </strong><span>In Stock</span></p>
+        }
+        <span>
+          <strong>Price: </strong>
+          <ng-container *ngIf="product.discount > 0; else fullPrice">
+            {{ calcDiscount(product.price, product.discount) | currency: 'EGP': 'symbol-narrow' }}
+            <del>{{ product.price | currency: 'EGP': 'symbol-narrow' }}</del>
+          </ng-container>
+          <ng-template #fullPrice>
+            <span>{{ product.price | currency: 'EGP': 'symbol-narrow' }}</span>
+          </ng-template>
+        </span>
+        <button class="btn" [disabled]="product.amount === 0" (click)="addOne(product)">Add to Cart</button>
+    </div>
+
+  </div>
+</div>

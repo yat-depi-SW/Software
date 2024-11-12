@@ -1,0 +1,10 @@
+div{
+  margin-top: 5rem;
+}
+select {
+  width: 100%;
+
+  @media (max-width:450px) {
+    width: 95vw;
+  }
+}

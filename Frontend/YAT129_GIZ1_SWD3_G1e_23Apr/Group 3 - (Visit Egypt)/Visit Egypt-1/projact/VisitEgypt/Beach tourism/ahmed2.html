@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach tourism</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>
+       body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f7;
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding-left: 50px;
+  border: 1px solid white;
+  background-color: white;
+  top: 8%;
+  left: 9%;
+  /* margin: 50px; */
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom:10px ;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+
+
+}
+.header .nav{
+  padding-left: 340px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-left: 20px;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 7px;
+}
+.nav .btn {
+  padding: 10px 20px;
+  background-color:#00B98E;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.nav .dropdown,header {
+  position: relative;
+}
+.header
+{
+  z-index: 50;}
+  .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav .dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  width: 150px;
+}
+
+.nav .dropdown-content a:hover {
+  color: white;
+  background-color: #00B98E;
+}
+.btnm-imp
+{
+  text-decoration: none;
+  background-color: #020807;
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius:5px;
+  width: 125px; 
+}
+.btnm-imp:hover
+{
+color: #FFFFFF !important;
+background-color: #01cb9c !important;
+}
+.nav .dropdown2 {
+  position: relative;
+}
+
+.nav .dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.nav .dropdown-content2 a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+.nav .dropdown-content2 a:hover {
+  color: white;
+  background-color: #00B98E;
+}
+
+.nav a:hover {
+  color: #32c787;
+}
+
+.active a {
+  color: #32c787;
+}
+.logo{
+    text-decoration: none;
+    color: #020807;
+}
+
+
+
+   </style>
+</head>
+<body>
+    <div class="big-container">
+        <header class="header">
+            <a href="logo" class="logo"><span>visit</span> <span>Egypt</span>  </a>
+    
+            <ul class="nav">
+                <li class="active"><a href="/ahmed.html">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="../index.html">categry</a>
+                    <div class="dropdown-content">
+                        <a href="../Ancient Egyptian monuments/ahmed2.html">Ancient Egyptian</a>
+                        <a href="../VisitEgypt/Islamic monuments/ahmed2.html">Islamic monuments</a>
+                        <a href="../VisitEgypt/Beach tourism/ahmed2.html">Beach tourism</a>
+                    </div>
+                </li>
+                <li class="dropdown2">
+                    <a href="/travel to egypt Hotels/Hotels.html">Hotels</a>
+                    <div  class="dropdown-content2">
+                    <a href="/travel to egypt Hotels/Hotels.html">Alexandria</a>
+                    <a href="/travel to egypt Hotels/Hotels.html">Hurghada</a>
+                    <a href="/travel to egypt Hotels/Hotels.html">Sharm El Sheikh</a>
+                    <a href="/travel to egypt Hotels/Hotels.html">Luxor</a>
+                    <a href="/travel to egypt Hotels/Hotels.html">Aswan</a>
+                </div>
+                </li>
+                <li><a href="/travel to egypt Blog/Blog.html">Blog</a></li>
+    
+                <li></li>
+            </ul>
+            <a href="/المشروع/Booking Form.html" class="btn btnm-imp">Booking</a>
+        </header>
+    <main>
+      <h1>Beach tourism</h1>
+      <p class="subtitle">
+        Beach tourism is considered as one of the most important tourist
+        activities <br />
+        that exist in Egypt, attracting a large number of tourists from
+        different
+      </p>
+      <div class="property-grid">
+        <div class="property-card">
+          <a href="#"><img src="image/2022-04-27.jpg" alt="AbydosFacade" /></a>
+          <h2>Dahab</h2>
+          <p>
+            Dahab is a small Egyptian town on the southeast coast of the Sinai
+            Peninsula in Egypt, approximately 80 km northeast of Sharm
+            el-Sheikh.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="image/2022-08-20.jpg" alt="Villa" /></a>
+          <h2>Sharm El-Sheikh</h2>
+          <p>
+            Sharm el-Sheikh is an Egyptian resort town between the desert of the
+            Sinai Peninsula and the Red Sea. It's known for its sheltered sandy
+            beaches, clear waters and coral reefs.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="image/download (1).jpeg" alt="Home" /></a>
+          <h2>Marsa Alam</h2>
+          <p>
+            Marsa Alam is a resort town on the Red Sea in Egypt. It’s renowned
+            for its sandy beaches and coral reefs. The U-shaped Abu Dabab Bay is
+            known for its sea turtles and dugongs (sea cows).
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="image/download.jpeg" alt="Office" /></a>
+          <h2>Alexandria</h2>
+          <p>
+            Alexandria is a Mediterranean port city in Egypt. During the
+            Hellenistic period, it was home to a lighthouse ranking among the
+            Seven Wonders of the Ancient World as well as a storied library.
+            Today the library is reincarnated in the disc-shaped, ultramodern
+            Bibliotheca Alexandrina.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"
+            ><img
+              src="image/El-Gouna-Red-Sea-Sheraton-Miramar-Resort.webp"
+              alt="Building"
+          /></a>
+          <h2>El Gouna</h2>
+          <p>
+            El Gouna is a modern resort town on Egypt’s Red Sea, near Hurghada.
+            It’s built along the shore and on small islands, and is known for
+            its lagoons, coral reefs and sandy beaches. Among these is long,
+            wide Mangroovy Beach, popular with kitesurfers.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"
+            ><img src="image/licensed-image (1).jpeg" alt="Townhouse"
+          /></a>
+          <h2>Ras Mohamed Nature Reserve</h2>
+          <p>
+            Ras Muhammad is a national park in Egypt at the southern extreme of
+            the Sinai Peninsula, overlooking the Gulf of Suez on the west and
+            the Gulf of Aqaba to the east.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="image/licensed-image (2).jpeg" alt="Shop" /></a>
+          <h2>Hurghada</h2>
+          <p>
+            Hurghada is a beach resort town stretching some 40km along Egypt’s
+            Red Sea coast. It’s renowned for scuba diving, and has numerous dive
+            shops and schools in its modern Sekalla district.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="image/licensed-image.jpeg" alt="Garage" /></a>
+          <h2>Safaga</h2>
+          <p>
+            Port Safaga, also known as Safaga, is a town in Egypt, on the coast
+            of the Red Sea, located 53 km south of Hurghada. This small port is
+            also a tourist area that consists of several bungalows and rest
+            houses.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

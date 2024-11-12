@@ -1,0 +1,15 @@
+
+pipeline {
+  agent any
+  environment {
+   ANSIBLE_PRIVATE_KEY=credentials('S-jenkins') 
+  }
+  stages {
+    stage('Hello') {
+      steps {
+      //  sh 'ansible-galaxy collection install -r requirements.yml'
+        sh 'ansible-playbook -i app/mariadb.hosts --private-key=$ANSIBLE_PRIVATE_KEY app/mariadb.yml'
+      }
+    }
+  }
+}

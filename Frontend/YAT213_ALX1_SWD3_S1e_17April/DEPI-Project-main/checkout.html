@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/solid.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>YSFI</title>
+  </head>
+    <body>
+        <!-- nav start -->
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img alt="Company Logo" src="logo without bg-modified.png" width="50"height="50" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 flex-grow-1 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Best Sellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-custom" href="cart.html">Cart<i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- nav end -->
+
+<!-- checkout -->
+<body class="bg-body-tertiary">
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Checkout form</h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="sansita-bold">Your cart</span>
+          <span class="badge sansita-bold-3 bg-custom rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Chocolate Donut</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">40.00 EGP</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Strawberry Donut</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">25.00 EGP</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Glazed Donut</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">45.00 EGP</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Shipping</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">20.00 EGP</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Subtotal (USD)</span>
+            <strong>110.00 EGP</strong>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">−15.00 EGP</span>
+          </li>
+          
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>95.00 EGP</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-custom">Redeem</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Save this information for next time</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label " for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-body-secondary">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <a href="index.html"  id="submitbtn"  class="w-100 btn  btn-custom btn-lg" type="submit">Submit</a>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- end of checkout -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- footer start -->
+        <footer>
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- First Column -->
+                    <div class="col-lg-4">
+                        <h1 class="firstconh1 sansita-bold">YSFI</h1>
+        
+                        <!-- Contact Us Heading -->
+                        <h4 id="contact" class="mt-4 mb-3 sansita-regular">Contact Us</h4>
+        
+                        <!-- Contact Form -->
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control contactus" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control contactus" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message contactus" rows="3" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary  btn-custom"
+                                style=" border: none;">Submit</button>
+                        </form>
+        
+                        <!-- Follower Count -->
+                        <!-- <p class="firstconn mt-4 sansita-regular-italic"><span class="fw-bold" style="color: rgb(255, 208, 155);">15K</span> followers</p> -->
+        
+                        <!-- Divider -->
+                        <hr class="fhr">
+        
+                        <!-- Social Media Follow Section -->
+                        <div class="folloicon d-flex align-items-center">
+                            <!-- Follow Us Text next to icons -->
+                            <p class="foll mb-0 me-3 sansita-regular-italic">Follow us:</p>
+                            <div class="ficc d-flex">
+                                <a href="https://facebook.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://pinterest.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a href="https://youtube.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://google.com" target="_blank" class="social-icon me-2 socialmedia">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!-- Subscription Form -->
+                        <!-- <div class="sub d-flex mt-4">
+                                    <input type="email" class="form-control" placeholder="Your email">
+                                    <button class="btn btn-primary ms-2">SUBSCRIBE</button>
+                                </div> -->
+                    </div>
+        
+        
+                    <!-- Second Column -->
+                    <div class="col-lg-4">
+                        <h2 class="firstconh1 sansita-bold">blogs</h2>
+        
+                        <!-- Blog Item 1 -->
+                        <div class="blogitems">
+                            <div class="secondconimg d-flex align-items-start mb-3 ">
+                                <img src="images/blogs/blog1.jfif" class="img-fluid blogs me-3" alt="Blog 1"
+                                    style=" width: 100px; height: 95px;">
+                                <div class="secondconinfo">
+                                    <a href="#" class="sec fw-bold blogcon sansita-regular-italic">Lorem ipsum dolor sit
+                                        amet<br>consectetur adipiscing</a>
+                                    <p class="parasec blogdate">Jan 9, 2016</p>
+                                </div>
+                            </div>
+        
+                            <!-- Blog Item 2 -->
+                            <div class="secondconimg d-flex align-items-start mb-3">
+                                <img src="images/blogs/blog2.jfif" class="img-fluid blogs me-3" alt="Blog 2"
+                                    style=" width: 100px; height: 102px;">
+                                <div class="secondconinfo">
+                                    <a href="#" class="sec fw-bold blogcon sansita-regular-italic">Lorem ipsum dolor sit
+                                        amet<br>consectetur adipiscing</a>
+                                    <p class="parasec  blogdate">Feb 14, 2016</p>
+                                </div>
+                            </div>
+        
+                            <!-- Blog Item 3 -->
+                            <div class="secondconimg d-flex align-items-start mb-3">
+                                <img src="images/blogs/blog3.jfif" class="img-fluid blogs me-3" alt="Blog 3"
+                                    style=" width: 100px; height: 102px;">
+                                <div class="secondconinfo">
+                                    <a href="#" class="sec fw-bold blogcon sansita-regular-italic">Lorem ipsum dolor sit
+                                        amet<br>consectetur adipiscing</a>
+                                    <p class="parasec  blogdate">Mar 22, 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Column -->
+                    <div class="col-lg-4">
+                        <h2 class="firstconh1 sansita-bold">Instagram</h2>
+        
+                        <!-- Adjusted Instagram Images Section -->
+                        <div class="instacon">
+                            <div class="row imgg">
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i1.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i2.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i3.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i4.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                            </div>
+                            <div class="row imgg">
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i5.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i6.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i7.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i8.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                            </div>
+                            <div class="row imgg">
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i9.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i10.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i11.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                                <div class="col-3 p-1"><a href="#"><img src="images/instagram/i12.jfif" class="img-fluid"
+                                            alt=""></a></div>
+                            </div>
+                        </div>
+        
+        
+        
+                        <!-- View More Button -->
+                        <a href="#" class="btn btn-outline-secondary d-block text-center mt-2  btn-custom"
+                            style=" border: none; color: aliceblue;">View more photos</a>
+                    </div>
+        
+        
+                </div>
+        
+                <hr class="my-4">
+        
+        
+        </footer>
+        <!-- footer end -->
+  <script src="checkout.js"></script></body>
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>

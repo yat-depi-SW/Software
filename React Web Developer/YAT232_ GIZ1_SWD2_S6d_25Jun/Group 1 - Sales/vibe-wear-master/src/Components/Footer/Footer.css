@@ -1,0 +1,54 @@
+.footer {
+  background: #263238 !important;
+  color: white !important;
+}
+.footer-head * {
+  max-width: 224px;
+}
+.footer-head p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.shopping * {
+  font-size: 12px;
+  font-weight: 500;
+}
+.shopping li:nth-child(1) * {
+  font-size: 16px;
+}
+
+.client * {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0 12px;
+}
+.newletter {
+  max-width: 260px;
+}
+.newletter p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.newletter input[type="email"] {
+  width: 60%;
+  padding: 6px 0 6px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+}
+.newletter input::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 00px;
+}
+.newletter input:focus {
+  outline: none;
+  color: black;
+}
+.copyWrite {
+  font-weight: 500;
+}

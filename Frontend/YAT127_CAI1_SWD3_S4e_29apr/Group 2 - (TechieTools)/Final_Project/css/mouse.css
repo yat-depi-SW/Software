@@ -1,0 +1,202 @@
+/* Header Start */
+.bgImage {
+    height: 30vh;
+    background-image: url(../images/pexels-fox-58267-1486294.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.bgImage::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.bgImage h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.bgImage h1 span {
+    color: var(--main-color)
+}
+
+@media (max-width: 768px) {
+    .bgImage h1 {
+        font-size: 65px;
+    }
+}
+
+/* Header End */
+
+body {
+    background-color: rgb(17, 16, 16);
+}
+
+.mb-3 {
+    margin-bottom: 2.5rem !important;
+}
+
+.sidemenu span {
+    color: #9300CC !important;
+}
+
+.sidemenu {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.sidemenu .side-bara {
+    margin: 0;
+    font-size: 40px;
+}
+
+.side-bara a {
+    color: var(--main-color) !important;
+    text-decoration: none;
+}
+
+.img-brands,
+.sidemenu .side-bara {
+    transition: all 0.2s;
+}
+
+.sidemenu .side-bara:hover {
+    transform: scale(1.1);
+}
+
+.img-brands {
+    cursor: pointer;
+}
+
+.mouse-card {
+    background-color: black;
+    transition: all 0.3s;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.mouse-card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.mouse-card * {
+    margin-bottom: 5px;
+}
+
+.mouse-card p:nth-of-type(1),
+.mouse-card p:last-of-type {
+    font-family: "Bowlby One sc", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.parabrand {
+    color: #969696;
+    font-family: "Bowlby One sc", sans-serif;
+}
+
+.btn-cart {
+    background-color: #361c41;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.btn-cart:hover {
+    background-color: #301939
+}
+
+.fa-heart {
+    cursor: pointer;
+}
+
+i:hover:hover {
+    scale: 1.1;
+}
+
+.ps-5 {
+    margin-left: -5px !important;
+}
+
+.footer {
+    background-color: black !important;
+}
+
+
+@media (max-width: 768px) {
+    .sidemenu {
+        padding-block: 15px;
+        margin-bottom: 20px;
+    }
+
+    .sidemenu .row,
+    .sidemenu p:last-of-type {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+    .mouse-card {
+        width: 350px;
+    }
+
+    .mb-3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .mouse-card {
+        max-width: 90%;
+    }
+
+    .sidemenu .side-bara {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .mouse-card {
+        max-width: 80%;
+    }
+
+    .sidemenu .side-bara {
+        font-size: 40px;
+    }
+
+}
+
+@media (min-width: 1800px) {
+    .mouse-card {
+        max-width: 70%;
+    }
+}

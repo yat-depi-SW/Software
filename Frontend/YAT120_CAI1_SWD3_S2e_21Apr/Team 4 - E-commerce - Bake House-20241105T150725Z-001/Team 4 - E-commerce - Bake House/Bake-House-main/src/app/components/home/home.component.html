@@ -1,0 +1,137 @@
+<!-- Section with background image and text overlay -->
+<div class="landing-section">
+  <img src="images/Bread.jpg" alt="Bakery Image">
+  <div class="text">
+    <h1>Bake House</h1>
+    <p>When it comes to bread and sandwiches, freshness equals quality. That's why we bake our loaves, bagels, and sweet
+      treats every single morning for maximum freshness.</p>
+    <div class="button-group">
+      <a class="btn" onclick="location.href='user/allProduct'">All Products</a>
+      <a class="btn" onclick="location.href='user/cart'">Your Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- Features and Icons -->
+<div class="container-xl features-section">
+  <h2 class="section-title">Delicious Baking</h2>
+  <div class="features">
+    <!-- First Feature -->
+    <div class="feature-item">
+      <i class="fas fa-bread-slice"></i>
+      <h3>Baked Fresh Daily</h3>
+      <p>Our bread is baked fresh daily, contains no preservatives and is very high in quality. It is also especially
+        nice
+        and soft.</p>
+    </div>
+    <!-- Second Feature -->
+    <div class="feature-item">
+      <i class="fas fa-dollar-sign"></i>
+      <h3>Great Value</h3>
+      <p>With the most competitive prices on the market we are able to deliver great value without compromising on
+        taste.
+      </p>
+    </div>
+    <!-- Third Feature -->
+    <div class="feature-item">
+      <i class="fas fa-university"></i>
+      <h3>Institutions</h3>
+      <p>We serve a wide range of institutions including universities, airlines, hotels, and schools. Order daily for
+        tomorrow.</p>
+    </div>
+    <!-- Fourth Feature -->
+    <div class="feature-item">
+      <i class="fas fa-truck"></i>
+      <h3>Delivery To Your Door</h3>
+      <p>We offer fast delivery straight to your door, ensuring that your products arrive fresh and on time.</p>
+    </div>
+    <!-- Fifth Feature -->
+    <div class="feature-item">
+      <i class="fas fa-box"></i>
+      <h3>No Order Too Large</h3>
+      <p>Whether you're ordering for a small gathering or a large event, we are equipped to handle orders of all sizes.
+      </p>
+    </div>
+    <!-- Sixth Feature -->
+    <div class="feature-item">
+      <i class="fas fa-cookie"></i>
+      <h3>Delicious Baking</h3>
+      <p>We take pride in offering a variety of delicious baked goods, made with quality ingredients and love.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Categories Section with Background Image -->
+<div class="categories-section">
+  <!-- <img src="images/tabitha-turner-Ns2aJ5OXKds-unsplash.jpg" alt="Bakery Image"> -->
+  <div class="container-xl categories">
+    <!-- <div class="container-xl"> -->
+    <h2>Our Categories</h2>
+    <div class="content">
+      <div class="category-card">
+        <h3>Bakery</h3>
+        <button class="btn" onclick="location.href='user/bakery'">Shop Now</button>
+      </div>
+      <div class="category-card">
+        <h3>Pastries</h3>
+        <button class="btn" onclick="location.href='user/allProduct'">Shop Now</button>
+      </div>
+      <div class="category-card">
+        <h3>Cakes</h3>
+        <button class="btn" onclick="location.href='user/cake'">Shop Now</button>
+      </div>
+      <div class="category-card">
+        <h3>Breads</h3>
+        <button class="btn" onclick="location.href='user/bakery'">Shop Now</button>
+      </div>
+      <div class="category-card">
+        <h3>Chocolates</h3>
+        <button class="btn" onclick="location.href='user/chocolate'">Shop Now</button>
+      </div>
+      <div class="category-card">
+        <h3>Offers</h3>
+        <button class="btn" onclick="location.href='user/offers'">Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured products -->
+<div class="container-xl swiper-container-xl">
+  <h2>Our Featured Products</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div *ngFor="let product of randomProducts" class="swiper-slide card item">
+        <img [src]="product.image" class="card-img-top" [alt]="product.name">
+        <span *ngIf="product.amount <= 0" class="warning-label bg-danger">
+          Out of Stock
+        </span>
+        <span *ngIf="product.amount > 0 && product.amount <= 10" class="warning-label bg-warning">
+          Low in Stock
+        </span>
+        <div class="card-body">
+          <h3 class="card-title">{{ product.name }}</h3>
+          <span>
+            <ng-container *ngIf="product.discount > 0; else fullPrice">
+              {{ calcDiscount(product.price, product.discount) | currency: 'EGP': 'symbol-narrow' }}
+              <del>{{ product.price | currency: 'EGP': 'symbol-narrow' }}</del>
+            </ng-container>
+            <ng-template #fullPrice>
+              <span>{{ product.price | currency: 'EGP': 'symbol-narrow' }}</span>
+            </ng-template>
+          </span>
+          <a [routerLink]="['../product', product.id]" class="btn">Show Details</a>
+          <button class="btn" [disabled]="product.amount === 0" (click)="addOne(product)">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Add Navigation -->
+    <div class="nav-btns">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>

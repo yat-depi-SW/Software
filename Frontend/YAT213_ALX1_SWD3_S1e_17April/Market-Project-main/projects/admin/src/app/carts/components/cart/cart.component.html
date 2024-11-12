@@ -1,0 +1,124 @@
+<!-- View Cart -->
+<div class="container px-3 my-5 clearfix " *ngIf="viewDetails">
+  <div class="card m-auto" style="width: 1000px">
+    <!-- cart table -->
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h2>Carts</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="goBack()"></button>
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered m-0">
+        <thead>
+          <tr>
+            <!-- Set columns width -->
+            <th class="text-right py-3 px-4 text-center" style="width: 100px">
+              Name
+            </th>
+            <th class="text-center py-3 px-4 text-center" style="width: 120px">
+              Price
+            </th>
+            <th class="text-center py-3 px-4 text-center" style="width: 120px">
+              Quantity
+            </th>
+            <th class="text-center py-3 px-4 text-center" style="width: 120px">
+              Total
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cartItem of viewCartProducts">
+            <td class="text-right font-weight-semibold align-middle p-4 text-center" style="width: 100px">
+              <img src="{{cartItem.item.image}}" style="width: 70px; height: 70px;" alt="">
+              <p>{{cartItem.item.title}}</p>
+            </td>
+            <td class="align-middle p-4 text-center">
+              <p>{{cartItem.item.price}}</p>
+            </td>
+            <td class="align-middle p-4 text-center">
+              <p>{{cartItem.quantity}}</p>
+            </td>
+            <td class="align-middle p-4 text-center">
+              <p>{{cartItem.item.price * cartItem.quantity |currency}}</p>
+            </td>
+          </tr>
+          <p>Total Price: {{totalfn | currency}}</p>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <button type="button" class="btn-delete btn btn-secondary me-2" (click)="goBack()">
+        Back
+      </button>
+      <button type="button" class="btn-delete btn btn-danger" (click)="deleteCart(details.id)">
+        Delete
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Carts -->
+<div class="container px-3 my-5 clearfix" *ngIf="!viewDetails">
+  <!-- Shopping cart table -->
+  <div class="card">
+    <div class="card-header">
+      <h2>Carts</h2>
+    </div>
+    <div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <form [formGroup]="form">
+            <div class="date-filter d-flex align-items-center">
+              <div class="start-date mb-4 w-25 me-3">
+                <label for="" class="form-label">start date</label>
+                <input type="date" formControlName="start" class="form-control" name="" id="" aria-describedby="helpId"
+                  placeholder="" />
+              </div>
+              <div class="end-date mb-4 w-25 me-3">
+                <label for="" class="form-label">end date</label>
+                <input type="date" formControlName="end" class="form-control" name="" id="" aria-describedby="helpId"
+                  placeholder="" />
+              </div>
+              <button type="button" (click)="applyFilter()" class="btn btn-success mb-0">
+                filter
+              </button>
+            </div>
+          </form>
+        </div>
+        <table class="table table-bordered m-0">
+          <thead>
+            <tr>
+              <!-- Set columns width -->
+              <th class="text-right py-3 px-4 text-center" style="width: 100px">
+                Date
+              </th>
+              <th class="text-center py-3 px-4 text-center" style="width: 120px">
+                Quantity
+              </th>
+              <th class="text-center py-3 px-4 text-center" style="width: 120px">
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cartItem of carts; let i = index">
+              <td class="text-right font-weight-semibold align-middle p-4 text-center" style="width: 100px">
+                {{ cartItem.date | date : "shortDate" }}
+              </td>
+              <td class="align-middle p-4 text-center">
+                <p>{{ cartItem.products.length }}</p>
+              </td>
+              <td class="text-center align-middle p-4 d-flex justify-content-center">
+                <a role="button" (click)="deleteCart(cartItem.id)" class="btn btn-danger me-3" title="">Delete</a>
+
+                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"
+                  (click)="viewItem(i)">View</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- / Shopping cart table -->
+    </div>
+  </div>
+</div>

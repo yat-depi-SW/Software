@@ -1,0 +1,99 @@
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+$light-background: rgba(248, 244, 225, 0.8);
+$alt-light-color: #af8f6f;
+$section-padding: 90px;
+$shadow: $dark-color 0px 2px 8px -5px, $alt-light-color 0px 4px 5px 0px,
+  #896c50 0px 1px 10px 0px;
+  
+.container-xl.cart-section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  .item-cart {
+    padding: 15px;
+    text-align: center;
+    color: $dark-color;
+    transition: 0.3s ease;
+    position: relative;
+    border: 1px solid $alt-dark-color;
+    img {
+      margin: auto;
+      padding: 15px;
+      width: 70% !important;
+      border: none;
+      object-fit: contain;
+      transition: transform 0.5s ease;
+      &.card-img-top {
+        border-radius: 0;
+        border: none;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .info {
+      h3 {
+        text-align: center;
+        font-size: 20px;
+      }
+      p{
+        font-size: 16px !important;
+      }
+    }
+    .edit-container {
+      .edit{
+        margin: auto;
+      }
+      .edit + button {
+        background-color: $alt-dark-color;
+        color: $light-color;
+        transition: 0.3s ease;
+        margin-top: 10px;
+        &:hover {
+          background-color: $dark-color;
+        }
+      }
+    }
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: $shadow;
+    }
+  }
+
+  .cart+p{
+    margin: 25px 0;
+    margin-left: auto;
+    background-color: $alt-dark-color;
+    color: $light-color;
+    padding: 8px 14px;
+    width: fit-content;
+    border-radius: 6px;
+  }
+  .actions{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+
+    button{
+      transition: background-color 0.3s ease;
+      padding: 8px 14px !important;
+      color: $light-color;
+      background-color: $alt-dark-color;
+      &:hover{
+        background-color: $dark-color;
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+    .cart+p{
+    margin: 25px auto !important;
+  }
+  .actions{
+    justify-content: center !important;
+  }
+}

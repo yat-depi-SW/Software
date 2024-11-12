@@ -1,0 +1,16 @@
+<div class="single-item">
+  <div class="left-set">
+    <img src="{{productData.image}}" alt="" />
+  </div>
+  <div class="right-set">
+    <div class="name">{{productData.title}}</div>
+    <div class="subname">{{productData.category}}</div>
+    <div class="price">{{productData.price | currency}}</div>
+    <div class="description">
+      <p>
+        {{productData.description}}
+      </p>
+    </div>
+    <button (click)="goBack()">back</button>
+  </div>
+</div>

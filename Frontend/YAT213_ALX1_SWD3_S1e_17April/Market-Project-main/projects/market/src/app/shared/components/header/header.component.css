@@ -1,0 +1,19 @@
+header {
+  background-color: brown;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+header div .content {
+  color: white;
+  align-items: center;
+}
+header div .content ul {
+  color: white;
+  list-style: none;
+  font-weight: 600;
+}
+header div .content ul li {
+  cursor: pointer;
+}/*# sourceMappingURL=header.component.css.map */

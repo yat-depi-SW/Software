@@ -1,0 +1,94 @@
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+$light-background: rgba(248, 244, 225, 0.8);
+$error-color: #dc3545;
+$main-transition: 0.8s;
+
+section {
+  background-color: $light-background;
+  width: 80%;
+  padding: 32px;
+
+  h2 {
+    color: $dark-color;
+    font-weight: 600;
+  }
+  form {
+    color: $dark-color;
+    input {
+      font-size: 18px;
+      color: $dark-color;
+      caret-color: $dark-color;
+      &::placeholder {
+        color: $alt-light-color;
+      }
+      &::selection {
+        background-color: $dark-color;
+        color: $light-color;
+      }
+    }
+    .main-btn {
+      cursor: pointer;
+      border: none;
+      color: $light-color !important;
+      background-color: $dark-color !important;
+      padding: 10px 24px;
+      transition: background-color $main-transition;
+      border-radius: 6px;
+      opacity: 0.95;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:disabled {
+        opacity: 0.8;
+        color: $light-color !important;
+        cursor: not-allowed;
+      }
+    }
+    .modal-footer {
+      .btn {
+        border: none;
+        color: $light-color !important;
+        background-color: $dark-color !important;
+        padding: 6px 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    width: 95%;
+    padding: 28px;
+    & > h2 {
+      font-size: 52px !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+    padding: 20px;
+    & > h2 {
+      font-size: 42px !important;
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  section {
+    padding: 15px 10px;
+    & > h2 {
+      font-size: 36px !important;
+    }
+  }
+}
+
+a{
+  cursor: pointer;
+}

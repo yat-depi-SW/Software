@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+:root {
+--source:"Source Code Pro", sans-serif;
+--dosis:"Dosis", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  line-height: normal;
+  font-family: var(--source);
+}
+
+a {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  display: inline-block;
+}
+/* NavBar */
+nav{
+  background: linear-gradient(to bottom,
+    black 90%,
+    red 10%);
+}
+.navbar-toggler{
+  color: transparent;
+  border-radius:0%;
+}
+
+nav ul li {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.active{
+  background-color: #4d4d4d7d;
+}
+
+.bg-trans {
+  background-color: transparent;
+}
+
+/* home page basics */
+.pad-110{
+  padding-block: 110px;
+}
+.text-head {
+  font-family: var(--dos);
+  letter-spacing: 0.03em;
+}
+
+.text-head h1 {
+  font-size: 32px;
+  line-height: 36px;
+  color: #000;
+  font-weight: 400;
+}
+
+.text-head p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(77, 77, 77);
+}
+
+.icon i {
+  display: none;
+  font-size: 20px;
+  color: red;
+}
+
+
+

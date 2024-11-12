@@ -1,0 +1,88 @@
+﻿@model LMSProjectAUTH.Application.ViewModel.Book.EditBookVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<h4>Edit Book</h4>
+<hr />
+
+<div class="container">
+    <div class="row">
+        <!-- Column for form controls -->
+        <div class="col-md-8">
+            <form asp-action="Edit" enctype="multipart/form-data" method="post">
+                @Html.HiddenFor(model => model.Id)
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="AuthorId" class="control-label"></label>
+                    <select asp-for="AuthorId" asp-items="Model.Authors" class="form-control">
+                        <option disabled value="">-- Select Author --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="GenreID" class="control-label"></label>
+                    <select asp-for="GenreID" asp-items="Model.Genres" class="form-control">
+                        <option disabled value="">-- Select Genre --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BookPrice" class="control-label"></label>
+                    <input asp-for="BookPrice" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PenalityPercentage" class="control-label"></label>
+                    <input asp-for="PenalityPercentage" class="form-control" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="NoofCopies" class="control-label"></label>
+                    <input asp-for="NoofCopies" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="UploadBookPhoto">Book Photo:</label>
+                    <input type="file" asp-for="UploadBookPhoto" class="form-control" />
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Save" class="btn btn-dark" />
+                    <a asp-action="Index" class="btn btn-dark">cancel</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Column for displaying the current photo -->
+        <div class="col-md-4 d-flex justify-content-center align-items-start">
+            @if (Model.BookPhoto != null && Model.BookPhoto.Length > 0)
+            {
+                <div class="form-group">
+                    <label>Current Photo:</label><br />
+                    <img src="data:image/png;base64,@Convert.ToBase64String(Model.BookPhoto)" alt="Book Photo" class="img-fluid" style="max-width: 100%; height: auto;" />
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <p>No photo available.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

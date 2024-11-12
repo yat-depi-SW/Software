@@ -1,0 +1,43 @@
+- name: Pull Docker Image and Run Container
+  hosts: ec2_instances
+  become: yes
+  vars:
+    image_name: "saraelsharkawy/my-node-app:latest"  # Replace with your image
+    container_name: "NodeApp"                          # Replace with your desired container name
+    container_port: 3000                                           # Adjust as needed
+    host_port: 3000                                               # Adjust as needed
+
+  tasks:
+    - name: Update package repository
+      apt:
+        update_cache: yes
+
+    - name: Install required packages
+      apt:
+        name:
+          - docker.io
+        state: present
+
+    - name: Start Docker service
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Pull Docker image from Docker Hub
+      docker_image:
+        name: "{{ image_name }}"
+        source: pull
+
+      - name: Run Docker container
+      docker_container:
+        name: "{{ container_name }}"
+        image: "{{ image_name }}"
+        state: started
+        restart_policy: unless-stopped
+        published_ports:
+          - "{{ host_port }}:{{ container_port }}"
+
+                                                                                                                            40,0-1        Bot
+
+                                                                                    1,28     

@@ -1,0 +1,177 @@
+:root {
+    --main-color: #C5F82A;
+    --second-color: #B600FF;
+}
+
+body {
+    background-color: black;
+}
+
+/* Background Style start*/
+.background {
+    background-image: url(../images/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.background:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Background Style end*/
+
+/* form start */
+.register-container {
+    padding-inline: 75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding-block: 20px;
+}
+
+.register-container h1 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.register-container .form .form-floating {
+    padding: 0;
+}
+
+.register-container .form .form-floating label {
+    color: #8D8D8D;
+    background-color: transparent;
+}
+
+.register-container .form .form-floating .btn-outline-secondary {
+    --bs-btn-border-color: none;
+
+}
+
+.register-container .form .form-floating .btn:hover {
+    background-color: transparent;
+}
+
+.form-floating>.form-control:focus~label i {
+    display: none;
+}
+
+.form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label::after {
+    background-color: transparent;
+}
+
+.register-container .form .form-control {
+    background-color: #42424264;
+    color: white;
+    border: var(--bs-border-width) solid #424242
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem var(--main-color);
+}
+
+.register-container .form .privacy {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+    /* Hide the default checkbox */
+}
+
+/* Create a custom checkbox */
+.custom-checkbox {
+    margin-right: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid #8D8D8D;
+    cursor: pointer;
+    position: relative;
+    /* Position relative for checkmark */
+}
+
+/* Checkmark */
+input[type="checkbox"]:checked+.custom-checkbox {
+    background-color: #424242;
+    border-color: #424242
+        /* Ensure background stays trans when checked */
+}
+
+/* Create the checkmark */
+input[type="checkbox"]:checked+.custom-checkbox::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -6px;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--main-color);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+    /* Rotate the checkmark */
+}
+
+.register-container .form .privacy a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.register-container .form .submit {
+    font-weight: bold;
+    font-size: 28px;
+    background-color: var(--main-color);
+    transition: all 0.2s;
+}
+
+.register-container .form .submit:hover {
+    opacity: 0.8;
+}
+
+.register-container .form .text {
+    color: white;
+    text-align: center;
+}
+
+.register-container .form .text a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.1s;
+}
+
+.register-container .form .text a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 540px) {
+    .register-container {
+        padding-inline: 30px;
+    }
+}
+
+
+/* form end */

@@ -1,0 +1,50 @@
+<div class="container-xl cart-section">
+  <h2>Your Cart</h2>
+  <div class="cart">
+    <div *ngFor="let item of cartItems" class="card item-cart">
+      <img [src]="item.image" [alt]="item.name">
+      <div class="info">
+        <h3>{{ item.name }}</h3>
+
+        <p><strong>Price per item: </strong>{{ item.price | currency: 'EGP': 'symbol-narrow' }}</p>
+        <ng-container *ngIf="item.discount > 0; else noDiscount">
+          <p><strong>Price after discount: </strong>{{ calcDiscount(item.price, item.discount) | currency:
+            'EGP': 'symbol-narrow' }}</p>
+          <p><strong>Total Price: </strong>
+            {{ calcTotalPerItem((item.quantity ?? 0), calcDiscount(item.price, item.discount)) | currency: 'EGP':
+            'symbol-narrow' }}
+            <del>{{ calcTotalPerItem((item.quantity ?? 0), item.price) | currency: 'EGP': 'symbol-narrow' }}</del>
+          </p>
+        </ng-container>
+        <ng-template #noDiscount>
+          <p><strong>Total Price: </strong>{{ calcTotalPerItem((item.quantity ?? 0), item.price) | currency: 'EGP':
+            'symbol-narrow' }}</p>
+        </ng-template>
+
+        <div class="edit-container">
+          <div class="edit">
+            <button [disabled]="item.quantity === 0" class="btn" (click)="removeOne(item)"><i
+                class="fa-solid fa-minus"></i></button>
+            <span>{{ (item.quantity ?? 0) }}</span>
+            <button [disabled]="item.amount === 0" class="btn" (click)="addOne(item)"><i
+                class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="btn" (click)="removeProduct(item)">Remove Product</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>Total Amount: {{ getTotalPrice() | currency: 'EGP': 'symbol-narrow' }}</p>
+
+  <div class="actions">
+    <!-- Clear Cart Button -->
+    <button class="btn" (click)="clearCart()">
+      Clear Cart
+    </button>
+    <!-- Proceed to Payment Button -->
+    <button class="btn" (click)="proceedToPayment()">
+      Proceed to Payment
+    </button>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+Now we will go over Jenkins UI and do a lot of configurations and install a lot of tools to save it and use it later we will do the following:
+1- on the current server that has all of the configuration
+
+- `sudo tar -czvf /tmp/jenkins_backup.tar.gz /var/lib/jenkins`
+- install the backup to your machine `scp dev@54.93.103.63:/tmp/jenkins_backup.tar.gz .`
+  2- we will push this to the repo so anyone will be able to test things out
+  3- add a new ansible task that will be responsible about copying this from local to the new server and untar it `sudo tar -xzvf jenkins_backup.tar.gz -C /`
+  4- `sudo systemctl restart jenkins`
+
+
+###############################################################################
+1- run the setup script for jenkins
+2- unlock jenkins
+3- create a token for your user
+4- run the playbook to install the required plugins using the token
+5- from the ui from the CasC apply the connfigrations in `/var/lib/jenkins/casc_configs`
+
+[] Plugins to be installed on jenkins
+1- Eclipse Temurin installer
+2- Config File Provider
+3- Pipeline Maven Integration
+4- SonarQube Scanner
+5- Docker
+6- Docker Pipeline
+7- Kubernetes Client API
+8- Kubernetes Credentials
+9- Kubernetes
+10- Kubernetes CLI
+11- Maven Integration
+12- prometheus metrics
+
+
+
+[] Configure the plugins we installed from tools
+1- JDK installations
+Name: jdk17
+Install automatically: Install from adoptium.net
+Version: jdk-17.0.9+9
+
+2- SonarQube Scanner installations
+Name: sonar-scanner
+Version: SonarQube Scanner 6.2.1.4610
+
+3- Maven installations
+Name: maven3
+Version: 3.6.1
+
+4- Docker installations
+Name: docker
+Docker version: latest
+
+
+
+/var/lib/jenkins/workspace/BoardGame/boardgame
+
+nexus need to be cleared
+##################################################################
+steps to run the whole project
+1- run the terraform `terraform apply --auto-approve` to create the whole infrastructure.
+2- ansible-playbook -i inventory.yml playbooks/nexus_setup.yml
+3- open `http://35.159.165.36:8081/`
+4- login username: admin, password: docker exec -it nexus cat /nexus-data/admin.password (after sshin to the server it self)
+5- ansible-playbook -i inventory.yml playbooks/sonarqube_setup.yml
+6- open `http://3.76.226.211:9000/`
+7- login username: admin, password: admin
+8- ansible-playbook -i inventory.yml playbooks/k8s_setup.yml
+sudo su 
+9- cd /root/.kube
+10- get the server url `cat config | grep "server"` and update the jenkinsfile to use it
+11- makesure all of the services were ran
+8- ansible-playbook -i inventory.yml playbooks/jenkins_setup.yml
+9- open `http://3.64.11.34:8080/`
+10- unlock Jenkins & create the admin user with the password related to it.
+11 - prepare a jenkins token admin > Configure > API Token `asdasdasd`
+12 - prepare a sonar_token Administration > Security > Users > Tokens `squ_casdasd`
+13 - prepare nexus_username : admin
+14 - prepare nexus_password : 123
+15 - prepare you dockerhub token : Account Settings > Personal access tokens (Read & Write scope) `dckr_pat_abcd`
+16 - create sonarqube webhook on sonarqube server Administration > Configuration > Webhooks > http://<Jenkins-IP>:8080/sonarqube-webhook/
+17 - update the pom.xml file and push it to the github
+// here we update the last part of the pom.xml related to maven-releases and maven-snapshots with the urls related to nexus we copy them from the relaeses and snapshot 
+			// we need to add a configuration file in managed files and this will be `Global Maven settings`
+			// id = global-settings   
+18 - ansible-playbook -i inventory.yml playbooks/jenkins_install_plugins.yml
+19 - Manage Jenkins > Configuration as Code > Path or URL: `/var/lib/jenkins/casc_configs` > Apply new configuration
+20 - check that all of the plugins installed from the UI
+21 - check that all of the tools installed in tools section
+22 - check that managed configuraition file is there
+23 - check on the credentials
+24 - check on the system (sonar)
+25 - check on the pipeline
+26 - take the pipeline from the repo outside all folders and update the created pipeline with it
+27 - run the pipeline.
+

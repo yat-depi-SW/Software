@@ -1,0 +1,35 @@
+- hosts: aws_servers
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install apt-transport-https
+      apt:
+        name: apt-transport-https
+        state: present
+
+    - name: Add Kubernetes GPG key
+      command: curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+    - name: Add Kubernetes apt repository
+      apt_repository:
+        repo: "deb https://apt.kubernetes.io/ kubernetes-xenial main"
+        state: present
+
+    - name: Install Kubernetes packages
+      apt:
+        name: kubelet,kubeadm,kubectl
+        state: present
+
+    - name: Mark kubelet to hold
+      apt_mark:
+        name: kubelet
+        state: held
+
+    - name: Ensure kubelet is running
+      service:
+        name: kubelet
+        state: started
+        enabled: yes

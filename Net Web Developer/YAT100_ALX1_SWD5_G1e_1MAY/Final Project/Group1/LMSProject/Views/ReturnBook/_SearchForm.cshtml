@@ -1,0 +1,16 @@
+﻿@model List<SelectListItem>
+
+<div class="row justify-content-end">
+    <div class="col-auto">
+        <form method="get" asp-action="Index" class="d-flex align-items-center">
+            <select id="selectedMemberId" name="selectedMemberId" class="form-select shadow rounded me-2">
+                <option value="" disabled selected>-- Select Member No --</option>
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Value">@item.Text</option>
+                }
+            </select>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+</div>

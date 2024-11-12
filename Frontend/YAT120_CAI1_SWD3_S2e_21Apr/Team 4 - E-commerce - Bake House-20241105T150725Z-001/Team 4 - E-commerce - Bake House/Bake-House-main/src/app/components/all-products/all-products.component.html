@@ -1,0 +1,28 @@
+<div class="container-xl product-section">
+  <h2>All Products</h2>
+  <div class="content">
+    <div *ngFor="let product of allProducts" class="card item">
+      <img [src]="product.image" class="card-img-top" [alt]="product.name">
+      <span *ngIf="product.amount <= 0" class="warning-label bg-danger">
+        Out of Stock
+      </span>
+      <span *ngIf="product.amount > 0 && product.amount <= 10" class="warning-label bg-warning">
+        Low in Stock
+      </span>
+      <div class="card-body">
+        <h3 class="card-title">{{ product.name }}</h3>
+        <span>
+          <ng-container *ngIf="product.discount > 0; else fullPrice">
+            {{ calcDiscount(product.price, product.discount) | currency: 'EGP': 'symbol-narrow' }}
+            <del>{{ product.price | currency: 'EGP': 'symbol-narrow' }}</del>
+          </ng-container>
+          <ng-template #fullPrice>
+            <span>{{ product.price | currency: 'EGP': 'symbol-narrow' }}</span>
+          </ng-template>
+        </span>
+          <a [routerLink]="['../product', product.id]" class="btn">Show Details</a>
+          <button class="btn" [disabled]="product.amount === 0" (click)="addOne(product)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

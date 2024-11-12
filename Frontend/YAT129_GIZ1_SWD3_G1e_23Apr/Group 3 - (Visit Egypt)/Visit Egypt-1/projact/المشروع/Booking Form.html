@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///D:/SHERIF/DEBI%20PROJECT/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style-2.css">
+
+    
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Form submitted successfully!");
+        });
+    </script>
+    <style>
+        body{
+            background-image: url(beb3fe78-eaa2-4334-91c9-09e4f9429570.jpeg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 1.5;
+            
+        }
+        .conf{
+            background-color: rgb(104, 208, 104);
+        }
+        .conf:hover{
+            background-color: rgb(2, 70, 2);
+        }
+        .back{
+            background-color: rgb(3, 3, 91);
+            
+        
+
+        }
+        .back:hover{
+            background-color: blue;
+        }
+        #link{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="booking"> Booking </h2>
+        <form id="bookingForm">
+            <label for="firstName">Name:</label>
+            <input type="text" id="firstName" name="firstName" required="">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required="">
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required="">
+                <option value="" disabled="" selected="">Select City</option>
+                <option value="city1">Alexandria</option>
+                <option value="city2">Hurghada</option>
+                <option value="city3">Sharm El Sheikh</option>
+                <option value="city3">Luxor</option>
+                <option value="city3">Aswan</option>
+            </select>
+
+            <label for="hotel">Hotel:</label>
+            <select id="hotel" name="hotel" required="">
+                <option value="" disabled="" selected="">Select Hotel</option>
+                <option value="hotel1">Four Seasonsa at San Stefano</option>
+                <option value="hotel2">Golden Jewel Hotel</option>
+                <option value="hotel3">Hilton Alexandria Corniche</option>
+                <option value="hotel3"> Oberoi Beach Resort Sahl Hasheesh</option>
+                <option value="hotel3">Titanic Royal Hotel</option>
+                <option value="hotel3">The Four Seasons Sharm el-Sheikh</option>
+                <option value="hotel3">Novotel Sharm El Sheikh</option>
+                <option value="hotel3">Sofitel Winter Palace Luxor</option>
+                <option value="hotel3">Pavillon Winter Luxor</option>
+                <option value="hotel3">Movenpick Aswan</option>
+                <option value="hotel3">Kato Dool Wellness Resort</option>
+
+            </select>
+
+            <label for="arrivalDate">Arrival Date:</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required="">
+
+            <label for="travelingDate">Traveling Date:</label>
+            <input type="date" id="travelingDate" name="travelingDate" required="">
+
+           
+            <label for="city">Room Type:</label>
+            <select id="city" name="Room Type" required="">
+                <option value="" disabled="" selected="">Select Room</option>
+                <option value="city1">Single</option>
+                <option value="city2">Double</option>
+            </select>
+
+            <input type="submit" value="Confirm" class="conf">
+            <button class="back"><a href="../ahmed.html" id="link">Back to Home</a></button>
+        </form>
+    </div>
+
+   
+
+
+
+</body></html>

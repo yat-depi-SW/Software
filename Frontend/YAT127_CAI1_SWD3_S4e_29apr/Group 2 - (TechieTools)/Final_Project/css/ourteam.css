@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 16, 16);
+}
+
+.main-color {
+    color: #C5F82A;
+}
+
+/* Header Start */
+.bgImage {
+    height: 30vh;
+    background-image: url(../images/ourteam.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.bgImage::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.bgImage h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 1000;
+}
+
+.bgImage h1 span {
+    color: var(--main-color)
+}
+
+@media (max-width: 768px) {
+    .bgImage h1 {
+        font-size: 65px;
+    }
+}
+
+/* Header End */
+
+.maincontent {
+    background-color: rgb(17, 16, 16);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: rgb(17, 16, 16);
+    border: none;
+}
+
+.card-title {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.title {
+    color: rgb(95, 94, 94);
+    margin-top: 5px;
+}
+
+.shape {
+    border: 8px solid #C5F82A;
+    border-radius: 800px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.shape img {
+    width: 65%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.shape .position1 {
+    position: relative;
+    bottom: 10px;
+}
+
+.shape .position2 {
+    position: relative;
+    bottom: 25px;
+}
+
+
+.linkedin-icon {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 8px;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+}
+
+.linkedin-icon:hover {
+    color: rgb(74, 180, 222);
+}
+
+
+@media screen and (max-width: 992px) {
+    .maincontent {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .maincontent {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .maincontent {
+        font-size: 30px;
+    }
+}

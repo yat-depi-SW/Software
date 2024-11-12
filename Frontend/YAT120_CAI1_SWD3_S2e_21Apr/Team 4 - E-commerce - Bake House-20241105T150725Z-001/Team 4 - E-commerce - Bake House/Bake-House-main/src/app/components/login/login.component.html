@@ -1,0 +1,58 @@
+<section class="mx-auto shadow rounded my-5">
+  <h2 class="text-center">Login Now</h2>
+  <form class="w-100" [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+    <!-- Email Field -->
+    <mat-form-field class="w-100">
+      <input type="email" matInput formControlName="email" placeholder="Enter your email">
+      <!-- Email Validation Messages -->
+      <mat-error *ngIf="loginForm.get('email')?.hasError('email') && !loginForm.get('email')?.hasError('required')">
+        Please enter a <strong>valid</strong> email address
+      </mat-error>
+      <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Password Field -->
+    <mat-form-field class="w-100">
+      <input matInput placeholder="Enter your password" formControlName="password"
+        [type]="hide() ? 'password' : 'text'" />
+      @if (loginForm.get('password')?.hasError('required')) {
+      <mat-error>Password is <strong>required</strong></mat-error>
+      }
+      <a mat-icon-button matSuffix (click)="clickEvent()" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()">
+        <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </a>
+    </mat-form-field>
+
+    <!-- Submit Button and Link -->
+    <div class="d-flex justify-content-between align-items-center mt-2">
+      <button type="submit" [disabled]="loginForm.invalid" class="main-btn">Login</button>
+      <!-- Modal if login failed-->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-4 m-0" id="staticBackdropLabel">Login Failed</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-danger fs-5">
+              Your Information is not Correct!!
+              <br>
+              Please, try again!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a class="link-primary" (click)="goToRegister()">Do not have an account?</a>
+        <a class="link-primary" (click)="goToForgetPassword()">Forget Password?</a>
+      </div>
+    </div>
+  </form>
+</section>

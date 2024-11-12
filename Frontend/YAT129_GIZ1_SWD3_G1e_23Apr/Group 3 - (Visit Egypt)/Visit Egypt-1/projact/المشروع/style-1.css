@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.booking{
+    font-size: 200%;
+    align-items: center;
+}
+.form-container {
+    width: 300px;
+    margin-left: 70%;
+    padding: 20px;
+   
+}
+
+.form-container label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.form-container input[type="text"],
+.form-container select,
+.form-container input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+

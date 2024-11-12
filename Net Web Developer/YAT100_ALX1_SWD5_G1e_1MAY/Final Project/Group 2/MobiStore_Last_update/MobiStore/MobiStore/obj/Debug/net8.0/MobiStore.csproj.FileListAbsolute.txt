@@ -1,0 +1,332 @@
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\appsettings.Development.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\appsettings.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.staticwebassets.runtime.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.exe
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.deps.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.runtimeconfig.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.pdb
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Azure.Core.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Azure.Identity.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Humanizer.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.CodeDom.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.csproj.AssemblyReference.cache
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.AssemblyInfoInputs.cache
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.AssemblyInfo.cs
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.csproj.CoreCompileInputs.cache
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.MvcApplicationPartsAssemblyInfo.cache
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.RazorAssemblyInfo.cache
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.RazorAssemblyInfo.cs
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets.build.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets.development.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.MobiStore.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.build.MobiStore.props
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MobiStore.props
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MobiStore.props
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\scopedcss\bundle\MobiStore.styles.css
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\scopedcss\projectbundle\MobiStore.bundle.scp.css
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.csproj.Up2Date
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\refint\MobiStore.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.pdb
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.genruntimeconfig.cache
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\obj\Debug\net8.0\ref\MobiStore.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\FubarCoder.RestSharp.Portable.Core.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\FubarCoder.RestSharp.Portable.HttpClient.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.barcodes.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.forms.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.io.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.kernel.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.layout.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.pdfa.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.pdfua.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.sign.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.svg.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\itext.commons.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\JsonSubTypes.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\QRCoder.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\sib_api_v3_sdk.dll
+D:\Learning\Final DEPI Project\Final Project 2\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\appsettings.Development.json
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\appsettings.json
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.staticwebassets.runtime.json
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.exe
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.deps.json
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.runtimeconfig.json
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\MobiStore.pdb
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Azure.Core.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Azure.Identity.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\FubarCoder.RestSharp.Portable.Core.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\FubarCoder.RestSharp.Portable.HttpClient.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Humanizer.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.barcodes.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.forms.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.io.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.kernel.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.layout.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.pdfa.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.pdfua.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.sign.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.styledxmlparser.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.svg.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\itext.commons.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\JsonSubTypes.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\QRCoder.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\sib_api_v3_sdk.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.CodeDom.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Memory.Data.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.csproj.AssemblyReference.cache
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.AssemblyInfoInputs.cache
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.AssemblyInfo.cs
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.csproj.CoreCompileInputs.cache
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.MvcApplicationPartsAssemblyInfo.cache
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.RazorAssemblyInfo.cache
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.RazorAssemblyInfo.cs
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets.build.json
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets.development.json
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.MobiStore.Microsoft.AspNetCore.StaticWebAssets.props
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.build.MobiStore.props
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MobiStore.props
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MobiStore.props
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\staticwebassets.pack.json
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\scopedcss\bundle\MobiStore.styles.css
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\scopedcss\projectbundle\MobiStore.bundle.scp.css
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.csproj.Up2Date
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\refint\MobiStore.dll
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.pdb
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\MobiStore.genruntimeconfig.cache
+E:\DEPI\Final_project\MobiStore\MobiStore\obj\Debug\net8.0\ref\MobiStore.dll

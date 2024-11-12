@@ -1,0 +1,14 @@
+.img-cart {
+  width: 64px !important;
+  height: 64px !important;
+  padding: 0;
+}
+.bolda {
+  font-weight: 600;
+}
+.delete {
+  transition: all ease-in-out 0.4s;
+}
+.left-div:hover .delete {
+  opacity: 1 !important ;
+}

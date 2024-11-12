@@ -1,0 +1,21 @@
+.bg-main {
+  background-image: url("/bg-home.jpg");
+}
+.bg-hero {
+  background-image: url(/hero-1.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+}
+.row-hero {
+  height: 100vh;
+}
+.text-red {
+  color: #e30d0e;
+}
+.bg-red {
+  background: #e30d0e;
+}
+.fw-300 {
+  font-weight: 300;
+}

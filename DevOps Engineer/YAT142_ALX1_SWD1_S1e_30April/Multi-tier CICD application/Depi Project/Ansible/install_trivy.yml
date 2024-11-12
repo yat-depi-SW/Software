@@ -1,0 +1,16 @@
+- hosts: aws_servers
+  become: yes
+  tasks:
+    - name: Download Trivy binary
+      get_url:
+        url: https://github.com/aquasecurity/trivy/releases/latest/download/trivy_0.36.0_Linux-64bit.tar.gz
+        dest: /tmp/trivy.tar.gz
+
+    - name: Extract Trivy binary
+      unarchive:
+        src: /tmp/trivy.tar.gz
+        dest: /usr/local/bin/
+        remote_src: yes
+
+    - name: Make Trivy executable
+      command: chmod +x /usr/local/bin/trivy

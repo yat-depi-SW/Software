@@ -1,0 +1,318 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the theme object.
+$E-commerce-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+:root {
+  @include mat.all-component-themes($E-commerce-theme);
+}
+
+// Comment out the line below if you want to use the pre-defined typography utility classes.
+// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
+// @include mat.typography-hierarchy($E-commerce-theme);
+
+// Comment out the line below if you want to use the deprecated `color` inputs.
+// @include mat.color-variants-backwards-compatibility($E-commerce-theme);
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+$warning-color: #ffc107;
+$error-color: #dc3545;
+$light-background: rgba(248, 244, 225, 0.8);
+$alt-light-color: #af8f6f;
+$section-padding: 90px;
+$shadow: $dark-color 0px 2px 8px -5px, $alt-light-color 0px 4px 5px 0px,
+  #896c50 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #6c4e31;
+$main-transition: 0.8s;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $light-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #745c44;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 50px #543310;
+  border-radius: 2px;
+}
+
+.nav-link {
+  transition: unset !important;
+}
+
+.active-link {
+  background-color: $alt-dark-color;
+  color: #fff !important;
+  border-radius: 5px;
+}
+body {
+  font-family: $font-family;
+}
+
+.rating-color {
+  color: $rating-color;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-sm {
+  font-size: 12px;
+}
+
+.text-main {
+  color: $alt-dark-color;
+}
+
+.text-main-light {
+  color: $light-color;
+}
+
+.bg-main {
+  background-color: $alt-dark-color !important;
+}
+
+.bg-main-light {
+  background-color: $light-color !important;
+}
+
+.btn-close {
+  color: $dark-color !important;
+  opacity: 0.75;
+  &:hover {
+    opacity: 1;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+// angular material styles
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+}
+
+.container-xl {
+  max-width: 1180px !important;
+}
+
+input {
+  caret-color: $dark-color;
+  &::selection {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+}
+
+*::selection {
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: $dark-color;
+  margin: 0 0 50px !important;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 100px;
+    background-color: $dark-color;
+  }
+}
+
+@media (max-width: 767px) {
+  h1,
+  h2 {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 399px) {
+  h1,
+  h2 {
+    font-size: 42px !important;
+  }
+}
+
+// product, bakery, cake, chocolate, offers style
+.container-xl.product-section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.product-section .content,
+.cart {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
+  gap: 30px;
+}
+.card {
+  border-color: $alt-dark-color;
+  padding-top: 25px;
+}
+.item {
+  text-align: center;
+  color: $dark-color;
+  transition: 0.3s ease;
+  position: relative;
+  img {
+    margin: auto;
+    padding: 15px;
+    width: 70% !important;
+    border: none;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    &.card-img-top {
+      border-radius: 0;
+      border: none;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .warning-label {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 40px;
+    padding: 10px 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    writing-mode: vertical-lr;
+    color: white;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 15px solid white;
+      border-style: solid;
+      border-color: transparent transparent white;
+      border-width: 20px;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  span {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  a.btn {
+    display: block;
+    width: fit-content;
+    font-size: 14px !important;
+    margin: 30px auto 10px;
+    padding: 4px 10px;
+    box-shadow: $dark-color 0px 0px 8px -2px;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: $alt-dark-color;
+      color: $light-color;
+    }
+  }
+  button {
+    font-size: 18px;
+    box-shadow: $dark-color 0px 0px 8px -2px;
+    transition: 0.3s ease;
+    color: $light-color;
+    background-color: $alt-dark-color;
+    &:hover {
+      background-color: $dark-color;
+      color: $light-color;
+    }
+  }
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: $shadow;
+  }
+}
+
+// Add Buttons
+div.edit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: $dark-color 0px 0px 8px -2px;
+  width: fit-content;
+  height: 100%;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  button {
+    color: $dark-color;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $light-color;
+      background-color: $alt-dark-color;
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

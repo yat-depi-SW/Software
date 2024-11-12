@@ -1,0 +1,78 @@
+﻿@model MemberProfileVM
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="card-title">Member Profile</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Personal Information</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Name:</strong> @Model.Name
+                        </li>
+                        <li class="list-group-item">
+                            <strong>National ID:</strong> @Model.NID
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Address:</strong> @Model.Address
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Phone:</strong> @Model.Phone
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Membership Information</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Member No:</strong> @Model.MemberNo
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Subscribe Date:</strong> @Model.SubscribeDate.ToString("dd/MM/yyyy")
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Status:</strong>
+                            @if (Model.IsActive)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">Inactive</span>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Statistic Information</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>No of Borrowed Books:</strong> @Model.NoOfBorrowBooks
+                        </li>
+                         <li class="list-group-item">
+                            <strong>No Of Penality:</strong> @Model.NoOfPenality
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Score:</strong>
+                            @if (Model.Score> 50)
+                            {
+                                <span class="badge bg-success">@Model.Score</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">@Model.Score</span>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

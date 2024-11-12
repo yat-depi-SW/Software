@@ -1,0 +1,46 @@
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+
+.notfound-section{
+  height: 100vh;
+  width: 100%;
+  padding: 15vh 0;
+  .notfound-container {
+    height: 70vh;
+    margin: auto;
+    .image{
+      height: 60vh;
+      width: fit-content;
+      margin: auto;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        animation: rotateOnLoad 1.2s ease-in-out infinite alternate;
+      }
+    }
+    a {
+      background-color: $alt-dark-color;
+      color: $light-color;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: fit-content;
+      margin: 5vh auto 0;
+      &:hover{
+        background-color: $dark-color;
+      }
+    }
+  }
+}
+
+@keyframes rotateOnLoad {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}

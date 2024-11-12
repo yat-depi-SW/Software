@@ -1,0 +1,171 @@
+﻿@using LMSProjectAUTH.Application.ViewModel.Account
+@model UserRegistrationViewModel
+
+<h2 class="mb-4">Register @Model.UserType</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Reduced the column width -->
+            <form asp-action="Register" method="post" class="needs-validation">
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="UserType" />
+
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label">
+                        @Html.LabelFor(m => m.UserName)
+                        @if (ViewData.ModelState["UserName"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">
+                        @Html.LabelFor(m => m.Name)
+                        @if (ViewData.ModelState["Name"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NID" class="form-label">
+                        @Html.LabelFor(m => m.NID)
+                        @if (ViewData.ModelState["NID"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="NID" class="form-control" />
+                    <span asp-validation-for="NID" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Address" class="form-label">
+                        @Html.LabelFor(m => m.Address)
+                        @if (ViewData.ModelState["Address"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">
+                        @Html.LabelFor(m => m.Email)
+                        @if (ViewData.ModelState["Email"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Phone" class="form-label">
+                        @Html.LabelFor(m => m.Phone)
+                        @if (ViewData.ModelState["Phone"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <!-- Conditionally show Librarian-specific fields -->
+                @if (Model.UserType == "Librarian")
+                {
+                    <div class="mb-3">
+                        <label asp-for="LibrarianNo" class="form-label">
+                            @Html.LabelFor(m => m.LibrarianNo)
+                            @if (ViewData.ModelState["LibrarianNo"]?.Errors.Count > 0)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <input asp-for="LibrarianNo" class="form-control" readonly />
+                        <span asp-validation-for="LibrarianNo" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="HiredOn" class="form-label">
+                            @Html.LabelFor(m => m.HiredOn)
+                            @if (ViewData.ModelState["HiredOn"]?.Errors.Count > 0)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <input asp-for="HiredOn" type="date" class="form-control" />
+                        <span asp-validation-for="HiredOn" class="text-danger"></span>
+                    </div>
+                }
+
+                <!-- Conditionally show Member-specific fields -->
+                @if (Model.UserType == "Member")
+                {
+                    <div class="mb-3">
+                        <label asp-for="MemberNo" class="form-label">
+                            @Html.LabelFor(m => m.MemberNo)
+                            @if (ViewData.ModelState["MemberNo"]?.Errors.Count > 0)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <input asp-for="MemberNo" class="form-control" readonly />
+                        <span asp-validation-for="MemberNo" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="SubscribeDate" class="form-label">
+                            @Html.LabelFor(m => m.SubscribeDate)
+                            @if (ViewData.ModelState["SubscribeDate"]?.Errors.Count > 0)
+                            {
+                                <span class="text-danger">*</span>
+                            }
+                        </label>
+                        <input asp-for="SubscribeDate" type="date" class="form-control" />
+                        <span asp-validation-for="SubscribeDate" class="text-danger"></span>
+                    </div>
+                }
+
+                <!-- Password fields -->
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">
+                        @Html.LabelFor(m => m.Password)
+                        @if (ViewData.ModelState["Password"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="Password" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ConfirmPassword" class="form-label">
+                        @Html.LabelFor(m => m.ConfirmPassword)
+                        @if (ViewData.ModelState["ConfirmPassword"]?.Errors.Count > 0)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-dark">Register</button>
+            </form>
+        </div>
+    </div>
+</div>

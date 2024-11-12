@@ -1,0 +1,6 @@
+[jenkins_worker_node]
+16.171.234.163
+
+[jenkins_worker_node:vars]
+ansible_ssh_private_key_file=~/.ssh/ssh_m.pem 
+ansible_user=ubuntu

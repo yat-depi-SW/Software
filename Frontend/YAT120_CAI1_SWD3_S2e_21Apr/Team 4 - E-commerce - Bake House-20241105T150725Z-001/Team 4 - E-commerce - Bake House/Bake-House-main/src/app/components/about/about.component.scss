@@ -1,0 +1,61 @@
+$dark-color: #543310;
+$section-padding: 90px;
+
+.container-xl {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .slide {
+    display: flex;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+
+    div {
+      width: calc(50% - 15px);
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    p {
+      color: $dark-color;
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 0.045rem;
+    }
+  }
+
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 767px) {
+  .slide {
+    flex-direction: column;
+    gap: 24px !important;
+
+    div {
+      width: 100% !important;
+    }
+
+    &:last-of-type {
+      div:first-child {
+        order: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+:root {
+    --main-color: #C5F82A;
+    --second-color: #B600FF;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* Background Style start*/
+
+.background {
+    background-image: url(../images/register.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.background:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+/* Background Style end*/
+
+
+/* form start */
+
+.register-container {
+    padding-inline: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding-block: 20px;
+    margin-top: 5%;
+}
+
+.register-container h1 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.register-container .form .form-floating {
+    padding: 0;
+}
+
+.register-container .form .form-floating .btn-outline-secondary {
+    --bs-btn-border-color: none;
+
+}
+
+.register-container .form .form-floating .btn:hover {
+    background-color: transparent;
+
+}
+
+.register-container .form .form-floating label {
+    color: #8D8D8D;
+    background-color: transparent;
+}
+
+.form-floating>.form-control:focus~label i {
+    display: none;
+}
+
+.form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label::after {
+    background-color: transparent;
+}
+
+.register-container .form .form-control {
+    background-color: #42424264;
+    color: white;
+    border: var(--bs-border-width) solid #424242
+}
+
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem var(--main-color);
+}
+
+.register-container .form .submit {
+    height: 60px;
+    max-width: 50%;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: var(--main-color);
+    transition: all 0.2s;
+}
+
+.register-container .form .submit:hover {
+    opacity: 0.8;
+}
+
+.register-container .form .text {
+    color: white;
+    text-align: center;
+}
+
+.register-container .form .text a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.1s;
+}
+
+.register-container .form .text a:hover {
+    opacity: 0.9;
+}
+
+
+.modal-backdrop {
+    --bs-backdrop-opacity: 0.8;
+}
+
+.modal .modal-dialog .modal-header {
+    background-color: var(--main-color);
+}
+
+.modal .modal-dialog .modal-body {
+    background-color: #424242;
+    font-size: 20px;
+    font-family: "Heebo", sans-serif;
+    color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-dialog .modal-footer {
+    background-color: var(--main-color);
+}
+
+.modal .modal-dialog .modal-footer .home {
+    background-color: black;
+    border-color: transparent;
+    color: White;
+}
+
+
+@media (max-width:555px) {
+    .register-container .form .submit {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 540px) {
+    .register-container {
+        padding-inline: 30px;
+    }
+}
+
+/* form end */

@@ -1,0 +1,160 @@
+﻿<!------------------------------tata work ------------------->
+@model BorrowfVM
+
+<h2>Borrow</h2>
+<hr />
+<form asp-action="Borrow" method="post" class="container needs-validation">
+    <div class="row">
+        <div class="col-md-6">
+            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+            <!-- Borrow Date -->
+            <div class="form-group mb-3">
+                <label asp-for="BorrowDate" class="form-label">
+                    @Html.LabelFor(m => m.BorrowDate)
+                    @if (ViewData.ModelState["BorrowDate"]?.Errors.Count > 0)
+                    {
+                        <span class="text-danger">*</span>
+                    }
+                </label>
+                <input asp-for="BorrowDate" type="date" class="form-control form-control-sm" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="BorrowDate" class="text-danger"></span>
+            </div>
+
+            <!-- Select Member -->
+            <div class="form-group mb-3">
+                <label for="MemberId" class="form-label">Select a Member:</label>
+                <select id="MemberId" name="MemberId" class="form-control form-control-sm" required>
+                    <option value="" disabled selected>Select a Member...</option>
+                    @foreach (var member in Model.Members)
+                    {
+                        <option value="@member.Id">@member.MemberNo</option>
+                    }
+                </select>
+                <span asp-validation-for="MemberId" class="text-danger"></span>
+            </div>
+
+            <!-- Select Book -->
+            <div class="form-group mb-3">
+                <label for="bookSelect" class="form-label">
+                    Select a Book:
+                    @if (ViewData.ModelState["BookId"]?.Errors.Count > 0)
+                    {
+                        <span class="text-danger">*</span>
+                    }
+                </label>
+                <select id="bookSelect" class="form-control form-control-sm" onchange="fetchPrintSerials(this.value)" required>
+                    <option value="" disabled selected>Select a book...</option>
+                    @foreach (var book in Model.Books)
+                    {
+                        <option value="@book.Id">@book.Title - (@book.BookPrice)</option>
+                    }
+                </select>
+                @* <span asp-validation-for="BookId" class="text-danger"></span> *@
+            </div>
+
+            <!-- Select Print Serial -->
+            <div class="form-group mb-3">
+                <label for="SelectedPrintSerial" class="form-label">
+                    Select a Print Serial:
+                    @if (ViewData.ModelState["SelectedPrintSerial"]?.Errors.Count > 0)
+                    {
+                        <span class="text-danger">*</span>
+                    }
+                </label>
+                <select id="SelectedPrintSerial" class="form-control form-control-sm" name="SelectedPrintSerial" required disabled>
+                    <option value="" disabled selected>Select a Print Serial...</option>
+                </select>
+                <span asp-validation-for="SelectedPrintSerial" class="text-danger"></span>
+            </div>
+
+            <!-- Default Return Date -->
+            <div class="form-group mb-3">
+                <label asp-for="DefaultReturnDate" class="form-label">
+                    @Html.LabelFor(m => m.DefaultReturnDate)
+                    @if (ViewData.ModelState["DefaultReturnDate"]?.Errors.Count > 0)
+                    {
+                        <span class="text-danger">*</span>
+                    }
+                </label>
+                <input asp-for="DefaultReturnDate" type="date" class="form-control form-control-sm" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="DefaultReturnDate" class="text-danger"></span>
+            </div>
+
+            <!-- Note -->
+            <div class="form-group mb-3">
+                <label asp-for="Note" class="form-label">Note</label>
+                <textarea asp-for="Note" class="form-control form-control-sm" rows="3" placeholder="Enter any notes here..."></textarea>
+                <span asp-validation-for="Note" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-dark btn-sm">Submit</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        function fetchPrintSerials(bookId) {
+            const printSerialSelect = document.getElementById("SelectedPrintSerial");
+            printSerialSelect.innerHTML = '<option value="" disabled selected>Select a Print Serial...</option>';
+            printSerialSelect.disabled = true;
+
+            if (bookId) {
+                const books = @Html.Raw(Json.Serialize(Model.Books));
+                const book = books.find(b => b.id == bookId);
+
+                if (book && book.bookStore) {
+                    printSerialSelect.disabled = false;
+
+                    book.bookStore.forEach(store => {
+                        if (store.isAvaliable) {
+                            const option = document.createElement("option");
+                            option.value = store.printSerial;
+                            option.textContent = `Print Serial: ${store.printSerial}`;
+                            printSerialSelect.appendChild(option);
+                        }
+                    });
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var toastElement = document.getElementById('topToast');
+            if (toastElement) {
+                var toast = new bootstrap.Toast(toastElement);
+                toast.show();
+
+                // Remove the toast after 3 seconds (3000 milliseconds)
+                setTimeout(function () {
+                    toast.hide();
+                }, 3000);
+            }
+        });
+
+    </script>
+
+
+
+}
+
+<!-- Bootstrap Toast Container -->
+<!-- Bootstrap Toast Container -->
+<div class="toast-container position-fixed top-0 end-0 p-3">
+    @if (TempData["message"] != null)
+    {
+        var toastClass = TempData["toastType"].ToString() == "error" ? "bg-danger" : "bg-success";
+        <div id="topToast" class="toast show @toastClass" role="alert" aria-live="assertive" aria-atomic="true" style="color: white;">
+            <div class="toast-header">
+                <strong class="me-auto">
+                    <i class="bi bi-check-circle-fill"></i>
+                    Notification
+                </strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                @TempData["message"]
+            </div>
+        </div>
+    }
+</div>

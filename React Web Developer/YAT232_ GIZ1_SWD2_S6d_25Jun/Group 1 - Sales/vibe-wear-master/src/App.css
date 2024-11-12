@@ -1,0 +1,22 @@
+.btn-green {
+  background-color: #014026 !important;
+  color: white !important;
+}
+.btn-moon {
+  background: #0f172a !important;
+  color: white !important ;
+  width: 40px !important;
+  height: 40px !important;
+}
+.btn-font {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin: auto 0;
+  text-transform: uppercase;
+  height: 40px !important;
+  display: inline-block;
+  width: auto !important;
+}
+.btn-font:nth-child(2) {
+  padding-top: 10px !important;
+}

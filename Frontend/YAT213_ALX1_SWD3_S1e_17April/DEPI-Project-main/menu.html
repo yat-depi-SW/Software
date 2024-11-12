@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/solid.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>Our menu</title>
+</head>
+    <body>
+        <!-- nav start -->
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img alt="Company Logo" src="logo without bg-modified.png" width="50"height="50" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0 flex-grow-1 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Best Sellers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-custom" href="cart.html">Cart<i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section Start -->
+    <div class="menu" style="background-image: url('menuimg/bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container text-white ">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3" id="shadowed">Welcome to our menu</h1>
+                    <p id="shadowed">All our products are made with love and care.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <img id="imag1" class="img-fluid donut-spin" src="menuimg/donut.png" alt="Delicious Donut">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="favorites-section container" style="height: 600px; padding-top: 100px;">
+        <div class="row align-items-center">
+            <!-- Left Column - Text Content -->
+            <div class="col-md-6">
+                <span class="section-title">Fresh & Trending</span>
+                <br>
+                <h2>Discover Our Favorites</h2>
+                <p class="p1">
+                    Delve into our most beloved products, handpicked just for you. 
+                    Enjoy the unique flavors and aromas of YSFI Café's exquisite offerings.
+                </p>
+                <ul class="favorites-list">
+                    <li>
+                        <img src="menuimg/icons8-donut-60.png" alt="Icon 1" class="icon"> 
+                        <span>Artisan Donuts</span> <br>
+                        <span>Handcrafted with love, our donuts are a sweet escape into flavor heaven.</span>
+                    </li>
+                    <li>
+                        <img src="menuimg/icons8-coffee-60.png" alt="Icon 2" class="icon"> 
+                        <span>Gourmet Coffee</span> <br>
+                        <span>Brewed to perfection; our coffee promises a delightful start to your day.</span>
+                    </li>
+                    <li>
+                        <img src="menuimg/icons8-flower-60.png" alt="Icon 3" class="icon"> 
+                        <span>Blooming Flowers</span> <br>
+                        <span>Brighten your space with our selection of fresh, vibrant flowers.</span>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Right Column - Image Slider -->
+            <div class="col-md-6">
+                <div id="favoritesCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="asiandonut.jpeg" class="d-block w-100 img-fluid rounded" alt="Donut" style="background-color: #fcdbdf;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Gourmet Coffee.jpg" class="d-block w-100 img-fluid rounded" alt="Coffee" style="background-color: #fcdbdf;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Blooming Flowers.jpg" class="d-block w-100 img-fluid rounded" alt="Flowers" style="background-color: #fcdbdf;">
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Indicators (Dots) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#favoritesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="bgslider" style="background-color: #fcdbdf; width: 100%;">
+        <div class="container" id="menucontainer">
+        
+            <div  id="slide">
+                <div class="item" style="background-image: url('menuimg/Slider/coffe1.jpeg');">
+                    <h3>Coffee</h3>
+                    <p>Aromatic blends to awaken your senses.</p>
+                </div>
+            </div>
+            <div id="slide">
+                <div class="item" style ="background-image: url('menuimg/Slider/pexels-karleykosmos-10234647.jpg');">
+                    <h3>Delicious Donuts</h3>
+                    <p>A variety of flavors that melt in your mouth and your heart, too!.</p>
+                </div>
+            </div>
+            <div id="slide">
+                <div class="item" style="background-image: url('menuimg/Slider/flower.jpeg');">
+                    <h3>Fresh Flowers</h3>
+                    <p>Bring nature's beauty to your home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="customized" class="customized">
+        <h1 style="color:#fcdbdf; margin-left: 30px; white-space: nowrap;">Customized Donuts</h1>
+        <div class="container" id="custcontainer">
+            <div class="box" data-color="clr1">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst1.jpeg">
+                    <div class="glass">
+                        <h3>forgive me<br><span>Bouquet</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr2">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst2.jpg">
+                    <div class="glass">
+                        <h3>Unicorn<br><span>Donuts</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr3">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst3.jpeg">
+                    <div class="glass">
+                        <h3>Superhero<br><span>Your fav spider</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr4">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst4.jpeg">
+                    <div class="glass">
+                        <h3>Halloween<br><span>Collection</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr5">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst5.jpeg">
+                    <div class="glass">
+                        <h3>Cartoon<br><span>World</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr6">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst6.png">
+                    <div class="glass">
+                        <h3>Coffee Face<br><span>Donut</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr7">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst7.jpg">
+                    <div class="glass">
+                        <h3>Lolipop<br><span>Donut</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-color="clr8">
+                <div class="imgbx">
+                    <img src="menuimg/Customized/Cst8.jpg">
+                    <div class="glass">
+                        <h3>Skyblue<br><span>Donut</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+    
+    <!-- Menu Section End -->
+    <div class="container text-center mt-5">
+        <h1>Shop by Category</h1>
+        <p>Find your favorites from our diverse product categories.</p>
+        <!-- Category Cards -->
+        <div class="d-flex justify-content-center">
+            <div class="category-card">
+                <img src="images/Products/Glazed Donut.jpg" alt="Image of donuts">
+                <p>Donuts</p>
+            </div>
+            <div class="category-card">
+                <img src="images/Products/Chai Latte.jpg" alt="Image of coffee">
+                <p>Coffee</p>
+            </div>
+            <div class="category-card">
+                <img src="images/Products/Elegant Roses Bouquet.jpg" alt="Image of flowers">
+                <p>Flowers</p>
+            </div>
+        </div>
+
+        <div style="text-align: right; margin-right: 240px;">
+            <button class="btn btn-outline-secondary btn-view-all"><a href="#tab-all">
+                View All Products <i class="fas fa-arrow-right"></i></a>
+            </button>
+        </div>
+        
+        
+    </div>
+    <!-- Product Tabs Content -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="tab-class text-center">
+                <div class="row g-4">
+                    <div class="col-12 text-center fruite">
+                        <ul class="nav nav-pills d-inline-flex text-center mb-5 tab-class">
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-all">
+                                    <span class="text-dark" style="width: 130px;">All Products</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-donuts">
+                                    <span class="text-dark" style="width: 130px;">Donuts</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-coffee">
+                                    <span class="text-dark" style="width: 130px;">Coffee</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-flowers">
+                                    <span class="text-dark" style="width: 130px;">Flowers</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="tab-content">
+                    <!-- All Products Tab Pane -->
+                    <div id="tab-all" class="tab-pane fade show active p-0">
+                        <div class="row justify-content-center g-4">
+                            <!-- Donuts Products -->
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Glazed Donut.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Glazed Donut</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">45.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/boston-cream-doughnut.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Boston Cream Donut</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">40.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/biscoff-donuts.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Biscoff Donuts</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">45.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/doughnuts-without-yeass.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Fried Donut Holes (No Yeast)</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">25.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Strawberry-glazed-doughnuts.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Strawberry Glazed Donuts</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">25.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/jelly-donuts.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Sufganiyot (Jelly Doughnuts)</h4> <br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">40.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Coffee Products -->
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Caramel Frappuccino.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Iced</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Caramel Frappuccino</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">70.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Mocha Frappuccino.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Iced</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Mocha Frappuccino</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">85.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Iced Caramel Macchiato.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Iced</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Iced Caramel Macchiato</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">60.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Chai Latte.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Hot</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Chai Latte</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Peppermint Mocha.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Hot</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Peppermint Mocha</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Turkish coffee.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Hot</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Turkish Coffee</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- Flowers Products -->
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Pure Flowers Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Pure Flowers Bouquet</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1249.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Romantic Radiance Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Romantic Radiance Roses Bouquet</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1199.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Royal Purple Chrysanthemum Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Royal Purple Chrysanthemum Bouquet</h4>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1099.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Elegant Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Elegant Roses Bouquet</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1699.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Alluring Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Alluring Roses Bouquet</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Bright Yellow Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Bright Yellow Roses Bouquet</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">999.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                    <!-- Donuts Tab Pane -->
+                    <div id="tab-donuts" class="tab-pane fade p-0">
+                        <div class="row justify-content-center g-4">
+                            <!-- Donuts Products Only -->
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Glazed Donut.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Glazed Donut</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">45.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/boston-cream-doughnut.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Boston Cream Donut</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">40.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/biscoff-donuts.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Biscoff Donuts</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">45.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/doughnuts-without-yeass.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Fried Donut Holes (No Yeast)</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">25.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Strawberry-glazed-doughnuts.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Strawberry Glazed Donuts</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">25.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/jelly-donuts.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000065;">Donut</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Sufganiyot (Jelly Doughnuts)</h4> <br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">40.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Coffee Tab Pane -->
+                    <div id="tab-coffee" class="tab-pane fade p-0">
+                        <div class="row justify-content-center g-4"> 
+                            <div class="col-lg-12">
+                                <div class="row g-4 justify-content-center"> 
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="images/Products/Caramel Frappuccino.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Iced</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Caramel Frappuccino</h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">70.00 EGP</p>
+                                                    <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="images/Products/Mocha Frappuccino.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Iced</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Mocha Frappuccino</h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">85.00 EGP</p>
+                                                    <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="images/Products/Iced Caramel Macchiato.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Iced</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Iced Caramel Macchiato</h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">60.00 EGP</p>
+                                                    <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <br><br>
+                        <div class="row justify-content-center g-4"> 
+                            <div class="col-lg-12">
+                                <div class="row g-4 justify-content-center"> 
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="images/Products/Chai Latte.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Hot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Chai Latte</h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                    <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="images/Products/Peppermint Mocha.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Hot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Peppermint Mocha</h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                    <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="images/Products/Turkish coffee.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #00000086;">Hot</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Turkish Coffee</h4>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                    <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div id="tab-flowers" class="tab-pane fade p-0">
+                        <div class="row justify-content-center g-4">
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Pure Flowers Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Pure Flowers Bouquet</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1249.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Romantic Radiance Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Romantic Radiance Roses Bouquet</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1199.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Royal Purple Chrysanthemum Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Royal Purple Chrysanthemum Bouquet</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1099.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center g-4"> 
+                                <div class="col-lg-12">
+                                    <div class="row g-4 justify-content-center"> 
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Elegant Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Elegant Roses Bouquet</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">1699.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Alluring Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Alluring Roses Bouquet</h4><br><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">949.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="images/Products/Bright Yellow Roses Bouquet.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px; background-color: #5353535c;">Flowers</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Bright Yellow Roses Bouquet</h4><br>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">999.00 EGP</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3" style="color: #000;"><i class="fa fa-shopping-bag me-2" style="color: #FFB0B0;"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footerr start -->
+    <footer>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-lg-4">
+                    <h1 class="firstconh1 sansita-bold">YSFI</h1>
+    
+                    <!-- Contact Us Heading -->
+                    <h4 id="contact" class="mt-4 mb-3 sansita-regular">Contact Us</h4>
+    
+                    <!-- Contact Form -->
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control contactus" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control contactus" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message contactus" rows="3" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom"
+                            style=" border: none;">Submit</button>
+                    </form>
+    
+                    <!-- Follower Count -->
+                    <!-- <p class="firstconn mt-4 sansita-regular-italic"><span class="fw-bold" style="color: rgb(255, 208, 155);">15K</span> followers</p> -->
+    
+                    <!-- Divider -->
+                    <hr class="fhr">
+    
+                    <!-- Social Media Follow Section -->
+                    <div class="folloicon d-flex align-items-center">
+                        <!-- Follow Us Text next to icons -->
+                        <p class="foll mb-0 me-3 sansita-regular-italic">Follow us:</p>
+                        <div class="ficc d-flex">
+                            <a href="https://facebook.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://pinterest.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://google.com" target="_blank" class="social-icon me-2 socialmedia">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Subscription Form -->
+                    <!-- <div class="sub d-flex mt-4">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button class="btn btn-primary ms-2">SUBSCRIBE</button>
+                            </div> -->
+                </div>
+    
+    
+                <!-- Second Column -->
+                <div class="col-lg-4">
+                    <h2 class="firstconh1 sansita-bold">blogs</h2>
+    
+                    <!-- Blog Item 1 -->
+                    <div class="blogitems">
+                        <div class="secondconimg d-flex align-items-start mb-3 ">
+                            <img src="images/blogs/blog1.jfif" class="img-fluid blogs me-3" alt="Blog 1"
+                                style=" width: 100px; height: 95px;">
+                            <div class="secondconinfo">
+                                <a href="#" class="sec fw-bold blogcon sansita-regular-italic">Lorem ipsum dolor sit
+                                    amet<br>consectetur adipiscing</a>
+                                <p class="parasec blogdate">Jan 9, 2016</p>
+                            </div>
+                        </div>
+    
+                        <!-- Blog Item 2 -->
+                        <div class="secondconimg d-flex align-items-start mb-3">
+                            <img src="images/blogs/blog2.jfif" class="img-fluid blogs me-3" alt="Blog 2"
+                                style=" width: 100px; height: 102px;">
+                            <div class="secondconinfo">
+                                <a href="#" class="sec fw-bold blogcon sansita-regular-italic">Lorem ipsum dolor sit
+                                    amet<br>consectetur adipiscing</a>
+                                <p class="parasec  blogdate">Feb 14, 2016</p>
+                            </div>
+                        </div>
+    
+                        <!-- Blog Item 3 -->
+                        <div class="secondconimg d-flex align-items-start mb-3">
+                            <img src="images/blogs/blog3.jfif" class="img-fluid blogs me-3" alt="Blog 3"
+                                style=" width: 100px; height: 102px;">
+                            <div class="secondconinfo">
+                                <a href="#" class="sec fw-bold blogcon sansita-regular-italic">Lorem ipsum dolor sit
+                                    amet<br>consectetur adipiscing</a>
+                                <p class="parasec  blogdate">Mar 22, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Column -->
+                <div class="col-lg-4">
+                    <h2 class="firstconh1 sansita-bold">Instagram</h2>
+    
+                    <!-- Adjusted Instagram Images Section -->
+                    <div class="instacon">
+                        <div class="row imgg">
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i1.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i2.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i3.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i4.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                        </div>
+                        <div class="row imgg">
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i5.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i6.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i7.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i8.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                        </div>
+                        <div class="row imgg">
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i9.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i10.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i11.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                            <div class="col-3 p-1"><a href="#"><img src="images/instagram/i12.jfif" class="img-fluid"
+                                        alt=""></a></div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <!-- View More Button -->
+                    <a href="#" class="btn btn-outline-secondary d-block text-center mt-2 btn-custom"
+                        style=" border: none; color: aliceblue;">View more photos</a>
+                </div>
+    
+    
+            </div>
+    
+            <hr class="my-4">
+    
+    
+    </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var triggerEl = document.querySelector('#tab-all');
+        var tab = new bootstrap.Tab(triggerEl);
+        tab.show();
+    </script>
+    </body>
+</html>

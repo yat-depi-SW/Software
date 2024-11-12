@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/wishlist2.css">
+    <link rel="stylesheet" href="css/categories.css">
+
+    <link rel="icon" href="logo/web-logo.png" type="image/x-icon">
+    <title>TechieTools | Wishlist</title>
+</head>
+
+<body>
+
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="logo/brand_logo.png" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="shopping">
+                    <span class="card"><a href="Cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="icon-cart">
+                                <span id="cartCount">0</span>
+                            </div>
+                        </a></span>
+                    <span class="wishlist"><a href="wishlist2.html">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="icon-heart">
+                                <span id="heartCount">0</span>
+                            </div>
+                        </a></span>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ourtime.html">Our Team</a></li>
+                            <li><a class="dropdown-item" href="AboutUs.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catrgories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex btnContainer" role="search">
+                    <a href="register.html"><button class="button register">Register</button></a>
+                    <a href="login.html"><button class="button login">Login</button></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <div class="layout">
+
+        <!-- start of header content -->
+        <div class="container-fluid bgImage">
+            <h1>Wish <span>List</span></h1>
+        </div>
+        <!-- end of header content -->
+
+
+        <!-- start of table 2 -->
+        <main class="flex-grow p-8">
+            <h2 class="text-3xl font-bold text-center mt-4 titleCart">Your Wish Cart</h2>
+            <div class="mt-8">
+
+                <div class="container cont" style="background-color: rgb(17, 16, 16);">
+                    <table id="wishlistTable"
+                        class="table table w-80 mx-auto table-bordered bg-color table-sm text-center align-middle"
+                        style="background-color:#000;">
+                        <thead class="bg-gray">
+                            <tr class="bg-gray">
+                                <th class="firstTable" scope="col">Image</th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="wishlistContainer" class="data">
+                            <!-- Wishlist items will be inserted here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-center align-items-center"
+                    style="max-width: 400px; margin: auto;">
+                    <a href="catrgories.html" class="w-100" style="color: inherit;"><button
+                            class="btn btn-lime w-100 py-2 fw-bold">CONTINUE
+                            SHOPPING</button></a>
+                </div>
+                <!-- end of table -->
+
+
+                <!-- start of footer -->
+                <div class="footer row justify-content-between">
+                    <div class="contact section col-12 col-md-3">
+                        <a href="#"><img src="logo/brand_logo.png" width="130" height="45"></a>
+                        <span class="ref location"><i class="fa-solid fa-location-dot fa-lg"></i> Cairo Nasr City,
+                            <span>Technology
+                                Mail</span> 3rd</span>
+                        <span class="ref mail"><i class="fa-regular fa-envelope fa-lg"></i> techietools@gmail.com</span>
+                    </div>
+                    <div class="links section col-12 col-md-5">
+                        <div class="quickLinks">
+                            <h2>Quick links</h2>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </div>
+                        <div class="category">
+                            <h2>Categories</h2>
+                            <ul>
+                                <li><a href="#">Mouse</a></li>
+                                <li><a href="#">Keyboard</a></li>
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Headset</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="media section col-12 col-md-3">
+                        <h2>Community</h2>
+                        <a href=#><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                        <a href=#><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <a href=#><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                        <a href=#><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                    </div>
+                </div>
+                <!-- end of footer -->
+            </div>
+
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mouse.js"></script>
+<script src="js/wishlist.js"></script>
+
+</html>

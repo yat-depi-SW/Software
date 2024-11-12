@@ -1,0 +1,155 @@
+<!-- Category -->
+<div class="my-3 w-25">
+  <app-select [title]="'Categories'" [categoryData]="allCategories"
+    (selectedValue)="filterCategory($event)"></app-select>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add Product
+</button>
+
+<!-- Add Product Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Product</h5>
+        <button type="button" #closeAddBtn class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row" [formGroup]="addForm">
+        <div class=" col-4">
+          <label for="" class="form-label">Title</label>
+          <input type="text" formControlName="title" id="" class="form-control" placeholder="title" />
+        </div>
+        <div class="col-4">
+          <label for="" class="form-label">Price</label>
+          <input type="number" formControlName="price" id="" class="form-control" placeholder="price" />
+        </div>
+        <div class=" col-4">
+          <app-select [title]="'Categories'" [categoryData]="allCategories" (selectedValue)="getCategoryName($event)"
+            [all]="false"></app-select>
+        </div>
+        <div class="col-4 mt-2">
+          <label for="" class="form-label">image</label>
+          <img src="{{addBase64}}" alt="">
+          <input type="file" (change)="getAddImagePath($event)" #imageInput name="" id="" class="form-control"
+            placeholder="" />
+        </div>
+        <div class="col-8 mt-2">
+          <label for="" class="form-label">Description</label>
+          <textarea class="form-control" formControlName="description" id="" rows="3"
+            placeholder="write description here"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal" [disabled]="!addForm.valid"
+          (click)="addProduct() ">Add
+          Product</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Update Product Modal -->
+<div class="modal fade" id="updateProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row" [formGroup]="updateForm">
+        <div class=" col-4">
+          <label for="" class="form-label">Title</label>
+          <input type="text" formControlName="title" id="" class="form-control" placeholder="title" />
+        </div>
+        <div class="col-4">
+          <label for="" class="form-label">Price</label>
+          <input type="number" formControlName="price" id="" class="form-control" placeholder="price" />
+        </div>
+        <div class=" col-4">
+          <app-select [title]="'Categories'" [categoryData]="allCategories" (selectedValue)="getCategoryName($event)"
+            [all]="false" [select]="updateForm.value.category"></app-select>
+        </div>
+        <div class="col-4 mt-2">
+          <label for="" class="form-label">image</label>
+          <img src="{{updateBase64}}" alt="">
+          <input type="file" (change)="getUpdateImagePath($event)" name="" id="" class="form-control" placeholder="" />
+        </div>
+        <div class="col-8 mt-2">
+          <label for="" class="form-label">Description</label>
+          <textarea class="form-control" formControlName="description" id="" rows="3"
+            placeholder="write description here"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal" [disabled]="!updateForm.valid"
+          (click)="updateProduct()">Update
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Products -->
+<div class="mt-5" *ngIf="!loading">
+  <div class="row">
+    <div class="col-md-3 col-sm-12 ">
+      <!-- <app-product [data]="item" (item)="addToCart($event)"></app-product> -->
+      <div class="card-body">
+        <table class="table m-0" style="width: 1200px;">
+          <thead>
+            <tr>
+              <!-- Set columns width -->
+              <th class="text-right py-3 px-4 text-center">
+                Image </th>
+              <th class="text-right py-3 px-4 text-center">
+                Name
+              </th>
+              <th class="text-center py-3 px-4 text-center">
+                Category
+              </th>
+              <th class="text-center py-3 px-4 text-center">
+                Price
+              </th>
+              <th class="text-center py-3 px-4 text-center">
+
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-row" *ngFor="let item of products">
+              <td class="text-right font-weight-semibold align-middle d-flex justify-content-between p-4 text-center"
+                style="width: 100px">
+                <img src="{{item.image}}" style="width: 100px; height: 100px;" alt="" routerLink="/details/{{item.id}}">
+              </td>
+              <td class="align-middle p-4 text-center product-title">
+                <p routerLink="/details/{{item.id}}">{{item.title}}</p>
+              </td>
+              <td class="align-middle p-4 text-center">
+                <p>{{item.category}}</p>
+              </td>
+              <td class="align-middle p-4 text-center">
+                <p>{{item.price | currency}}</p>
+              </td>
+              <td class="align-middle p-4 text-center">
+                <!--updateProduct Button trigger modal -->
+                <button type="button" class="btn btn-warning" (click)="getCartData(item,item.id)" data-bs-toggle="modal"
+                  data-bs-target="#updateProduct">
+                  Edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<app-spinner *ngIf="loading"></app-spinner>

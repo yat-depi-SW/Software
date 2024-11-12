@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحة اقتراح كتاب لـ Robabookia">
+    <meta name="author" content="Robabookia">
+    
+    <!-- Title -->
+    <title>Suggest a Book</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/Form&Suggest.css">
+    <!-- Font-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="transparent icon2.png">
+
+    <link rel="icon" href="Imge/transparent icon2.png">
+</head>
+<body>
+    <div class="all-elment">
+            <!-- Preloader -->
+            <div class="loader">
+              <div class="img">
+                <img class="pre-image" src="Imge/elhag.webp"/>
+              </div>
+              <div class="img">
+                <img class="pre-image" src="Imge/kids.webp" loading="lazy"/>
+              </div>
+              <div class="img">
+                <img class="pre-image" src="Imge/m.webp" loading="lazy"/>
+              </div>
+              <div class="img">
+                <img class="pre-image" src="Imge/old-fashioned-bookstore.webp" loading="lazy"/>
+              </div>
+              <div class="img">
+                <img class="pre-image" src="Imge/old-man-reading.webp" loading="lazy"/>
+              </div>
+              <div class="img">
+                <img class="pre-image" src="Imge/old-man-reading.webp" loading="lazy"/>
+              </div>
+              <div class="img">
+                <img class="pre-image" src="Imge/RobaBookia-large logo.webp" loading="lazy"/>
+              </div>
+            </div>
+
+     <!-- Navigation -->
+      <!-- Main content (initially hidden) -->
+      <header>
+        <div class="navbar" id="navbar">
+          <div
+            class="menu-icon"
+            onclick="showMenu()"
+            onmouseover="changeTitle('OPEN MENU')"
+            onmouseout="resetTitle()"
+            id="menuIcon"
+          >
+            <span></span>
+            <span></span>
+          </div>
+          <div class="navbar-title" id="navbarTitle">RobaBookia</div>
+          <div class="info-icon" id="infoIcon">
+            <span>i</span>
+          </div>
+        </div>
+      </header>
+
+          <!-- Popover Menu (Initially Hidden) -->
+    <div id="menu">
+        <svg
+          class="close"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48px"
+          viewBox="0 -960 960 960"
+          width="48px"
+          fill="#f4d8c0"
+          onclick="hideMenu()"
+        >
+          <path
+            d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+          />
+        </svg>
+        <div id="menu-items">
+          <!-- I made these divs instead of links so you can click on mobile to view the effect -->
+          <div class="menu-item"><a class="menu-links" href="index.html">Home</a></div>
+          <div class="menu-item"><a class="menu-links" href="readBook.html">Arabic Books</a></div>
+          <div class="menu-item"><a class="menu-links" href="EnglishBooks.html">English Books</a></div>
+          <div class="menu-item"><a class="menu-links" href="Suggest-Section.html">Suggest a book</a></div>
+          <div class="menu-item"><a class="menu-links" href="about.html">About-Us</a></div>
+          <div class="menu-item"><a class="menu-links" href="Contact2.html">Contact-Us</a></div>
+          <div class="menu-item"><a class="menu-links" href="Form.html">Login/Signin</a></div>
+          <div class="menu-item"><a class="menu-links" href="error.html">ERROR 404</a></div>
+        </div>
+  
+        <div id="menu-background-image"></div>
+      </div>
+
+
+    <!-- Suggest Section -->
+    <div class="suggest" id="sug">
+        <div class="container">
+            <!-- Main Content -->
+            <main class="row">
+                <!-- Left Section -->
+                <section class="col left">
+                    <div class="contactTitle">
+                        <h2>Suggest a Book</h2>
+                        <p>We are here to assist you, and we are happy to know your satisfaction with our services.</p>
+                        <h3 style="font-size: xx-large; color: white; font-weight: 400;">Robabookia <i class="fa-solid fa-book" style="margin-left: 10px;"></i></h3>
+
+                    </div>
+                    <div class="contactInfo">
+                        <div class="iconGroup">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="details">
+                                <span>Phone</span><span>+00 110 111 00</span>
+                            </div>
+                        </div>
+                        <div class="iconGroup">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="details">
+                                <span>Email</span><span>Robabookia@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="    text-align: center;
+                    font-size: 25px;
+                    color: antiquewhite">Follow us</h3>
+                    <div class="socialMedia">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </section>
+
+                <!-- Right Section -->
+                <section class="col right">
+                    <form class="messageForm" id="bookForm">
+                        <div class="inputGroup halfWidth">
+                            <input type="text" id="bookName" required>
+                            <label>Book Title</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="inputGroup halfWidth">
+                            <input type="email" id="email" required>
+                            <label>Your Email</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="inputGroup fullWidth">
+                            <input type="text" id="authorName" required>
+                            <label>Author Name</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="inputGroup fullWidth">
+                            <input type="text" id="publisherName" required>
+                            <label>Publisher Name</label>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="inputGroup fullWidth">
+                            <textarea id="notes" required></textarea>
+                            <label style="bottom: 182px;">Notes</label>
+                        </div>
+                        <div class="inputGroup fullWidth">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="fot">
+            <div class="container-footer">
+                <div class="Box-f one">
+                    <h3 class="logo">Robabookia</h3>
+                    <ul class="social">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+                
+                    </ul>
+                    <p class="text">Robabookia - Your go-to destination for books! Explore a wide range of titles across various genres with fast and easy shopping.</p>
+                </div>
+                <div class="Box-f two">
+                  <!--  -->
+                  <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="Books"><a href="EnglishBooks.html" class="eng">English-Books</a>
+                      <a href="readBook.html" class="arb">Arabic-Books</a></li>
+                    <li><a href="Suggest-Section.html">Suggest a book  </a></li>
+                    <li><a href="about.html">About-Us</a></li>
+                    <li><a href="Contact2.html">Contact Us</a></li>
+                </ul>
+                    <!--  -->
+                </div>
+                <div class="Box-f three">
+                    <div class="linf"><i class="fa-solid fa-location-dot"></i><div class="info">Cairo, Egypt, Book Street, No. 123</div></div>
+                    <div class="linf"><i class="fa-solid fa-clock"></i><div class="info">Saturday to Thursday: 9:00 AM - 8:00 PM
+                    <br>   Friday: Closed
+                        </div></div>
+                    <div class="linf"><i class="fa-solid fa-phone"></i><div class="info">+00 110 111 00</div></div>
+                </div>
+                <div class="carf-flex">
+                    <div class="carf">
+                        <div class="banner"><span class="banner-text">SUBSCRIBE</span><span class="banner-text">JOIN US</span></div>
+                        <span class="carf__title"> Robabookia  </span>
+                        <p class="carf__subtitle">"Get fresh book recommendations and exclusive offers to your inbox every week."</p>
+                        <form class="carf__form" id="subscribeForm">
+                            <input id="emailInput" placeholder="Your Email" type="email" required>
+                            <button class="sign-up" type="submit">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  -->
+         <!-- End-footer -->
+    </div>
+    <!-- main-js -->
+    <script src="JS/gsap.min.js"></script>
+    <script src="JS/suggest.js"></script>
+</body>
+</html>

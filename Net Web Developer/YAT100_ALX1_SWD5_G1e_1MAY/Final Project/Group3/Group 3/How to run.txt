@@ -1,0 +1,15 @@
+1- delete migration files in the Data Class library if exist
+2- change configuration string if you're not using windows in appconfig in the main project
+3- write the following commands inside the Data Class Library (IMP)
+    add-migration initial
+    update-datebase
+
+4- run the program ( Only Home Page and Account controls will be visible now )
+5- go to the log in page from account controls in the sidebar
+6- log in with the following username and password:
+
+	Username : admin@yourdomain.com
+	Password : Admin@123
+
+7- now you can have access to the entire website through the admin account
+8- you can create new accounts and give them suitable roles (WH managers, Admins, Users) from the Admin Board

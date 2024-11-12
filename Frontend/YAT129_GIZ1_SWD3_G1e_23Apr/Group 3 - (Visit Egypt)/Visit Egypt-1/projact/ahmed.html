@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<title>
+    Home
+</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 50%;
+}
+.b4{
+
+    background-color: rgb(67, 66, 66);
+    float: right;
+    margin-left: 400px;
+}
+.b4:hover{
+    background-color: green;
+}
+.b2{
+    background-color: aqua;
+}
+.b2:hover{
+    background-color: green;
+}
+.hero {
+    display: flex;
+    background-color: rgb(235, 235, 173);
+    margin-top: 100px;
+}
+
+.content3 {
+  max-width: 53%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 15%;
+  
+}
+
+
+
+.hero-vedio
+{
+  max-width: 47%;
+  display: inline-block;
+}
+.hero-vedio-2
+{
+  position: relative;
+  z-index: 6;
+  padding-left: 20px;
+}
+#demo{
+    height: 50%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f7;
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding-left: 50px;
+  border: 1px solid white;
+  background-color: white;
+  top: 8%;
+  left: 9%;
+  /* margin: 50px; */
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom:10px ;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+
+
+}
+.header .nav{
+  padding-left: 340px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-left: 20px;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 7px;
+}
+.nav .btn {
+  padding: 10px 20px;
+  background-color:#00B98E;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.nav .dropdown,header {
+  position: relative;
+}
+.header
+{
+  z-index: 50;}
+  .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav .dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  width: 150px;
+}
+
+.nav .dropdown-content a:hover {
+  color: white;
+  background-color: #00B98E;
+}
+.btnm-imp
+{
+  text-decoration: none;
+  background-color: #020807;
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius:5px;
+  width: 125px; 
+}
+.btnm-imp:hover
+{
+color: #FFFFFF !important;
+background-color: #01cb9c !important;
+}
+.nav .dropdown2 {
+  position: relative;
+}
+
+.nav .dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.nav .dropdown-content2 a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+.nav .dropdown-content2 a:hover {
+  color: white;
+  background-color: #00B98E;
+}
+
+.nav a:hover {
+  color: #32c787;
+}
+
+.active a {
+  color: #32c787;
+}
+.logo{
+    text-decoration: none;
+    color: #020807;
+}
+
+
+
+   </style>
+</head>
+<body>
+    <div class="big-container">
+        <header class="header">
+            <a href="logo" class="logo"><span>visit</span> <span>Egypt</span>  </a>
+    
+            <ul class="nav">
+                <li class="active"><a href="ahmed.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="./VisitEgypt/index.html">categry</a>
+                    <div class="dropdown-content">
+                        <a href="./VisitEgypt/Ancient Egyptian monuments/ahmed2.html">Ancient Egyptian</a>
+                        <a href="./VisitEgypt/Islamic monuments/ahmed2.html">Islamic monuments</a>
+                        <a href="./VisitEgypt/Beach tourism/ahmed2.html">Beach tourism</a>
+                    </div>
+                </li>
+                <li class="dropdown2">
+                    <a href="./travel to egypt Hotels/Hotels.html">Hotels</a>
+                    <div  class="dropdown-content2">
+                    <a href="./travel to egypt Hotels/Hotels.html">Alexandria</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Hurghada</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Sharm El Sheikh</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Luxor</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Aswan</a>
+                </div>
+                </li>
+                <li><a href="./travel to egypt Blog/Blog.html">Blog</a></li>
+    
+                <li></li>
+            </ul>
+            <a href="./المشروع/Booking Form.html" class="btn btnm-imp">Booking</a>
+        </header>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+  <li data-target="#demo" data-slide-to="0" class="active"></li>
+  <li data-target="#demo" data-slide-to="1"></li>
+  <li data-target="#demo" data-slide-to="2"></li>
+  <li data-target="#demo" data-slide-to="3"></li>
+  <li data-target="#demo" data-slide-to="4"></li>
+  <li data-target="#demo" data-slide-to="5"></li>
+  <li data-target="#demo" data-slide-to="6"></li>
+  <li data-target="#demo" data-slide-to="7"></li>
+  <li data-target="#demo" data-slide-to="8"></li>
+  <li data-target="#demo" data-slide-to="9"></li>
+  <li data-target="#demo" data-slide-to="10"></li>
+  <li data-target="#demo" data-slide-to="11"></li>
+  <li data-target="#demo" data-slide-to="12"></li>
+  
+</ul>
+<div class="carousel-inner" style="width: 100%; height: 1000px;">
+  <div class="carousel-item active">
+    <img src="./Images/25355490-4d24-4812-b285-00e6d2723cb0.jpeg" alt="Los Angeles" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Tahrir square</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/Alexandria Egypt.jpeg" alt="Chicago" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Alexandria</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/Al azhar Mosque - Egyptian architecture_مسجد الازهر - المعمار المصري.jpeg" alt="Chicago" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Al azhar Mosque</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/Al Alamein, Egypt .jpeg" alt="Chicago" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Al Alamein</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/aa9c9cd0-7d10-4368-a8ef-5f826f25fe9d.jpeg" alt="Chicago" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>sharm El-shaikh</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/b1c9cb15-b83b-4e80-a394-0cd26d3ad217.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>pyramids</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+
+  <div class="carousel-item">
+    <img src="./Images/7.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>the Egyptian Museum</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/8.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>citadel Mohamed ali</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/9.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Mohamed hassan Mosque</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/10.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Down town</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  <div class="carousel-item">
+    <img src="./Images/11.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Abu simbel temple</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+  
+  <div class="carousel-item">
+    <img src="./Images/Cairo Down Town At Night, Egypt.jpeg" alt="New York" width="1100" height="500">
+    <div class="carousel-caption">
+      <h3>Cairo Down Town</h3>
+      <button class="b2"><a href="./المشروع/Booking Form.html">Book now</a></button>
+    </div>   
+  </div>
+
+
+</div>
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+</div>
+<hr>
+<hr>
+
+<section class="hero">
+    <div class="content3">
+    
+        <p style="font-size: medium;">
+            Egypt's history extends for about 7000 years of civilization and progress,
+             starting with the Pharaonic civilization, then the Coptic civilization, 
+             then with the Islamic conquest,
+              Egypt contains beautiful and great landmarks such as the pyramids and museums containing antiquities from both the Roman era and the Coptic era in Alexandria and in all governorates of Egypt. 
+              The city of Luxor alone contains a third of the world's antiquities.
+               Now, Egypt has the largest museums in the world, the Grand Egyptian Museum and the Egyptian Civilization Museum. There are also some natural landmarks in Egypt,
+                such as the one in Siwa and Sinai.
+                 There are also many beautiful activities in Egypt with breathtaking views in Sharm El-Sheikh,
+                  Marsa Matrouh and the Red Sea. From here, we, the youth of Egypt, 
+                  had to show the greatness and beauty of Egypt,
+                   whether to Egyptians who do not see this beauty or foreigners, 
+            to help promote tourism and the prosperity of the Egyptian economy.
+        </p>
+        
+        
+    </div>
+    
+    <div class="hero-vedio">
+        <div class="hero-vedio-2">
+            <video  class="hero-img-in"  src="./Images/EGYPT 2021 _ Cinematic Video 4K(720P_HD).mp4" alt="House Image" controls autoplay>
+            <!-- <a class="btn-clint-a java-1"  href="#"  > 
+                <i class="material-icons btn-clint-i" >arrow_back_ios</i>
+            </a>
+            <a class="btn-clint-a java-2" href="#" > 
+                <i class="material-icons btn-clint-i" >arrow_forward_ios</i>
+            </a> -->
+        </div>
+    </div>
+</section>
+
+</body>

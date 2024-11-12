@@ -1,0 +1,191 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LMSProjectAUTH
+build_property.RootNamespace = LMSProjectAUTH
+build_property.ProjectDir = D:\Projects\Run Project - LMS 2024\LMSProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projects\Run Project - LMS 2024\LMSProject
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Account/LibrarianDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMaWJyYXJpYW5EYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Account/MemberDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNZW1iZXJEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Account/RegisterAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/AdminDb/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Author/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Author/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Author/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/BookSearch/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1NlYXJjaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Books/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Books/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Books/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Borrow/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Genre/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Genre/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Genre/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/LibrarianDB/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyaWFuREJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/MemberDB/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyREJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/MemberDB/MemberBorrowHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyREJcTWVtYmVyQm9ycm93SGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/MemberDB/MemberPenaltyActive.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyREJcTWVtYmVyUGVuYWx0eUFjdGl2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/MemberDB/MemberPenaltyHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyREJcTWVtYmVyUGVuYWx0eUhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/MemberDB/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyREJcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Penalty/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuYWx0eVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Penalty/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuYWx0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/ReturnBook/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuQm9va1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/ReturnBook/_Alert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuQm9va1xfQWxlcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/ReturnBook/_ReturnBookTB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuQm9va1xfUmV0dXJuQm9va1RCLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/ReturnBook/_SearchForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuQm9va1xfU2VhcmNoRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Shared/_MemberDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW1iZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Shared/_NavMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Shared/_Toast.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub2FzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Run Project - LMS 2024/LMSProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1oau105dq0

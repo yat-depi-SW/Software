@@ -1,0 +1,155 @@
+/* Ensure the html and body elements take the full height of the viewport */
+html,
+body {
+    height: 100%;
+}
+
+/* Flexbox layout  */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Full height of the viewport */
+}
+
+/* The content area stretches to fill available space */
+.cont {
+    display: flex;
+    flex-grow: 1;
+    background-color: rgb(17, 16, 16);
+    padding: 20px;
+}
+
+/* Header Start */
+.bgImage {
+    height: 30vh;
+    background-image: url(../images/categ-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.bgImage::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.bgImage h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.bgImage h1 span {
+    color: var(--main-color)
+}
+
+@media (max-width: 768px) {
+    .bgImage h1 {
+        font-size: 65px;
+    }
+}
+
+/* Header End */
+
+.container {
+    width: 100% !important;
+}
+
+.row {
+    background-color: rgb(17, 16, 16) !important;
+    padding: 30px;
+}
+
+.row .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #301939;
+    border: 1px solid #301939;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.circle-background img {
+    transition: all 0.3s;
+}
+
+.circle-background:hover img {
+    transform: scale(1.1);
+}
+
+.para-cat {
+    color: var(--main-color);
+    font-size: 55px !important;
+    margin: 0;
+}
+
+.footer {
+    background-color: black !important;
+}
+
+@media (max-width:576px) {
+    .circle-background {
+        width: 160px;
+        height: 160px;
+    }
+
+    .row .data .circle-background img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .row .data:nth-child(2) .circle-background img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .para-cat {
+        font-size: 30px !important;
+    }
+}
+
+@media (min-width:1600px) {
+    .circle-background {
+        width: 250px;
+        height: 250px;
+    }
+
+    .row .data .circle-background img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .row .data:nth-child(2) .circle-background img {
+        width: 230px;
+        height: 230px;
+    }
+}

@@ -1,0 +1,29 @@
+.container-xl {
+  padding: 16px 24px;
+  margin: 0 auto;
+  max-width: 98% !important;
+}
+
+.link {
+  font-size: 20px;
+  display: inline-block;
+  width: auto !important;
+  padding: 0 15px;
+  font-weight: 500;
+  border-bottom: solid 0px rgb(211 47 47 / 1);
+}
+.link * {
+  transition: all ease-in-out 0.1s;
+}
+.link:hover * {
+  border-bottom: solid 3px rgb(211 47 47 / 1);
+}
+.active {
+  border-bottom: solid 3px rgb(211 47 47 / 1);
+}
+.circlaya {
+  top: -8px;
+  right: -8px;
+}
+@media screen and (max-width: 1024px) {
+}

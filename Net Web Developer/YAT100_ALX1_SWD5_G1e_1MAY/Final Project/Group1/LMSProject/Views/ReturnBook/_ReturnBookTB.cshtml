@@ -1,0 +1,143 @@
+﻿
+@model IEnumerable<BorrowedBookDetailsVM>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <td style="display:none"></td>
+                    <td style="display:none"></td>
+                    <td style="display:none"></td>
+                    <td style="display:none"></td>
+                    <th style="width: 5%;">#</th>
+                    <th scope="col" style="width: 10%;">Member No</th>
+                    <th scope="col" style="width: 30%;">Book Title</th>
+                    <th scope="col" style="width: 15%;">Borrow Date</th>
+                    <th scope="col" style="width: 15%;">To be Return On</th>
+                    <th scope="col" style="width: 10%;">Return</th>
+                    <th scope="col" style="width: 15%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var serial = 1;
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="display:none">@item.Id</td>
+                        <td style="display:none">@item.PrintSerial</td>
+                        <td style="display:none">@item.MemberId</td>
+                        <td style="display:none">@item.LRID</td>
+                        <td style="width: 5%;">@serial</td>
+                        <td style="width: 10%;">@item.MemberNo</td>
+                        <td style="width: 30%;">@item.BookTitle</td>
+                        <td style="width: 15%;">@item.BorrowDate.ToString("dd-MMM-yyyy")</td>
+                        <td style="width: 15%;">
+                            <span class="badge @(item.DefaultReturnDate < DateTime.Now ? "bg-danger" : "bg-secondary")"
+                                  style="width: 100%; display: block; text-align: center;">
+                                @item.DefaultReturnDate.ToString("dd-MMM-yyyy")
+                            </span>
+                        </td>
+                        <td style="width: 10%;">
+                            <form asp-action="UpdateReturnDate" asp-route-borrowId="@item.Id" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-info btn-sm w-100"
+                                @(item.DefaultReturnDate < DateTime.Now.Date ? "disabled" : "")>
+                                    Return
+                                </button>
+                            </form>
+                        </td>
+                        <td style="width: 15%;">
+                            @if (item.DefaultReturnDate < DateTime.Now.Date)
+                            {
+                                <a asp-controller="Penalty" asp-action="Details" asp-route-borrowId="@item.Id"
+                                   class="btn btn-danger btn-sm w-100">
+                                    Overdue Return
+                                </a>
+                            }
+                            else
+                            {
+                                <button class="btn btn-danger btn-sm w-100" disabled>Overdue Return</button>
+                            }
+                        </td>
+                    </tr>
+                    serial++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+    @* /////////////////////////////// *@
+@* <div class="row">
+    <div class="col-10">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td style="display:none"></td>
+                    <td style="display:none"></td>
+                    <td style="display:none"></td>
+                    <td style="display:none"></td>
+                    <td>#</td>
+                    <th scope="col">Member No</th>
+                    <th scope="col">Book Title</th>
+                    <th scope="col">Borrow Date</th>
+                    <th scope="col">To be Return On</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var serial = 1;
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="display:none">@item.Id</td>
+                        <td style="display:none">@item.PrintSerial</td>
+                        <td style="display:none">@item.MemberId</td>
+                        <td style="display:none">@item.LRID</td>
+                        <td>@serial</td>
+                        <td>@item.MemberNo</td>
+                        <td>@item.BookTitle</td>
+                        <td>@item.BorrowDate.ToString("dd-MMM-yyyy")</td>
+                        <td>
+                            <span class="badge @(item.DefaultReturnDate < DateTime.Now ? "bg-danger" : "bg-secondary")">
+                                @item.DefaultReturnDate.ToString("dd-MMM-yyyy")
+                            </span>
+                        </td>
+                        <td>
+                            <form asp-action="UpdateReturnDate" asp-route-borrowId="@item.Id" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-info" @(item.DefaultReturnDate < DateTime.Now.Date ? "disabled" : "")>Return</button>
+                            </form>
+                        </td>
+                        <td>
+                            @if (item.DefaultReturnDate < DateTime.Now.Date)
+                            {
+                            <td>
+                                <a asp-controller="Penalty" asp-action="Details" asp-route-borrowId="@item.Id"
+                                   class="btn btn-danger"> Overdue Return </a>
+                            </td>
+                            }
+                            else
+                            {
+                            <td>
+                                <button class="btn btn-danger" disabled>Overdue Return</button>
+                            </td>
+                            }
+
+                        </td>
+                    </tr>
+                    serial++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+ *@

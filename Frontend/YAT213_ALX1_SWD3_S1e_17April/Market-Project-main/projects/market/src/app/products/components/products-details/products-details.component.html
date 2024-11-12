@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="single-item row  align-items-center">
+    <div class="left-set col-md-12 col-sm-12 col-lg-6 d-flex justify-content-center">
+      <img src="{{productData.image}}" alt="" class="w-75" />
+    </div>
+    <div class="right-set col-md-12 col-sm-12 col-lg-6">
+      <div class="name">{{productData.title}}</div>
+      <div class="subname">{{productData.category}}</div>
+      <div class="price">{{productData.price | currency}}</div>
+      <div class="description">
+        <p>
+          {{productData.description}}
+        </p>
+      </div>
+
+      <!-- <button>ADD TO CART</button> -->
+
+      <button (click)="goBack()">back</button>
+    </div>
+  </div>
+</div>

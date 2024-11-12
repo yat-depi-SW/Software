@@ -1,0 +1,123 @@
+:root {
+    --main-color: #C5F82A;
+    --second-color: #B600FF;
+}
+
+body {
+    background-color: rgb(17, 16, 16);
+}
+
+@media (max-width: 768px) {
+    .bgImage h1 {
+        font-size: 65px;
+    }
+}
+
+/* Header Start */
+.bgImage {
+    height: 30vh;
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.bgImage::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.bgImage h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.bgImage h1 span {
+    color: var(--main-color)
+}
+
+/* Header End */
+/* main content start */
+
+.contact-content .text {
+    color: white;
+    text-align: center;
+    max-width: 28rem;
+    margin: auto;
+    padding: 30px 0 55px;
+    font-size: 21px;
+}
+
+.contact-content .text span {
+    color: var(--main-color)
+}
+
+.contact-content .container .form-floating {
+    padding: 0;
+}
+
+.contact-content .container .form-floating label {
+    color: #8D8D8D;
+    background-color: transparent;
+}
+
+.form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label::after {
+    background-color: transparent;
+}
+
+.contact-content .container .form-control {
+    background-color: transparent;
+    color: white;
+    border: var(--bs-border-width) solid #424242
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.2rem var(--main-color);
+}
+
+.contact-content .container .submit {
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--main-color);
+    transition: background-color 0.3s;
+}
+
+.contact-content .container .submit:hover {
+    color: var(--main-color);
+    background-color: transparent;
+
+}
+
+/* responsive main content start */
+@media (max-width: 768px) {
+    .map {
+        display: none;
+    }
+
+    .row {
+        justify-content: center;
+    }
+}
+
+/* responsive main content end */
+/* main content end */

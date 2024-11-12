@@ -1,0 +1,148 @@
+--- 
+- name: Configure Jenkins worker node
+  hosts: jenkins_worker_node
+  become: yes
+  vars_files: 
+    - aws_credentials.yaml
+  
+  tasks: 
+    - name: Update server
+      apt:
+        update_cache: yes
+
+    - name: Install java for jenkins
+      apt:
+        name: openjdk-11-jdk
+        state: present
+        update_cache: yes
+
+    - name: Install unzip and curl
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - unzip
+        - curl
+        - apt-transport-https
+        - ca-certificates
+        - software-properties-common
+        - jq
+
+    - name: Add AWS CLI GPG key
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+        state: present
+
+    - name: Download AWS CLI v2
+      get_url:
+        url: "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" 
+        dest: "/tmp/awscliv2.zip"
+
+    - name: Unzip AWS CLI Installer
+      unarchive:
+        src: "/tmp/awscliv2.zip"
+        dest: "/tmp/" 
+        remote_src: yes
+
+    - name: Install AWS CLI 
+      command: "/tmp/aws/install --update"
+      register: aws_cli_installation
+      ignore_errors: yes
+
+    - name: Create .aws directory
+      file:
+        path: "/home/{{ admin_user }}/.aws"
+        state: directory
+        owner: "{{ admin_user }}"
+        group: "{{ admin_user }}"
+        mode: '700'
+
+    - name: Create AWS Credentials file
+      copy:
+        dest: "/home/{{ admin_user }}/.aws/credentials"
+        content: |
+            [default]
+            aws_access_key_id = {{ aws_access_key }}
+            aws_secret_access_key = {{ aws_secret_key }}
+        owner: "{{ admin_user }}"
+        group: "{{ admin_user }}"
+        mode: '600'
+
+    - name: Create AWS Config file
+      copy:
+        dest: "/home/{{ admin_user }}/.aws/config"
+        content: |
+            [default]
+            region = {{ aws_default_region }}
+            outpu = json
+        owner: "{{ admin_user }}"
+        group: "{{ admin_user }}"
+        mode: '600'
+
+    - name: Download eksctl binary
+      get_url:
+        url: https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz
+        dest: /tmp/eksctl.tar.gz
+
+    - name: Extract eksctl
+      unarchive:
+        src: /tmp/eksctl.tar.gz
+        dest: /tmp/
+        remote_src: yes
+
+    - name: Move eksctl to usr/local/bin
+      copy:
+        src: /tmp/eksctl
+        dest: /usr/local/bin/eksctl
+        mode: '755'
+        remote_src: yes
+
+    - name: Add Docker GPG key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Add Docker repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Docker Engine and CLI
+      apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+        state: present    
+    
+    - name: Download kubectl binary
+      shell: |
+        curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+      args:
+        chdir: /tmp/ 
+    
+    - name: Download kubectl SHA256 checksum
+      shell: |
+        curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+      args:
+        chdir: /tmp/ 
+
+    - name: Install kubectl
+      shell: |
+        sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
+      args:
+        chdir: /tmp/ 
+
+    - name: Move kubectl to usr/local/bin
+      copy:
+        src: /tmp/kubectl
+        dest: /usr/local/bin/kubectl
+        mode: '755'
+        remote_src: yes
+     

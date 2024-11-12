@@ -1,0 +1,40 @@
+---
+- name: Build Docker
+  hosts: dockerservers
+  gather_facts: false
+  remote_user: root
+  tasks:
+    - name: stop Build Docker image
+      docker_image:
+        name: node:12
+        state: absent
+       
+    - name: Build Docker image
+      docker_image:
+        name: node:12
+        source: build
+        build:
+          path: ~/project/
+        state: present
+
+    - name: stop container
+      docker_container:
+        name: appslave
+        image: node:12
+        state: stopped
+
+    - name: absent container
+      docker_container:
+        name: appslave
+        image: node:12
+        state: absent
+
+    - name: creating container
+      docker_container:
+        name: appslave
+        image: node:12
+        volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+        ports:
+          - "3000:3000"
+        state: started

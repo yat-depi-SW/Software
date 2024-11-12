@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        document.getElementById('confirmButton').addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const lastName = document.getElementById('lastName').value;
+            const city = document.getElementById('city').value;
+            const hotel = document.getElementById('hotel').value;
+            const arrived = document.getElementById('arrived').value;
+            const traveling = document.getElementById('traveling').value;
+            const roomType = document.getElementById('roomType').value;
+    
+            // التحقق من صحة البيانات
+            if (!name || !lastName || !city || !hotel || !arrived || !traveling || !roomType) {
+                alert('Please fill out all fields');
+                return;
+            }
+    
+            // عرض رسالة التأكيد
+            const confirmationMessage = document.getElementById('confirmationMessage');
+            confirmationMessage.style.display = 'block';
+            confirmationMessage.innerText = `تم حجز الغرفة!\n\nالاسم: ${name} ${lastName}\nالمدينة: ${city}\nالفندق: ${hotel}\nتاريخ الوصول: ${arrived}\nتاريخ المغادرة: ${traveling}\nنوع الغرفة: ${roomType}`;
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="container" id="bookingContainer">
+    <h2> Booking</h2>
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+
+    <label for="hotel">city</label>
+    <select id="hotel" required>
+        <option value=""> city Type</option>
+        <option value="city1">city 1</option>
+        <option value="city2">city 2</option>
+        <option value="city3">city 3</option>
+    </select>
+
+    <label for="hotel">hotel</label>
+    <select id="hotel" required>
+        <option value=""> hotel Type</option>
+        <option value="hotel1">hotel 1</option>
+        <option value="hotel2">hotel 2</option>
+        <option value="hotel3">hotel 3</option>
+    </select>
+
+    <label for="arrived">arrived date </label>
+    <input type="date" id="arrived" required>
+
+    <label for="traveling">traveling date </label>
+    <input type="date" id="traveling" required>
+
+    <label for="roomType">Room  </label>
+    <select id="roomType" required>
+        <option value="Room Type">  Room Type</option>
+        <option value="single">single </option>
+        <option value="double"> double</option>
+    </select>
+
+    <button id="confirmButton">confirm Regesteration</button>
+
+    <div class="alert" id="confirmationMessage"></div>
+</div>
+
+
+
+</body>
+</html>

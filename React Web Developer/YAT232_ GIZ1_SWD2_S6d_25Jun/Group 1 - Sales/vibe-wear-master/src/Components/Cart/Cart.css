@@ -1,0 +1,73 @@
+h3 {
+  color: rgb(31 41 55);
+  i {
+    color: red;
+  }
+}
+
+.left {
+  button {
+    background-color: white;
+    border: 1px;
+  }
+
+  i {
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+  }
+}
+
+.left-cart {
+  width: 80%;
+  border-radius: 10px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.left-cart button {
+  width: 35px;
+  height: 35px;
+}
+.icon-box {
+  height: 170px;
+  width: 30px;
+  padding: 16px;
+}
+.icon-box span {
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+.icon-box:hover span {
+  opacity: 1;
+}
+.left-cart:hover ~ .icon-box span {
+  opacity: 1;
+}
+.shopping-cart {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+.right * {
+  margin: 3px 0;
+}
+.btn-red {
+  background: #d32f2f;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.btn-red:hover {
+  background: #d32f2f;
+  color: white;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.summary {
+  font-size: 18px;
+}

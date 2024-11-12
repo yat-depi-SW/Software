@@ -1,0 +1,37 @@
+/* Login.css */
+.login-form {
+    width: 300px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .login-form input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .login-form button {
+    padding: 0.75rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #4CAF50;
+  }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-container {
+      padding: 10px;
+  }
+
+  .login-form {
+      width: 100%;
+  }
+}

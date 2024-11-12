@@ -1,0 +1,34 @@
+header {
+  background-color: brown;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+
+  div {
+
+
+    .content {
+
+      // display: flex;
+      // justify-content: space-between;
+      color: white;
+      align-items: center;
+
+      h2 {}
+
+      ul {
+        // display: flex;
+        // justify-content: space-between;
+        color: white;
+        list-style: none;
+        font-weight: 600;
+
+
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

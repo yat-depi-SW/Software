@@ -1,0 +1,117 @@
+{
+  "users": [
+    {
+      "name": "Youssef Hossam",
+      "email": "y.hossam2274@gmail.com",
+      "gender": "male",
+      "password": "Lorem@12",
+      "id": 1,
+      "role": "admin",
+      "cart": []
+    },
+    {
+      "name": "Youssef",
+      "email": "youssef.hosman22@gmail.com",
+      "password": "Youssef@20@20",
+      "gender": "male",
+      "role": "user",
+      "id": 2,
+      "cart": []
+    },
+    {
+      "name": "Youssef",
+      "email": "youssef.hosman22@gmail.comm",
+      "password": "Youssef@20@20",
+      "gender": "male",
+      "role": "user",
+      "id": 3,
+      "cart": []
+    },
+    {
+      "name": "anas",
+      "email": "anas@gmail.com",
+      "password": "Anas@20@20",
+      "gender": "male",
+      "role": "user",
+      "id": 4,
+      "cart": []
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "Test@20@20",
+      "gender": "male",
+      "role": "user",
+      "id": 5,
+      "cart": []
+    }
+  ],
+  "products": [
+    {
+      "id": 3,
+      "name": "Apple AirPods",
+      "description": "With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.",
+      "price": 90,
+      "imgUrl": "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "id": 5,
+      "name": "Apple AirPods",
+      "description": "With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.",
+      "price": 90,
+      "imgUrl": "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "id": 6,
+      "name": "Apple AirPods",
+      "description": "With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.",
+      "price": 90,
+      "imgUrl": "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "imgUrl": "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+      "name": "Apple AirPods",
+      "rating": {
+        "rate": "4",
+        "count": 100
+      },
+      "price": 90,
+      "id": 9,
+      "description": "With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case."
+    },
+    {
+      "id": 10,
+      "name": "Apple AirPods",
+      "description": "With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.",
+      "price": 90,
+      "imgUrl": "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "imgUrl": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png",
+      "name": "Essence Mascara Lash Princess",
+      "rating": {
+        "rate": "1",
+        "count": "10"
+      },
+      "price": "15",
+      "id": 11,
+      "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula."
+    }
+  ]
+}

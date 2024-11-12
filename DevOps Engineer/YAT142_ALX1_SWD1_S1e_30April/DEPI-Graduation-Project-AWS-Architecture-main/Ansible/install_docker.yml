@@ -1,0 +1,20 @@
+---
+
+- hosts: aws_ec2
+  become: true
+  pre_tasks:
+  
+  - name: Update repository index (Ubuntu)
+    tags: always
+    apt:
+      update_cache: yes
+    changed_when: false
+    when: ansible_distribution == "Ubuntu"
+
+
+- name: Install Docker Engine on the private instances
+  hosts: aws_ec2
+  become: true
+  gather_facts: false
+  roles:
+    - docker

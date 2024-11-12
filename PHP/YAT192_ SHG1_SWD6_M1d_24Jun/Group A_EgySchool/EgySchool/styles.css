@@ -1,0 +1,242 @@
+/* إعدادات أساسية */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #f2a900;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: #00a9f2;
+    color: white;
+}
+
+.hero .btn {
+    background-color: #f2a900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e09900;
+}
+
+.courses {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.courses h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+}
+
+.course img {
+    width: 300px;
+    height: 230px;
+    border-bottom: 1px solid #ddd;
+}
+
+.course h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.course p {
+    padding: 0 15px;
+    color: #666;
+}
+
+.course .btn {
+    background-color: #00a9f2;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.course .btn:hover {
+    background-color: #008bcc;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background-color: #00a9f2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #008bcc;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #00a9f2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #008bcc;
+}
+
+/* تنسيق إضافي لصفحات تسجيل الدخول والتسجيل */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #00a9f2;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #008bcc;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-container p a {
+    color: #00a9f2;
+    text-decoration: none;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+/* التنسيق لجعل الصفحة متجاوبة */
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

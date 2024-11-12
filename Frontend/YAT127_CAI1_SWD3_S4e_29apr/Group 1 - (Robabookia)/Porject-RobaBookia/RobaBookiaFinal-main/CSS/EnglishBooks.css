@@ -1,0 +1,14 @@
+.filter-section{
+    text-align: left;
+}
+#search-categories{
+    text-align: left;
+}
+@media (max-width: 400px) {
+    .cards-container{
+      padding-inline: 0;
+    }
+    .btn-buy{
+      width: 131px;
+    }
+  }

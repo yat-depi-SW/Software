@@ -1,0 +1,6 @@
+<div>
+<label for="cat-id" class="form-label">{{title}}:</label>
+<select class="form-select form-select-lg" name="" id="cat-id" (change)="detectedValue($event)">
+  <option selected value="All">All</option>
+  <option value="{{option}}" *ngFor="let option of data">{{option}}</option>
+</select></div>

@@ -1,0 +1,124 @@
+$section-padding: 90px;
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+$light-background: rgba(248, 244, 225, 0.8);
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: $light-background;
+    border-radius: 12px;
+    box-shadow: $alt-light-color 0px 2px 12px -4px;
+    padding: 60px 30px;
+    animation: slideIn 1s ease-in-out, fadeIn 1.5s ease-in-out;
+
+    .contact-form {
+      flex: 1;
+
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        min-width: fit-content;
+        background-color: $alt-dark-color !important;
+        color: $light-color !important;
+        border-radius: 25px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $dark-color !important;
+        }
+      }
+    }
+
+    .image {
+      flex: 1;
+      position: relative;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+        margin: auto;
+        animation: rotateOnLoad 1.2s ease-in-out infinite alternate; // Infinite animation
+        border-radius: 10px; // Optional: rounded corners
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      // Shadow effect to give depth
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 10px; // Match border radius of image
+        opacity: 0; // Initially hidden
+        transition: opacity 0.5s ease; // Smooth transition for shadow
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+    padding: 0px 15px 40px !important;
+
+    .contact-form {
+      padding-right: 0 !important;
+      order: 2;
+    }
+
+    .image {
+      max-width: 100%;
+      padding: 30px 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+        img {
+        width: 200px !important;
+      }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotateOnLoad {
+  0% {
+    transform: scale(1.05) translateY(-15px);
+  }
+
+  100% {
+    transform: scale(1.05) translateY(15px);
+  }
+}

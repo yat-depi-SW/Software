@@ -1,0 +1,50 @@
+﻿
+@model List<BookandBorrowandBookStoreVM>
+<h2>Borrow History</h2>
+<hr />
+<table class="table table-hover table-bordered text-center shadow-sm">
+    <thead class="thead-dark">
+        <tr>
+
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>BorrowDate</th>
+            <th>To be Return on</th>
+            <th>Status</th>
+            <th>Penalty</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.BookTitle</td>
+                <td>@record.Author</td>
+                <td>@record.GenereOfBook</td>
+                <td>@record.BorrowDate.ToString("dd/MM/yyyy")</td>
+                <td>@record.DefaultReurnDate.ToString("dd/MM/yyyy")</td>
+                <td>
+
+
+                    <span class="badge @(record.Status == "Returned" ? "bg-success" : "bg-warning")"
+                          style="width: 100px; display: inline-block; text-align: center;">
+                        @record.Status
+                    </span>
+                </td>
+
+                <td>
+
+                    <span class="badge @((record.DefaultReurnDate<DateTime.Today && record.ReturnDate==null )
+                      ||(record.ReturnDate> record.DefaultReurnDate) ? "bg-danger" : "bg-success")"
+                          style="width: 100px; display: inline-block; text-align: center;">
+                        @((record.DefaultReurnDate < DateTime.Today && record.ReturnDate==null)
+                        ||(record.ReturnDate>record.DefaultReurnDate) ? "Penalty" : "No Penalty")
+                    </span>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,242 @@
+$section-padding: 90px;
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$alt-light-color: #af8f6f;
+$hover-bg-color: rgb(84, 51, 16);
+$card-bg-color: rgba(255, 255, 255, 0.8);
+$light-background: rgba(248, 244, 225, 0.8);
+
+/* Image Section */
+.landing-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: $dark-color;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(84, 51, 16, 0.3);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(235, 233, 226, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+  }
+
+  .text h1 {
+    font-size: 3em;
+    margin-bottom: 40px !important;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    a {
+      width: 200px;
+      background-color: $alt-dark-color;
+      color: $light-color;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: $dark-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-section {
+    .text {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-section {
+    .text {
+      width: 100%;
+      border-radius: 0;
+    }
+    .button-group {
+      a {
+        flex: 1;
+      }
+    }
+  }
+}
+
+/* Features Section */
+.features-section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+
+    .feature-item {
+      padding: 22px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+      i {
+        font-size: 48px;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 15px 0;
+        color: $dark-color;
+      }
+      p,
+      i {
+        color: $alt-dark-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .features-section {
+    .features {
+      gap: 20px;
+    }
+    i {
+      font-size: 44px;
+    }
+    h3 {
+      font-size: 26px !important;
+    }
+  }
+}
+/* Ending features-section */
+
+/* Categories Section */
+.categories-section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  background: url(../../../../public/images/tabitha-turner-Ns2aJ5OXKds-unsplash.jpg)
+    fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(94, 53, 10, 0.3);
+  }
+  .categories {
+    position: relative;
+    z-index: 5;
+    h2 {
+      color: $light-color !important;
+      margin-bottom: 60px !important;
+      &::after {
+        background-color: $light-color !important;
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 32px;
+      .category-card {
+        background-color: $light-background;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        color: $dark-color;
+
+        &:hover {
+          transform: translateY(-8px);
+          background-color: rgba(248, 244, 225, 0.85);
+        }
+
+        button {
+          background-color: $alt-dark-color;
+          color: $light-color;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+}
+/* Ending categories-section */
+
+/* Carousel styles */
+
+.container-xl.swiper-container-xl {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  .swiper-container {
+    position: relative !important;
+    overflow: hidden;
+
+    .item:hover {
+      box-shadow: none !important;
+    }
+
+    .nav-btns {
+      display: flex;
+      justify-content: space-between !important;
+      width: 100%;
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      transform: translateY(-50%) !important;
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: relative !important;
+      }
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 28px !important;
+        color: $dark-color !important;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 22px !important;
+    }
+  }
+}

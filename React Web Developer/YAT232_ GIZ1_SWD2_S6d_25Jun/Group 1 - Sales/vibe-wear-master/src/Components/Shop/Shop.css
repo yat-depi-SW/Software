@@ -1,0 +1,10 @@
+.header-shop {
+  font-size: 30px;
+  margin: 40px 0;
+  color: rgb(21 101 192);
+}
+.header-shop span {
+  font-weight: 800;
+  letter-spacing: 6px;
+  border-bottom: 3px solid #42a5f5;
+}

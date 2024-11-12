@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ancient Egyptian</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f7;
+}
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding-left: 50px;
+  border: 1px solid white;
+  background-color: white;
+  top: 8%;
+  left: 9%;
+  /* margin: 50px; */
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom:10px ;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+
+
+}
+.header .nav{
+  padding-left: 340px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin-left: 20px;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 7px;
+}
+.nav .btn {
+  padding: 10px 20px;
+  background-color:#00B98E;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.nav .dropdown,header {
+  position: relative;
+}
+.header
+{
+  z-index: 50;}
+  .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav .dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  width: 150px;
+}
+
+.nav .dropdown-content a:hover {
+  color: white;
+  background-color: #00B98E;
+}
+.btnm-imp
+{
+  text-decoration: none;
+  background-color: #020807;
+  padding: 15px;
+  color: #FFFFFF;
+  border-radius:5px;
+  width: 125px; 
+}
+.btnm-imp:hover
+{
+color: #FFFFFF !important;
+background-color: #01cb9c !important;
+}
+.nav .dropdown2 {
+  position: relative;
+}
+
+.nav .dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+}
+
+.nav .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.nav .dropdown-content2 a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+.nav .dropdown-content2 a:hover {
+  color: white;
+  background-color: #00B98E;
+}
+
+.nav a:hover {
+  color: #32c787;
+}
+
+.active a {
+  color: #32c787;
+}
+.logo{
+    text-decoration: none;
+    color: #020807;
+}
+
+
+
+   </style>
+</head>
+<body>
+    <div class="big-container">
+        <header class="header">
+            <a href="logo" class="logo"><span>visit</span> <span>Egypt</span>  </a>
+    
+            <ul class="nav">
+                <li class="active"><a href="ahmed.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="./VisitEgypt/index.html">categry</a>
+                    <div class="dropdown-content">
+                      <a href="../Ancient Egyptian monuments/ahmed2.html">Ancient Egyptian</a>
+                      <a href="../Islamic monuments/ahmed2.html">Islamic monuments</a>
+                      <a href="../Beach tourism/ahmed2.html">Beach tourism</a>
+                    </div>
+                </li>
+                <li class="dropdown2">
+                    <a href="./travel to egypt Hotels/Hotels.html">Hotels</a>
+                    <div  class="dropdown-content2">
+                    <a href="./travel to egypt Hotels/Hotels.html">Alexandria</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Hurghada</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Sharm El Sheikh</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Luxor</a>
+                    <a href="./travel to egypt Hotels/Hotels.html">Aswan</a>
+                </div>
+                </li>
+                <li><a href="./travel to egypt Blog/Blog.html">Blog</a></li>
+    
+                <li></li>
+            </ul>
+            <a href="./المشروع/Booking Form.html" class="btn btnm-imp">Booking</a>
+        </header>
+    <main>
+      <h1>Ancient Egyptian monuments</h1>
+      <p class="subtitle">
+        The best known example of ancient Egyptian architecture are the Egyptian
+        pyramids <br />
+        and Sphinx, while excavated temples, palaces, tombs, and fortresses
+      </p>
+      <div class="property-grid">
+        <div class="property-card">
+          <a href="#"
+            ><img src="images/AbydosFacade.jpg" alt="AbydosFacade"
+          /></a>
+          <h2>Abydos</h2>
+          <p>
+            Abydos is one of the oldest cities of ancient Egypt, and also of the
+            eighth nome in Upper Egypt
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="images/images (1).jpeg" alt="Villa" /></a>
+          <h2>Karnak</h2>
+          <p>
+            The Karnak Temple Complex, commonly known as Karnak, comprises a
+            vast mix of temples, pylons, chapels, and other buildings near
+            Luxor, Egypt.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="images/images (2).jpeg" alt="Home" /></a>
+          <h2>Mortuary Temple of Hatshepsut</h2>
+          <p>
+            The mortuary temple of Hatshepsut is a mortuary temple built during
+            the reign of Pharaoh Hatshepsut of the Eighteenth Dynasty of Egypt.
+            Located opposite the city of Luxor, it is considered to be a
+            masterpiece of ancient architecture.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="images/images (3).jpeg" alt="Office" /></a>
+          <h2>Valley of the Kings</h2>
+          <p>
+            The Valley of the Kings, also known as the Valley of the Gates of
+            the Kings, is an area in Egypt where, for a period of nearly 500
+            years from the Eighteenth Dynasty to the Twentieth Dynasty
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="images/images (4).jpeg" alt="Building" /></a>
+          <h2>Great Sphinx of Giza</h2>
+          <p>
+            The Great Sphinx of Giza is a limestone statue of a reclining
+            sphinx, a mythical creature with the head of a human and the body of
+            a lion
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="images/images.jpeg" alt="Townhouse" /></a>
+          <h2>The Great Pyramid of Giza</h2>
+          <p>
+            The Great Pyramid of Giza is the largest Egyptian pyramid. It served
+            as the tomb of pharaoh Khufu, who ruled during the Fourth Dynasty of
+            the Old Kingdom.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"
+            ><img src="images/licensed-image (1).jpeg" alt="Shop"
+          /></a>
+          <h2>Abu Simbel</h2>
+          <p>
+            Abu Simbel is a historic site comprising two massive rock-cut
+            temples in the village of Abu Simbel, Aswan Governorate, Upper
+            Egypt, near the border with Sudan.
+          </p>
+        </div>
+        <div class="property-card">
+          <a href="#"><img src="images/licensed-image.jpeg" alt="Garage" /></a>
+          <h2>Luxor Temple</h2>
+          <p>
+            The Luxor Temple is a large Ancient Egyptian temple complex located
+            on the east bank of the Nile River in the city today known as Luxor
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

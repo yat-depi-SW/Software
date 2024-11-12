@@ -1,0 +1,51 @@
+<nav class="navbar fixed-top navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand p-0" href="#">
+      <img src="images/logo2.PNG" alt="Bake House" width="60">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <div class="btn-group">
+            <button type="button" class="btn" routerLink="allProduct" routerLinkActive="active">Products</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="cake" routerLinkActive="active">Cake</a></li>
+              <li><a class="dropdown-item" routerLink="bakery" routerLinkActive="active">Bakery</a></li>
+              <li><a class="dropdown-item" routerLink="chocolate" routerLinkActive="active">Chocolate</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="offers" routerLinkActive="active">Offers</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact Us</a>
+        </li>
+      </ul>
+      <div class="btns">
+        <a class="name">Hello, {{firstName[0]}}</a>
+        <a routerLink="cart" routerLinkActive="active">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>{{getTotal()}}</span>
+        </a>
+        <a class="btn" role="button" (click)="signOut()">Sign Out</a>
+      </div>
+    </div>
+  </div>
+</nav>

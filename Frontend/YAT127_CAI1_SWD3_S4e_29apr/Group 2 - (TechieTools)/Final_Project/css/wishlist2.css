@@ -1,0 +1,157 @@
+:root {
+    --main-color: #C5F82A;
+    --second-color: #B600FF;
+}
+
+body {
+    background-color: rgb(17, 16, 16) !important;
+}
+
+
+/* start of header */
+
+.bgImage {
+    height: 30vh;
+    background-image: url(../images/wishlist.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.bgImage::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.bgImage h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 90px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    z-index: 1000;
+}
+
+.bgImage h1 span {
+    color: var(--main-color)
+}
+
+/* end of header */
+
+.titleCart {
+    color: white;
+    font-size: 55px;
+}
+
+/* start of table  */
+
+.container .table .custom-color tr {
+    background-color: gray;
+}
+
+
+.xmark {
+    padding: 12px;
+
+}
+
+.table-custom {
+    background-color: #181818;
+}
+
+
+.table {
+    --bs-table-color: rgb(255, 253, 253);
+    --bs-table-bg: black;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #8D8D8D;
+    text-align: center;
+}
+
+.table>thead {
+    background-color: #8D8D8D;
+
+}
+
+tbody .data {
+    font-weight: 800;
+}
+
+.table tr td:first-child {
+    width: 300px;
+}
+
+.table tr td:nth-child(2) {
+    font-family: "Bowlby One SC", serif;
+    text-transform: uppercase;
+
+}
+
+.table tr td:nth-child(3) {
+    font-family: "Bowlby One SC", serif;
+}
+
+.table img {
+    width: 55%;
+}
+
+/* end of table  */
+
+/* start of continue shopping button  */
+/* start of checkout */
+
+.btn-lime {
+    background-color: #ccff00;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-lime:hover {
+    background-color: #181818;
+    border: 1px solid #ccff00;
+    color: white;
+}
+
+.cont-btn {
+    background-color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.cont-btn:hover {
+    background-color: #181818;
+    border: 1px solid rgb(255, 250, 250);
+
+}
+
+
+.table-custom {
+    color: gray;
+    background-color: black;
+}
+
+.table tr:first-child th {
+    background-color: #282828;
+    color: #8D8D8D;
+}
+
+
+
+.hover:hover {
+    background-color: #1608d9;
+}
+
+/* end of checkout */
+/* end of continue shopping button  */

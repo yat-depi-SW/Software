@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <title>TechieTools | Register</title>
+    <link rel="icon" href="logo/web-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="logo/brand_logo.png" width="150" height="50"
+                    alt="Brand Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="shopping">
+                    <span class="card"><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i> </a></span>
+                    <span class="wishlist"><a href="wishlist2.html"><i class="fa-regular fa-heart"></i></a></span>
+                </div>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ourtime.html">Our Team</a></li>
+                            <li><a class="dropdown-item" href="AboutUs.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catrgories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex btnContainer" role="search">
+                    <a href="#"><button class="button register">Register</button></a>
+                    <a href="login.html"><button class="button login">Login</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of register page content -->
+    <div class="container-fluid background"></div>
+    <div class="container-fluid row m-0 justify-content-center align-items-center" style="height: 100vh;">
+        <div class="container register-container col-11 col-md-9 col-lg-8 col-xl-7 col-xxl-6">
+            <h1>Register</h1>
+            <div class="form row justify-content-center">
+                <div class="form-floating mb-4 col-6">
+                    <input type="text" class="form-control" id="firstName" style="width: 96%;" placeholder="First Name"
+                        required>
+                    <label for="firstName">First Name</label>
+                    <div id="firstNameError" class="error text-danger"></div>
+                </div>
+                <div class="form-floating mb-4 col-6">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    <label for="lastName">Last Name</label>
+                    <div id="lastNameError" class="error text-danger"></div>
+                </div>
+                <div class="form-floating mb-4 col-12">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <label for="email"><i class="fa-solid fa-envelope" style="margin-right: 5px;"></i> Email</label>
+                    <div id="emailError" class="error text-danger"></div>
+                </div>
+                <div class="form-floating mb-4 col-12">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <label for="password"><i class="fa-solid fa-lock" style="margin-right: 5px;"></i> Password</label>
+                    <button type="button" class="btn btn-outline-secondary" id="togglePasswordVisibility"
+                        style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">
+                        <i class="fa-solid fa-eye" id="togglePasswordIcon"></i>
+                    </button>
+                    <div id="passwordError" class="error text-danger"></div>
+                </div>
+                <div class="form-floating mb-4 col-12">
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"
+                        required>
+                    <label for="confirmPassword"><i class="fa-solid fa-lock" style="margin-right: 5px;"></i> Confirm
+                        Password</label>
+                    <button type="button" class="btn btn-outline-secondary" id="toggleConfirmPasswordVisibility"
+                        style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">
+                        <i class="fa-solid fa-eye" id="toggleConfirmPasswordIcon"></i>
+                    </button>
+                    <div id="confirmPasswordError" class="error text-danger"></div>
+                </div>
+
+                <button type="button" class="btn mb-3 submit" onclick="validateForm()">Sign Up</button>
+                <p class='text'>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- End of register page content -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Register.js"></script>
+</body>
+
+</html>

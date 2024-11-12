@@ -1,0 +1,74 @@
+---
+- hosts: all
+  become: yes
+
+  vars:
+    ansible_ssh_common_args: >-
+      -o ProxyCommand="ssh -o StrictHostKeyChecking=no -W %h:%p -i ~/.ssh/mykey ubuntu@{{ hostvars['frontend-server'].ansible_host }}"
+    ansible_user: ubuntu
+  tasks:
+    - name: install required packages
+      apt:
+        name: 
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3
+          - python3-venv
+          - python3-pip
+          - python3-docker
+        state: present
+        update_cache: yes
+
+    - name: Install Docker using convenience script
+      shell: |
+        curl -fsSL https://get.docker.com -o get-docker.sh
+        sh get-docker.sh
+      args:
+        executable: /bin/bash
+  
+    - name: install docker compose
+      apt:
+        name: 
+          - docker-compose-plugin
+        state: present
+        update_cache: yes
+
+    - name: Create a virtual environment
+      command: python3 -m venv /opt/myenv
+
+    - name: Install Docker SDK for Python in virtual environment
+      command: /opt/myenv/bin/pip install docker
+      args:
+        creates: /opt/myenv/lib/python3.12/site-packages/docker
+
+    - name: Set Python interpreter for Ansible
+      set_fact:
+        ansible_python_interpreter: /opt/myenv/bin/python
+
+    - name: ensure Docker service is started
+      service:
+        name: docker
+        state: started
+        enabled: yes
+        
+    - name: add user to the docker group
+      user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: yes
+
+    - name: Add user to the sudo group (if not already a member)
+      user:
+        name: "{{ ansible_user }}"
+        groups: sudo
+        append: yes
+
+    - name: Get docker version for verification
+      shell: docker --version
+      register: docker_version
+
+    - name: Display docker version
+      debug:
+        msg: "Docker version: {{ docker_version.stdout }}"

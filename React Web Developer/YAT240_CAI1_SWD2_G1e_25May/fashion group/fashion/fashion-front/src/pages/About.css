@@ -1,0 +1,22 @@
+/* About.css */
+.about {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about img {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .about-container {
+      padding: 10px;
+  }
+
+  .about-image {
+      max-width: 90%;
+  }
+}

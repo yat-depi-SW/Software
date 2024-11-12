@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home / RobaBookia</title>
+    <link rel="icon" href="Img/transparent icon2.png" />
+    <link rel="stylesheet" href="CSS/Home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style id="internal-style"></style>
+    <!-- Preloader-page -->
+    <div class="loader">
+      <div class="img">
+        <img class="pre-image" src="Imge/elhag.webp"/>
+      </div>
+      <div class="img">
+        <img class="pre-image" src="Imge/kids.webp" loading="lazy"/>
+      </div>
+      <div class="img">
+        <img class="pre-image" src="Imge/m.webp" loading="lazy"/>
+      </div>
+      <div class="img">
+        <img class="pre-image" src="Imge/old-fashioned-bookstore.webp" loading="lazy"/>
+      </div>
+      <div class="img">
+        <img class="pre-image" src="Imge/old-man-reading.webp" loading="lazy"/>
+      </div>
+      <div class="img">
+        <img class="pre-image" src="Imge/old-man-reading.webp" loading="lazy"/>
+      </div>
+      <div class="img">
+        <img class="pre-image" src="Imge/RobaBookia-large logo.webp" loading="lazy"/>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="col">
+        <h2><div style="font-size: 3rem;">An Egyptian</div></h2>
+        <h2><div style="font-size: 3rem;">RobaBookia Bookstore</div></h2>
+        <h2><div style="font-size: 3rem;">based in Egypt</div></h2>
+        <h2><div style="font-size: 1rem; display: none;" class="responsive-show"><span>Click</span> anywhere to continue</div></h2>
+      </div>
+
+      <div class="col second-col">
+        <div style="font-size: 1rem;"><span>Click</span> anywhere to continue</div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <!-- Navbar HTML -->
+    <header>
+      <div class="navbar" id="navbar">
+        <div
+          class="menu-icon"
+          onclick="showMenu()"
+          onmouseover="changeTitle('OPEN MENU')"
+          onmouseout="resetTitle()"
+          id="menuIcon"
+        >
+          <span></span>
+          <span></span>
+        </div>
+        <div class="navbar-title" id="navbarTitle">RobaBookia</div>
+        <div class="info-icon" id="infoIcon">
+          <span style="font-family: 'Roboto Mono', monospace;">i</span>
+        </div>
+      </div>
+    </header>
+    <!-- Popover Menu (Initially Hidden) -->
+    <div id="menu">
+      <svg
+        class="close"
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#f4d8c0"
+        onclick="hideMenu()"
+      >
+        <path
+          d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+        />
+      </svg>
+      <div id="menu-items">
+        <!-- I made these divs instead of links so you can click on mobile to view the effect -->
+        <div class="menu-item"><a class="menu-links" href="index.html">Home</a></div>
+        <div class="menu-item"><a class="menu-links" href="readBook.html">Arabic Books</a></div>
+        <div class="menu-item"><a class="menu-links" href="EnglishBooks.html">English Books</a></div>
+        <div class="menu-item"><a class="menu-links" href="Suggest-Section.html">Suggest a book</a></div>
+        <div class="menu-item"><a class="menu-links" href="about.html">About-Us</a></div>
+        <div class="menu-item"><a class="menu-links" href="Contact2.html">Contact-Us</a></div>
+        <div class="menu-item"><a class="menu-links" href="Form.html">Login/Signin</a></div>
+        <div class="menu-item"><a class="menu-links" href="error.html">ERROR 404</a></div>
+      </div>
+
+      <div id="menu-background-image"></div>
+    </div>
+    <div class="wrapper">
+      <div class="intro">
+        <div id="handmaid" class="book">
+          <div class="gloss"></div>
+          <img
+            class="cover"
+            src="Img/RobaBookia-Book-Logo 2.jpg"
+            alt="RobaBookia Book Cover"
+          />
+          <div class="description">
+            <h1>RobaBookia</h1>
+            <hr />
+            <p>
+              <span style="font-weight: bold"><span style="font-size:20px; color: #b08e60;">R</span>obaBookia</span> goes beyond just
+              buying books; it transforms the reading experience into something
+              special. Our innovative virtual bookshelf allows users to create
+              their own collections, making it feel as though they are holding
+              physical copies in their hands. This feature fosters a sense of
+              ownership and pride in one’s literary pursuits. Additionally,
+              readers can share their thoughts and reviews, creating an
+              interactive dialogue that enhances the community feeling.
+              Moreover, RobaBookia thrives on connecting like-minded
+              individuals. Users can join book clubs, participate in
+              discussions, and attend virtual events hosted by authors and
+              literary experts.
+            </p>
+            <br />
+            <blockquote style="text-align: center">
+              <span style="font-weight: bold">Made by:</span> <br /><i
+                >Ahmed AbdelFattah</i
+              >
+              <br /><i>Abanob Nader</i> <br /><i>Joseph Lotfy</i> <br /><i
+                >Marihan Ehab</i
+              >
+              <br /><i>Mohamed Mahmoud</i> <br /><i>Raghad Hany</i>
+            </blockquote>
+          </div>
+        </div>
+        <audio
+          id="hover-audio"
+          src="STREAMING-heaven-s-gates-short-soundroll-3-00-08.mp3"
+        ></audio>
+      </div>
+      <div class="content">
+        <section class="section hero"></section>
+        <!--Marquee slider-->
+        <main>
+          <div
+            class="slider"
+            reverse="true"
+            style="--width: 200px; --height: 200px; --quantity: 9"
+          >
+            <div class="list">
+              <div class="item" style="--position: 1">
+                <img src="Imge/slider2_1.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 2">
+                <img src="Imge/slider2_2.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 3">
+                <img src="Imge/slider2_3.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 4">
+                <img src="Imge/slider2_4.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 5">
+                <img src="Imge/slider2_5.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 6">
+                <img src="Imge/slider2_6.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 7">
+                <img src="Imge/slider2_7.jpeg" alt="" />
+              </div>
+              <div class="item" style="--position: 8">
+                <img src="Imge/slider2_8.jpeg" alt="" />
+              </div>
+              <div class="item" style="--position: 9">
+                <img src="Imge/slider2_9.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </main>
+          <div class="test">
+            <div class="test-phrase">
+              <span style="display: block;">If you can’t find it at the library, WE HAVE IT!</span>
+              <div style="margin-top: 25px;"><span class="phrase-two"><span class="phrase-two" style="font-weight: bold; color: #b08e60;">RobaBookia</span>: “Discover the World One Book at a Time.”</span></div>
+            </div>
+            <div class="books-buttons">
+              <a href="EnglishBooks.html"><button class="book-button">English Books</button></a>
+              <a href="readBook.html"><button class="book-button">Arabic Books</button></a>
+            </div>
+          </div>
+        </section>
+<!--Book carousel section-->
+        <section class="featured-books">
+          <h2 class="carousel-h2">Featured Books</h2>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="book-card">
+                <img src="Imge/Brother.webp" alt="Sulthan Variyam Kunnan" />
+                <div class="book-info">
+                  <h3>The Brothers Karamazov</h3>
+                  <p>Fyodor Dostovsky</p>
+                  <div class="rating">★★★★★ (25 Ratings)</div>
+                  <p class="price">L.E. 522 <span>L.E. 550 (5% OFF)</span></p>
+                  <a href="EnglishBooks.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+    
+              <div class="book-card">
+                <img src="Imge/amanos.webp" alt="The Book Thief" />
+                <div class="book-info">
+                  <h3>أمانوس</h3>
+                  <p>حنان لاشين</p>
+                  <div class="rating">★★★★★ (50 Ratings)</div>
+                  <p class="price">L.E. 404 <span>L.E. 449 (10% OFF)</span></p>
+                  <a href="readBook.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+    
+              <div class="book-card">
+                <img src="Img/lamplighter.webp" alt="The Kite Runner" />
+                <div class="book-info">
+                  <h3>The Lamplighter</h3>
+                  <p>Crystal J. Bell</p>
+                  <div class="rating">★★★★★ (45 Ratings)</div>
+                  <p class="price">L.E. 629 <span>L.E. 699 (10% OFF)</span></p>
+                  <a href="EnglishBooks.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+    
+              <div class="book-card">
+                <img src="Imge/fattny-salah.webp" alt="The Kite Runner" />
+                <div class="book-info">
+                  <h3>فاتتنى صلاة</h3>
+                  <p>اسلام جمال</p>
+                  <div class="rating">★★★★★ (39 Ratings)</div>
+                  <p class="price">L.E. 629 <span>L.E. 699 (10% OFF)</span></p>
+                  <a href="readBook.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+    
+              <div class="book-card">
+                <img src="Imge/onsa-ebrya.webp" alt="The Kite Runner" />
+                <div class="book-info">
+                  <h3>فى قلبى أنثة عبرية</h3>
+                  <p>خولة حمدى</p>
+                  <div class="rating">★★★★★ (100 Ratings)</div>
+                  <p class="price">L.E. 629 <span>L.E. 699 (10% OFF)</span></p>
+                  <a href="readBook.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+    
+              <div class="book-card">
+                <img src="Imge/Harry Potter.webp" alt="The Kite Runner" />
+                <div class="book-info">
+                  <h3>Harry Potter and the Philosopher's Stone</h3>
+                  <p>J.K. Rowling</p>
+                  <div class="rating">★★★★★ (71 Ratings)</div>
+                  <p class="price">L.E. 629 <span>L.E. 699 (10% OFF)</span></p>
+                  <a href="EnglishBooks.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+    
+              <div class="book-card">
+                <img src="Img/obal.webp" alt="The Kite Runner" />
+                <div class="book-info">
+                  <h3>أوبال</h3>
+                  <p>حنان لاشين</p>
+                  <div class="rating">★★★★★ (95 Ratings)</div>
+                  <p class="price">L.E. 629 <span>L.E. 699 (10% OFF)</span></p>
+                  <a href="readBook.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+
+              <div class="book-card">
+                <img src="Imge/lordRings.webp" alt="The Kite Runner" />
+                <div class="book-info">
+                  <h3>The Lord Of The Rings</h3>
+                  <p>J.R.R. Tolkien</p>
+                  <div class="rating">★★★★★ (13 Ratings)</div>
+                  <p class="price">L.E. 629 <span>L.E. 699 (10% OFF)</span></p>
+                  <a href="EnglishBooks.html"><button class="book-btn">See The Book</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-arrows">
+            <button class="prev-btn"><span class="cent">❮</span></button>
+            <button class="next-btn"><span class="cent">❯</span></button>
+          </div>
+        </section>
+        <!--Another Marquee-->
+        <main style="margin-top: 0px;">
+          <div
+        class="slider"
+        reverse="true"
+        style="--width: 200px; --height: 200px; --quantity: 9"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img class="item-icon" src="Img/transparent icon2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img class="item-icon" src="Img/transparent icon2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img class="item-text" src="Img/logo-text.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img class="item-icon" src="Img/transparent icon2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img class="item-text" src="Img/logo-text.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img class="item-icon" src="Img/transparent icon2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img class="item-text" src="Img/logo-text.png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img class="item-icon" src="Img/transparent icon2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img class="item-text" src="Img/logo-text.png" alt="" />
+          </div>
+        </div>
+      </div>
+        </main>        
+      </div>
+  
+<!--Choice of the week-->
+<div class="choice">
+  <div class="center listt flex flex-col">
+    <h2 class="choice-h2">Choice of the week</h2>
+
+    <!-- Card 1 -->
+    <div class="card flex flex-row cursor-pointer" onclick="toggleDetails(this)">
+      <img src="Imge/fattny-salah.webp" class="bookk" />
+      <div class="flex flex-col info">
+        <div class="title">فاتتني صلاة</div>
+        <div class="author">اسلام جمال</div>
+        <div style="font-size: 1rem;" class="summary hidden mt-4 text-white">
+كتاب فاتتنى صلاة للكاتب اسلام جمال مهم لكل مسلم
+        </div>
+      </div>
+      <div class="flex flex-col groupp items-center">
+        <div class="members">
+          <span class="current">1</span> / <span class="max">3</span>
+        </div>
+        <div class="hidden mt-4">
+          <button class="simple bg-blue-500 text-white px-4 py-2 rounded">Read</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card flex flex-row cursor-pointer" onclick="toggleDetails(this)">
+      <img src="Imge/3-gernata.webp" class="bookk" />
+      <div class="flex flex-col info">
+        <div class="title">ثلاثية غرناطة</div>
+        <div class="author">رضوي عاشور</div>
+        <div style="font-size: 1rem;" class="summary hidden mt-4 text-white">
+          ثلاثية غرناطة من ثلاث روايات للكاتبة المصرية رضوى عاشور.
+        </div>
+      </div>
+      <div class="flex flex-col groupp items-center">
+        <div class="members">
+          <span class="current">2</span> / <span class="max">3</span>
+        </div>
+        <div class="hidden mt-4">
+          <button class="simple bg-blue-500 text-white px-4 py-2 rounded">Read</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card flex flex-row cursor-pointer" onclick="toggleDetails(this)">
+      <img src="Imge/onsa-ebrya.webp" class="bookk" />
+      <div class="flex flex-col info">
+        <div class="title">فى قلبى أنثة عبرية</div>
+        <div class="author">خولة حمدى</div>
+        <div style="font-size: 1rem;" class="summary hidden mt-4 text-white">
+        رواية في قلبي أنثى عبرية تأليف خولة حمدي رواية عظيمة.
+        </div>
+      </div>
+      <div class="flex flex-col groupp items-center">
+        <div class="members">
+          <span class="current">3</span> / <span class="max">3</span>
+        </div>
+        <div class="hidden mt-4">
+          <a href="index3/index3.html"><button class="simple bg-blue-500 text-white px-4 py-2 rounded">Read</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          <!--Testimonial section-->
+    <section class="py-24" style="padding-bottom: 0rem;">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-16">
+          <span style='font-size: 2.5rem  !important;color: black;font-family: "Courier New", Courier, monospace; font-weight: bold; line-height: 1;' class="text-sm text-gray-500 font-medium text-center block mb-2"
+            >What our happy users say!</span
+          >
+        </div>
+        <!--Slider wrapper-->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper w-max">
+            <div class="swiper-slide">
+              <div
+                class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-indigo-600 hover:shadow-sm slide_active:border-indigo-600"
+              >
+                <div class="">
+                  <div
+                    class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                        fill="rgb(240, 155, 12)"
+                      />
+                    </svg>
+                    <span class="text-base font-semibold text-indigo-600"
+                      >5</span
+                    >
+                  </div>
+                  <p
+                    class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                  >
+                    RobaBookia is the best store ever! Thank you for existing!
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5"
+                >
+                  <img
+                    class="rounded-full h-10 w-10 object-cover"
+                    src="https://pagedone.io/asset/uploads/1696229969.png"
+                    alt="avatar"
+                  />
+                  <div class="block">
+                    <h5
+                    style="font-weight: bold;"
+                      class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                    >
+                      Habiba Mo.
+                    </h5>
+                    <span class="text-sm leading-4 text-gray-500"
+                      >Premium user</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="group bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500 w-full mx-auto hover:border-indigo-600 slide_active:border-indigo-600 hover:shadow-sm"
+              >
+                <div class="">
+                  <div
+                    class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                        fill="rgb(240, 155, 12)"
+                      />
+                    </svg>
+                    <span class="text-base font-semibold text-indigo-600"
+                      >4.9</span
+                    >
+                  </div>
+                  <p
+                    class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                  >
+                    I had the best journey with RobaBookia, what a tremendous
+                    platform!
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-5 pt-5 border-t border-solid border-gray-200"
+                >
+                  <img
+                    class="rounded-full h-10 w-10 object-cover"
+                    src="https://pagedone.io/asset/uploads/1696229994.png"
+                    alt="avatar"
+                  />
+                  <div class="block">
+                    <h5
+                    style="font-weight: bold;"
+                      class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                    >
+                      Hisham S.
+                    </h5>
+                    <span class="text-sm leading-4 text-gray-500"
+                      >Premium user</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex justify-between flex-col lg:w-full group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-indigo-600 hover:border-indigo-600 hover:shadow-sm"
+              >
+                <div class="">
+                  <div
+                    class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                        fill="rgb(240, 155, 12)"
+                      />
+                    </svg>
+                    <span class="text-base font-semibold text-indigo-600"
+                      >4.9</span
+                    >
+                  </div>
+                  <p
+                    class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                  >
+                    RobaBookia is the best bookstore ever! what a team!
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5"
+                >
+                  <img
+                    class="rounded-full h-10 w-10 object-cover"
+                    src="	https://pagedone.io/asset/uploads/1696230027.png"
+                    alt="avatar"
+                  />
+                  <div class="block">
+                    <h5
+                    style="font-weight: bold;"
+                      class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                    >
+                      John N.
+                    </h5>
+                    <span class="text-sm leading-4 text-gray-500">User</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="group bg-white border border-solid border-gray-300 rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-indigo-600 hover:border-indigo-600 hover:shadow-sm"
+              >
+                <div class="">
+                  <div
+                    class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                        fill="rgb(240, 155, 12)"
+                      />
+                    </svg>
+                    <span class="text-base font-semibold text-indigo-600"
+                      >5</span
+                    >
+                  </div>
+                  <p
+                    class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                  >
+                    RobaBookia has made it possible for a great digital reading.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5"
+                >
+                  <img
+                    class="rounded-full h-10 w-10 object-cover"
+                    src="https://pagedone.io/asset/uploads/1696229969.png"
+                    alt="avatar"
+                  />
+                  <div class="block">
+                    <h5
+                    style="font-weight: bold;"
+                      class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                    >
+                      Salma Ibr.
+                    </h5>
+                    <span class="text-sm leading-4 text-gray-500"
+                      >Premium user
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="group bg-white border border-solid border-gray-300 flex justify-between flex-col rounded-xl p-6 transition-all duration-500 w-full mx-auto slide_active:border-indigo-600 hover:border-indigo-600 hover:shadow-sm"
+              >
+                <div class="">
+                  <div
+                    class="flex items-center mb-7 gap-2 text-amber-500 transition-all duration-500"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                        fill="rgb(240, 155, 12)"
+                      />
+                    </svg>
+                    <span class="text-base font-semibold text-indigo-600"
+                      >4.9</span
+                    >
+                  </div>
+                  <p
+                    class="text-base text-gray-600 leading-6 transition-all duration-500 pb-8 group-hover:text-gray-800 slide_active:text-gray-800"
+                  >
+                    Thanks to RobaBookia, I truly felt that the book is in my
+                    hands.
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-5 pt-5 border-t border-solid border-gray-200"
+                >
+                  <img
+                    class="rounded-full h-10 w-10 object-cover"
+                    src="https://pagedone.io/asset/uploads/1696229994.png"
+                    alt="avatar"
+                  />
+                  <div class="block">
+                    <h5
+                    style="font-weight: bold;"
+                      class="text-gray-900 font-medium transition-all duration-500 mb-1"
+                    >
+                      Islam A.
+                    </h5>
+                    <span class="text-sm leading-4 text-gray-500"
+                      >Premium user</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+        <!--Team section-->
+        <section class="team-sec">
+          <h2 class="choice-h2" style="margin-top:0px;">Developers behind <span>RobaBookia</span></h2>
+          <div class="team-cards">
+            <!-- First Row -->
+            <div class="team-card">
+              <img class="team-img" src="assets/img1.png" alt="Franklin Carlson" />
+              <div class="card-content">
+                <h3>Abanob Nader</h3>
+                <p>The Fastest</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img class="team-img" src="assets/img2.png" alt="Antonia Moore" />
+              <div class="card-content">
+                <h3>Ahmed AbdelFattah</h3>
+                <p>The Whisperer</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img class="team-img" src="assets/img3.png" alt="Travis Lynch" />
+              <div class="card-content">
+                <h3>Joseph Lotfy</h3>
+                <p>The Game Changer</p>
+              </div>
+            </div>
+    
+            <!-- Second Row -->
+            <div class="team-card">
+              <img class="team-img" src="assets/img4.png" alt="New Person 1" />
+              <div class="card-content">
+                <h3>Marihan Ehab</h3>
+                <p>The artist</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img class="team-img" src="assets/img5.png" alt="New Person 2" />
+              <div class="card-content">
+                <h3>Mohamed Mahmoud</h3>
+                <p>The Fearless One</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img class="team-img" src="assets/img6.png" alt="New Person 3" />
+              <div class="card-content">
+                <h3>Raghad Hany</h3>
+                <p>The Calm Presence</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      <div class="image-container">
+        <img src="Img/side-trees.png" alt="Side Trees" />
+      </div>
+       <!--Footer-->
+       <footer class="footer" id="fot">
+        <div class="container-footer">
+            <div class="Box-f one">
+                <h3 class="logo">Robabookia</h3>
+                <ul class="social">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            
+                </ul>
+                <p class="text">Robabookia - Your go-to destination for books! Explore a wide range of titles across various genres with fast and easy shopping.</p>
+            </div>
+            <div class="Box-f two">
+              <!--  -->
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li class="Books"><a href="EnglishBooks.html" class="eng">English-Books</a>
+                  <a href="readBook.html" class="arb">Arabic-Books</a></li>
+                <li><a href="Suggest-Section.html">Suggest a book  </a></li>
+                <li><a href="about.html">About-Us</a></li>
+                <li><a href="Contact2.html">Contact Us</a></li>
+            </ul>
+                <!--  -->
+            </div>
+            <div class="Box-f three">
+                <div class="linf"><i class="fa-solid fa-location-dot"></i><div class="info">Cairo, Egypt, Book Street, No. 123</div></div>
+                <div class="linf"><i class="fa-solid fa-clock"></i><div class="info">Saturday to Thursday: 9:00 AM - 8:00 PM
+                <br>   Friday: Closed
+                    </div></div>
+                <div class="linf"><i class="fa-solid fa-phone"></i><div class="info">+00 110 111 00</div></div>
+            </div>
+            <div class="carf-flex">
+                <div class="carf">
+                    <div class="banner"><span class="banner-text">SUBSCRIBE</span><span class="banner-text">JOIN US</span></div>
+                    <span class="carf__title"> Robabookia  </span>
+                    <p class="carf__subtitle">"Get fresh book recommendations and exclusive offers to your inbox every week."</p>
+                    <form class="carf__form" id="subscribeForm">
+                        <input id="emailInput" placeholder="Your Email" type="email" required>
+                        <button class="sign-up" type="submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>    
+    <script src="JS/Home.js"></script>
+  </body>
+</html>

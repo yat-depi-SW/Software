@@ -1,0 +1,409 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MobiStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MobiStore.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\images\\MobiStore Logo.png",
+      "PackagePath": "staticwebassets\\images\\MobiStore Logo.png"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\images\\hero.png",
+      "PackagePath": "staticwebassets\\images\\hero.png"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\images\\hero1.png",
+      "PackagePath": "staticwebassets\\images\\hero1.png"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\images\\icon.png",
+      "PackagePath": "staticwebassets\\images\\icon.png"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\images\\icon1.png",
+      "PackagePath": "staticwebassets\\images\\icon1.png"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\10590390.jpg",
+      "PackagePath": "staticwebassets\\products\\10590390.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\10744695.jpg",
+      "PackagePath": "staticwebassets\\products\\10744695.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\10967363.jpg",
+      "PackagePath": "staticwebassets\\products\\10967363.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\11677601.jpg",
+      "PackagePath": "staticwebassets\\products\\11677601.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\11736965.jpg",
+      "PackagePath": "staticwebassets\\products\\11736965.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\12643487.jpg",
+      "PackagePath": "staticwebassets\\products\\12643487.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\15587367.jpg",
+      "PackagePath": "staticwebassets\\products\\15587367.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\16303427.jpg",
+      "PackagePath": "staticwebassets\\products\\16303427.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\17327675.jpg",
+      "PackagePath": "staticwebassets\\products\\17327675.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\20241015045339095.webp",
+      "PackagePath": "staticwebassets\\products\\20241015045339095.webp"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\22866337.jpg",
+      "PackagePath": "staticwebassets\\products\\22866337.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\35640104.jpg",
+      "PackagePath": "staticwebassets\\products\\35640104.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\41732775.jpg",
+      "PackagePath": "staticwebassets\\products\\41732775.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\46411326.jpg",
+      "PackagePath": "staticwebassets\\products\\46411326.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\57380538.jpg",
+      "PackagePath": "staticwebassets\\products\\57380538.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\57415624.jpg",
+      "PackagePath": "staticwebassets\\products\\57415624.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\63529756.jpg",
+      "PackagePath": "staticwebassets\\products\\63529756.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\65286227.jpg",
+      "PackagePath": "staticwebassets\\products\\65286227.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\66017605.jpg",
+      "PackagePath": "staticwebassets\\products\\66017605.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\66899970.jpg",
+      "PackagePath": "staticwebassets\\products\\66899970.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\69725864.jpg",
+      "PackagePath": "staticwebassets\\products\\69725864.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\72426380.jpg",
+      "PackagePath": "staticwebassets\\products\\72426380.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\75241241.jpg",
+      "PackagePath": "staticwebassets\\products\\75241241.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\80522267.jpg",
+      "PackagePath": "staticwebassets\\products\\80522267.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\81882367.jpg",
+      "PackagePath": "staticwebassets\\products\\81882367.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\83655305.jpg",
+      "PackagePath": "staticwebassets\\products\\83655305.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\84600886.jpg",
+      "PackagePath": "staticwebassets\\products\\84600886.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\89890247.jpg",
+      "PackagePath": "staticwebassets\\products\\89890247.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\91537624.jpg",
+      "PackagePath": "staticwebassets\\products\\91537624.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\92970713.jpg",
+      "PackagePath": "staticwebassets\\products\\92970713.jpg"
+    },
+    {
+      "Id": "E:\\DEPI\\Final_project\\MobiStore\\MobiStore\\wwwroot\\products\\97815739.jpg",
+      "PackagePath": "staticwebassets\\products\\97815739.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MobiStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MobiStore.props",
+      "PackagePath": "build\\MobiStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MobiStore.props",
+      "PackagePath": "buildMultiTargeting\\MobiStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MobiStore.props",
+      "PackagePath": "buildTransitive\\MobiStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

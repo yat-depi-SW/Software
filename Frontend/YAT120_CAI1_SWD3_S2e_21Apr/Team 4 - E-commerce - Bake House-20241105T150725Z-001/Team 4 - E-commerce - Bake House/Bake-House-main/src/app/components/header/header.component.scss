@@ -1,0 +1,105 @@
+$dark-color: #543310;
+$alt-dark-color: #74512d;
+$light-color: #f8f4e1;
+$light-background: rgba(248, 244, 225, 0.8);
+$alt-light-color: #af8f6f;
+
+.navbar {
+  background-color: $light-background;
+  .nav-item {
+    .nav-link {
+      color: $dark-color;
+    }
+    .active {
+      font-weight: 600;
+    }
+  }
+  a.btn {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+  .btn-group {
+    & > button {
+      color: $dark-color;
+      border: none;
+      padding: 8px;
+    }
+    .dropdown-menu {
+      background-color: $light-background;
+      border-color: $dark-color;
+      a {
+        color: $dark-color;
+      }
+      .dropdown-item:hover {
+        background-color: $light-color;
+      }
+      .dropdown-item.active,
+      .dropdown-item:active,
+      .dropdown-item:focus {
+        font-weight: 600;
+        text-decoration: none;
+        background-color: $light-background;
+      }
+    }
+  }
+  div.btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    a:not(:last-child) {
+      color: $dark-color;
+      &.name {
+        text-decoration: none;
+        font-weight: 500;
+      }
+      &:nth-child(2) {
+        position: relative;
+        font-size: 22px;
+        transition: font-size 0.2s ease;
+        &:hover {
+          font-size: 24px;
+        }
+        span {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          font-size: 12px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          line-height: 20px;
+          text-align: center;
+          background-color: $light-color;
+          color: $dark-color;
+          border: 1px solid $dark-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    .dropdown-menu {
+      position: absolute;
+      margin: auto;
+      background-color: $light-color !important;
+    }
+    .dropdown-menu[data-bs-popper] {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .nav-item,
+    .nav-link {
+      text-align: center;
+    }
+  }
+  .btns {
+    flex-direction: column;
+    a:last-child{
+      width: 100%;
+    }
+  }
+}

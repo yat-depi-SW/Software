@@ -1,0 +1,40 @@
+﻿ @model ReturnBooksViewModel
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h1>Return Books</h1>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_Alert")
+
+    @await Html.PartialAsync("_SearchForm", Model.MemberList)
+
+    <br />
+
+    @if (Model.MemberDetails != null)
+    {
+        @await Html.PartialAsync("_MemberDetails", Model.MemberDetails)
+
+        <br />
+
+        @await Html.PartialAsync("_ReturnBookTB", Model.BorrowedBooks)
+    }
+    else
+    {
+        @if (TempData["Result"] == null)
+        {
+            <div class="alert alert-warning" role="alert">
+                Please select a member to view borrowed books.
+        </div>
+        }
+
+    }
+</div>
+
+
+
+
+      

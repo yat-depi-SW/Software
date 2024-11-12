@@ -1,0 +1,80 @@
+﻿@* <!-- Example buttons to trigger the toast -->
+<button onclick="showDynamicToast('Information', 'This is an informational message.', 'info')" class="btn btn-info mt-5">Show Info Toast</button>
+<button onclick="showDynamicToast('Success', 'Action completed successfully!', 'success')" class="btn btn-success mt-5">Show Success Toast</button>
+<button onclick="showDynamicToast('Delete Confirmation',
+                                                'Are you sure you want to delete this item?', 'danger',
+                                                '@Url.Action("Delete", "ProductLine", new { id = @item.Id })')"
+        class="btn btn-danger mt-5">
+    Show Delete Confirmation Toast
+</button> *@
+
+
+<!-- Toast container starts just below the navbar -->
+<div aria-live="polite" aria-atomic="true" class="position-relative">
+    <div class="toast-container position-fixed start-50 translate-middle-x" style="top: 70px;">
+        <div id="dynamicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div id="toastHeader" class="toast-header">
+                <!-- Dynamic icon depending on the type -->
+                <span id="toastIcon" class="me-2"></span>
+                <strong id="toastTitle" class="me-auto">Title</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div id="toastBody" class="toast-body">
+                Message
+                <!-- Buttons will appear here only for confirmation messages -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let deleteUrl = '';
+
+    // Function to show the toast with dynamic title, message, and type
+    function showDynamicToast(title, message, type = 'info', url = '') {
+        // Set the dynamic title and message in the toast
+        document.getElementById('toastTitle').innerText = title;
+        document.getElementById('toastBody').innerHTML = message;
+
+        // Set the header class based on type (info, success, danger, etc.)
+        const toastHeader = document.getElementById('toastHeader');
+        toastHeader.className = `toast-header bg-${type} text-white`;
+
+        // Set the icon based on the type
+        const toastIcon = document.getElementById('toastIcon');
+        switch (type) {
+            case 'success':
+                toastIcon.innerHTML = '✔️'; // Success icon
+                break;
+            case 'danger':
+                toastIcon.innerHTML = '⚠️'; // Warning icon
+                break;
+            case 'info':
+            default:
+                toastIcon.innerHTML = 'ℹ️'; // Information icon
+                break;
+        }
+
+        // If a URL is provided, show Yes/No buttons for confirmation
+        if (url) {
+            deleteUrl = url;
+            document.getElementById('toastBody').innerHTML += `
+                                <div class="mt-2 pt-2 border-top d-flex justify-content-end">
+                                    <button type="button" class="btn btn-danger btn-sm" id="confirmDelete">Yes</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">No</button>
+                                </div>`;
+
+            // Attach event listener for confirmation (Yes button)
+            document.getElementById('confirmDelete').addEventListener('click', function () {
+                if (deleteUrl) {
+                    window.location.href = deleteUrl;
+                }
+            });
+        }
+
+        // Show the toast
+        var toastElement = document.getElementById('dynamicToast');
+        var toast = new bootstrap.Toast(toastElement);
+        toast.show();
+    }
+</script>

@@ -1,0 +1,12 @@
+div {
+  margin-top: 5rem;
+}
+
+select {
+  width: 100%;
+}
+@media (max-width: 450px) {
+  select {
+    width: 95vw;
+  }
+}/*# sourceMappingURL=select.component.css.map */

@@ -1,0 +1,34 @@
+- hosts: aws_servers
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install dependencies for Docker
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+        state: present
+
+    - name: Add Docker GPG key
+      command: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+
+    - name: Add Docker repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+        state: present
+
+    - name: Install Docker
+      apt:
+        name: docker-ce
+        state: present
+
+    - name: Ensure Docker is running
+      service:
+        name: docker
+        state: started
+        enabled: yes

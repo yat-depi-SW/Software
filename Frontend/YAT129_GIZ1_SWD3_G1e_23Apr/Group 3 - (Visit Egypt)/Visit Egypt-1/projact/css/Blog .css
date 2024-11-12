@@ -1,0 +1,73 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.blog-header {
+    background: url('pyramids.jpg') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blog-content {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.review-section {
+    margin-top: 50px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.carousel-item h5 {
+    font-weight: bold;
+}
+
+.carousel-item p {
+    font-style: italic;
+}
+
+.footer {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Review-section textarea {
+    resize: none;
+}

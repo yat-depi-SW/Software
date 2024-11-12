@@ -1,0 +1,112 @@
+<div class="container-xl">
+  <h2>Your Payment</h2>
+  <!-- Order Summary -->
+  <div class="payment-section">
+    <h3>Order Summary</h3>
+    <div class="order-summary">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartItems">
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ calcTotalPerItem(item.quantity, item.discount && item.discount > 0 ? calcDiscount(item.price,
+              item.discount) : item.price) | currency: 'EGP': 'symbol-narrow' }}</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>{{ getTotalPrice() | currency: 'EGP': 'symbol-narrow' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Billing Information -->
+    <div class="billing-info">
+      <h3>Billing Information</h3>
+
+      <!-- نموذج الدفع -->
+      <form (ngSubmit)="confirmPayment(paymentForm)" #paymentForm="ngForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required ngModel>
+          <div *ngIf="paymentForm.controls['name']?.invalid && paymentForm.controls['name']?.touched"
+            class="error-message">
+            Name is required!
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required ngModel>
+          <div *ngIf="paymentForm.controls['email']?.invalid && paymentForm.controls['email']?.touched"
+            class="error-message">
+            Email is required!
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required ngModel>
+          <div *ngIf="paymentForm.controls['address']?.invalid && paymentForm.controls['address']?.touched"
+            class="error-message">
+            Address is required!
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" name="card-number" required ngModel>
+          <div *ngIf="paymentForm.controls['card-number']?.invalid && paymentForm.controls['card-number']?.touched"
+            class="error-message">
+            Card Number is required!
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="expiry">Expiry Date</label>
+          <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required ngModel
+            (input)="formatExpiryDate($event)">
+          <div *ngIf="paymentForm.controls['expiry']?.invalid && paymentForm.controls['expiry']?.touched"
+            class="error-message">
+            Expiry Date is required!
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" required ngModel (input)="formatCvv($event)">
+          <div *ngIf="paymentForm.controls['cvv']?.invalid && paymentForm.controls['cvv']?.touched"
+            class="error-message">
+            CVV is required!
+          </div>
+        </div>
+
+        <!-- Payment Options -->
+        <div class="payment-options">
+          <h3>Payment Options</h3>
+          <div class="option">
+            <input type="radio" id="Visa" name="payment-method" value="Visa" required ngModel>
+            <label for="Visa"><i class="fa-brands fa-cc-visa"></i>Visa</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="master-card" name="payment-method" value="master-card" required ngModel>
+            <label for="master-card"><i class="fa-brands fa-cc-mastercard"title="Master Card"></i>Master Card</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery" required ngModel>
+            <label for="cash-on-delivery"><i class="fa-solid fa-money-bill-wave"></i>Cash on Delivery</label>
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn submit-btn">Confirm Payment</button>
+      </form>
+    </div>
+  </div>
+</div>

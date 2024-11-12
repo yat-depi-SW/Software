@@ -1,0 +1,58 @@
+<div class="card my-3">
+  <img src="{{ data.image }}" class="card-img-top p-3" alt="..." routerLink="/details/{{data.id}}" />
+  <div class="card-body">
+    <h5 class="card-title">{{ data.title }}</h5>
+    <!-- <h5 class="card-title">{{data.category}}</h5> -->
+    <p class="card-text">{{ data.description }}</p>
+    <p class="bg-success w-25 text-light rounded text-center">
+      {{ data.price | currency }}
+    </p>
+    <a class="btn btn-primary" *ngIf="apearAddBtn" (click)="disAppear()">Add to Card</a>
+    <a class="btn btn-primary ms-2" *ngIf="apearAddBtn" routerLink="/details/{{data.id}}">Details</a>
+    <div>
+      <div class="my-3 w-50" *ngIf="!apearAddBtn">
+        <!-- <label for="count-id" class="form-label">define quantity</label> -->
+        <input type="number" class="form-control" [(ngModel)]="amount" id="count-id" min="1" />
+        <button type="button" class="btn bg-danger mt-2" (click)="add();apearAddBtn = true">
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card-body">
+  <table class="table table-bordered m-0">
+    <thead>
+      <tr>
+        <!-- Set columns width -->
+        <th class="text-right py-3 px-4 text-center" style="width: 100px">
+          Image </th>
+        <th class="text-right py-3 px-4 text-center" style="width: 100px">
+          Name
+        </th>
+        <th class="text-center py-3 px-4 text-center" style="width: 120px">
+          Category
+        </th>
+        <th class="text-center py-3 px-4 text-center" style="width: 120px">
+          Price
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-right font-weight-semibold align-middle d-flex justify-content-between p-4 text-center"
+          style="width: 100px">
+          <img src="{{data.image}}" style="width: 70px; height: 70px;" alt="" routerLink="/details/{{data.id}}">
+
+        </td>
+        <td class="align-middle p-4 text-center">
+          <p>{{data.title}}</p>
+        </td>
+        <td class="align-middle p-4 text-center">
+          <p>{{data.price | currency}}</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

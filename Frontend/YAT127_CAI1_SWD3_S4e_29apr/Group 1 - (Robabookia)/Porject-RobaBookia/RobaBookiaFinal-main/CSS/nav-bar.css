@@ -1,0 +1,173 @@
+header {
+  transform: translateY(40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 30;
+  width: 25%;
+  left: 50%; /* Move the header to the center horizontally */
+  transform: translate(-50%, -70px); /* Adjust for centering */
+}
+
+/* Navbar Container */
+div.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  min-width: 290px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width for better display */
+  z-index: 100; /* Higher z-index to stay above other content */
+  padding-block: 7px;
+  color: black !important;
+  visibility: hidden;
+
+}
+
+/* Left Menu Icon */
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Navbar title */
+.navbar-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Info Icon */
+.info-icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Dropdown Menu */
+.menu-links {
+  text-decoration: none;
+  color: #f4d8c0;
+}
+
+#menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; /* Dark transparent background */
+  z-index: 1000; /* Ensure it appears above all other content */
+  overflow: hidden; /* Prevent scroll inside the popover */
+}
+
+#menu-items {
+  margin-left: clamp(2rem, 4vw, 40rem);
+  position: relative;
+  z-index: 250;
+}
+
+#menu[data-active-index="0"] > #menu-background-image {
+  background-position: center 45%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+  background-position: center 50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+  background-position: center 55%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+  background-position: center 60%;
+}
+
+#menu-background-image {
+  background-image: url("../Imge/RobaBookia-large\ logo.webp");
+  background-position: center 40%;
+  background-size: 110vmax;
+  height: 100%;
+  left: 0px;
+  opacity: 0.15;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100%;
+  z-index: 249;
+}
+
+#menu-items:hover ~ #menu-background-image {
+  background-size: 100vmax;
+  opacity: 0.1;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+}
+
+.menu-item {
+  color: #f4d8c0;
+  cursor: pointer;
+  display: block;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  cursor: pointer;
+  z-index: 251;
+}
+
+/* Toggle button for mobile */
+.menu-icon {
+  cursor: pointer;
+}
+
+/* Styling the lines for the icon */
+.menu-icon span {
+  display: block;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px 0;
+  width: 20px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change to black on scroll */
+.scrolled .menu-icon span {
+  background-color: black;
+}
+
+/* Transition for title and info-icon */
+#navbarTitle,
+#infoIcon span {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* When scrolled, change to black */
+.scrolled #navbarTitle,
+.scrolled #infoIcon span {
+  color: black;
+}

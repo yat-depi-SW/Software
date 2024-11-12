@@ -1,0 +1,54 @@
+pipeline {
+    agent {
+        label 'ec2'  // Replace with your specific EC2 agent label
+    }
+     environment {
+        ANSIBLE_PLAYBOOK = 'app.yml'              // The name of your Ansible playbook
+        INVENTORY_FILE = 'inventory.ini'              // Replace with your inventory file
+    }
+    stages {
+        stage('Install Ansible') {
+            steps {
+                // Install Ansible on the EC2 instance
+                sh '''
+                sudo apt update
+                sudo apt install -y software-properties-common
+                sudo add-apt-repository --yes --update ppa:ansible/ansible
+                sudo apt install -y ansible
+                '''
+            }
+        }
+
+        stage('Add Host to Known Hosts') {
+            steps {
+                // Add the EC2 instance to known hosts
+                sh '''
+                ssh-keyscan -H 13.60.51.83 >> ~/.ssh/known_hosts
+                '''
+            }
+        }
+
+        stage('Checkout') {
+            steps {
+                // Checkout the repository using HTTPS
+                git branch: 'master', credentialsId: 'gitcred', url: 'https://github.com/Amira-sherif/CI-CD-project-V0.git'
+            }
+        }
+        
+        stage('Run Ansible Playbook') {
+            steps {
+             // Run the Ansible playbook
+                sh "ansible-playbook -i ${INVENTORY_FILE} ${ANSIBLE_PLAYBOOK}"
+            }
+        }
+    }
+
+    post {
+        success {
+            slackSend(channel: '#your-slack-channel', message: "Pipeline succeeded: ${env.JOB_NAME} - ${env.BUILD_NUMBER}")
+        }
+        failure {
+            slackSend(channel: '#your-slack-channel', message: "Pipeline failed: ${env.JOB_NAME} - ${env.BUILD_NUMBER}")
+        }
+    }
+}

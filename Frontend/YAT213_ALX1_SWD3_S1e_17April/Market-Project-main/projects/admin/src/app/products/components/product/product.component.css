@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2196078431);
+}
+.card:hover {
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+}
+.card img {
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+.card .card-body .card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}/*# sourceMappingURL=product.component.css.map */
